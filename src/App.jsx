@@ -5,7 +5,7 @@ import { useState, useEffect, useCallback } from "react";
 //  Set to true to show time/season override dropdowns in the UI.
 //  Set to false before pushing to GitHub.
 // ============================================================
-const DEV_MODE = true;
+const DEV_MODE = false;
 
 // ============================================================
 //  QUOTE LIBRARY
