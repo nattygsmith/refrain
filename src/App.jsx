@@ -555,7 +555,7 @@ export default function FolkClock() {
     }
 
     blockquote {
-      font-size: 2rem;
+      font-size: clamp(1.125rem, 4vw, 2rem);
       line-height: 2;
       font-style: normal;
       color: ${theme.ink};
