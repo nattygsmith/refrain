@@ -1,6 +1,13 @@
 import { useState, useEffect, useCallback } from "react";
 
 // ============================================================
+//  DEV MODE
+//  Set to true to show time/season override dropdowns in the UI.
+//  Set to false before pushing to GitHub.
+// ============================================================
+const DEV_MODE = true;
+
+// ============================================================
 //  QUOTE LIBRARY
 //  To add quotes: append objects to this array.
 //  Required fields:
@@ -370,11 +377,13 @@ export default function FolkClock() {
   const [lastQuote, setLastQuote] = useState(null);
   const [showInfo, setShowInfo] = useState(false);
   const [fadeKey, setFadeKey] = useState(0);
+  const [devTime, setDevTime] = useState(getTimeOfDay(new Date().getHours()));
+  const [devSeason, setDevSeason] = useState(getSeason(new Date().getMonth()));
 
   const hour = now.getHours();
   const month = now.getMonth();
-  const timeOfDay = getTimeOfDay(hour);
-  const season = getSeason(month);
+  const timeOfDay = DEV_MODE ? devTime : getTimeOfDay(hour);
+  const season = DEV_MODE ? devSeason : getSeason(month);
   const theme = THEMES[timeOfDay][season];
   const pool = getPool(timeOfDay, season);
 
@@ -653,6 +662,39 @@ export default function FolkClock() {
       background: ${theme.accent};
       color: ${theme.bg};
     }
+
+    /* Dev toggle */
+    .dev-bar {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 20;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      background: ${theme.bg};
+      border: 1px solid ${theme.accent};
+      padding: 0.4rem 0.75rem;
+      opacity: 0.7;
+    }
+    .dev-bar:hover { opacity: 1; }
+    .dev-bar label {
+      font-family: 'IM Fell English SC', serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      color: ${theme.ink};
+      text-transform: uppercase;
+    }
+    .dev-bar select {
+      background: none;
+      border: none;
+      font-family: 'IM Fell English SC', serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      color: ${theme.accent};
+      cursor: pointer;
+      text-transform: uppercase;
+    }
   `;
 
   return (
@@ -734,6 +776,26 @@ export default function FolkClock() {
                 Close
               </button>
             </div>
+          </div>
+        )}
+
+        {/* Dev toggle — remove DEV_MODE flag before deploying */}
+        {DEV_MODE && (
+          <div className="dev-bar">
+            <label>Time</label>
+            <select value={devTime} onChange={(e) => { setDevTime(e.target.value); setFadeKey((k) => k + 1); }}>
+              <option value="morning">Morning</option>
+              <option value="afternoon">Afternoon</option>
+              <option value="evening">Evening</option>
+              <option value="night">Night</option>
+            </select>
+            <label>Season</label>
+            <select value={devSeason} onChange={(e) => { setDevSeason(e.target.value); setFadeKey((k) => k + 1); }}>
+              <option value="spring">Spring</option>
+              <option value="summer">Summer</option>
+              <option value="autumn">Autumn</option>
+              <option value="winter">Winter</option>
+            </select>
           </div>
         )}
 
