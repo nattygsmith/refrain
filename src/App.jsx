@@ -99,7 +99,7 @@ const QUOTES = [
   },
   // --- Child 43: The Broomfield Hill ---
   {
-    text: "The ane gaed early in the morning,\nThe other in the afternoon.",
+    text: "The one rode early in the morning,\nThe other in the afternoon.",
     source: "The Broomfield Hill (Child 43)",
     time: ["afternoon"],
     season: [],
@@ -555,16 +555,16 @@ export default function FolkClock() {
     }
 
     blockquote {
-      font-size: clamp(1.05rem, 3.5vw, 1.35rem);
-      line-height: 1.85;
-      font-style: italic;
+      font-size: 2rem;
+      line-height: 2;
+      font-style: normal;
       color: ${theme.ink};
       transition: color 1.2s ease;
     }
 
     .attribution {
       margin-top: 1.1rem;
-      font-size: 0.78rem;
+      font-size: 1.125rem;
       font-family: 'IM Fell English SC', serif;
       letter-spacing: 0.08em;
       opacity: 0.6;
@@ -601,7 +601,7 @@ export default function FolkClock() {
     }
 
     .pool-note {
-      font-size: 0.68rem;
+      font-size: 0.75rem;
       opacity: 0.4;
       font-family: 'IM Fell English SC', serif;
       letter-spacing: 0.08em;
@@ -611,7 +611,7 @@ export default function FolkClock() {
     .overlay {
       position: fixed;
       inset: 0;
-      background: ${theme.bg}ee;
+      background: ${theme.bg};
       z-index: 10;
       display: flex;
       align-items: center;
@@ -639,8 +639,7 @@ export default function FolkClock() {
     .info-body {
       font-size: 0.9rem;
       line-height: 1.8;
-      opacity: 0.85;
-      font-style: italic;
+      font-style: normal;
     }
 
     .info-body p + p { margin-top: 0.75rem; }
@@ -769,7 +768,7 @@ export default function FolkClock() {
                   The words have been lightly modernised where needed.
                 </p>
                 <p>
-                  A new verse appears every hour, or tap <em>Another</em> whenever you like.
+                  A new verse appears every hour, or tap ANOTHER whenever you like.
                 </p>
               </div>
               <button className="info-close" onClick={() => setShowInfo(false)}>
