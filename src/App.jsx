@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 // ============================================================
 //  DEV MODE
@@ -66,12 +66,16 @@ const QUOTES = [
     source: "The Three Ravens (Child 26)",
     time: ["morning"],
     season: [],
+    lyricsKey: "child26",
+    stanzaIndex: 0,
   },
   {
     text: "She buried him before the prime,\nShe died herself ere evening time.",
     source: "The Three Ravens (Child 26)",
     time: ["evening"],
     season: [],
+    lyricsKey: "child26",
+    stanzaIndex: 8,
   },
   // --- Allison Gross (Child 35) ---
   {
@@ -94,24 +98,32 @@ const QUOTES = [
     source: "Tam Lin (Child 39)",
     time: ["night"],
     season: ["autumn"],
+    lyricsKey: "child39",
+    stanzaIndex: 36,
   },
   {
     text: "Just at the mirk and midnight hour,\nThe fairy folk will ride,\nAnd they that would their true-love win,\nAt Miles Cross they must bide.",
     source: "Tam Lin (Child 39)",
     time: ["night"],
     season: ["autumn"],
+    lyricsKey: "child39",
+    stanzaIndex: 25,
   },
   {
     text: "Tomorrow is Halloween,\nThe elfin court will ride,\nThrough England, and through all Scotland,\nAnd through the world wide.",
     source: "Tam Lin (Child 39)",
     time: ["morning", "afternoon"],
     season: ["autumn"],
+    lyricsKey: "child39",
+    stanzaIndex: 24,
   },
   {
     text: "O they begin at sky-setting,\nRide all the evening tide;\nAnd she that will her true-love borrow,\nAt Miles Cross will him bide.",
     source: "Tam Lin (Child 39)",
     time: ["evening"],
     season: ["autumn"],
+    lyricsKey: "child39",
+    stanzaIndex: 26,
   },
   // --- Clerk Colvill (Child 42) ---
   {
@@ -262,26 +274,34 @@ const QUOTES = [
     source: "The Wife of Usher's Well (Child 79)",
     time: ["night"],
     season: ["winter"],
+    lyricsKey: "child79",
+    stanzaIndex: 3,
   },
   {
     text: "The young cock crew in the merry morning,\nAnd the wild fowl chirped for day;\nThe elder to the younger did say,\nDear brother, we must away.",
     source: "The Wife of Usher's Well (Child 79)",
     time: ["morning"],
     season: [],
+    lyricsKey: "child79",
+    stanzaIndex: 7,
   },
   {
     text: "Up then crew the red, red cock,\nAnd up and crew the gray;\nThe eldest to the youngest said,\n'Tis time we were away.",
     source: "The Wife of Usher's Well (Child 79)",
     time: ["morning"],
     season: [],
-    // notes: "Kept alongside #24 \u2014 different stanza, different texture. #24 is warm and narrative; this is abrupt and elegiac."
+    lyricsKey: "child79",
+    stanzaIndex: 8,
+    // notes: "Kept alongside #24 — different stanza, different texture. #24 is warm and narrative; this is abrupt and elegiac."
   },
   {
     text: "It fell about the Martinmas,\nWhen nights are lang and mirk,\nThe carlin wife's three sons came home,\nAnd their hats were of the birch.",
     source: "The Wife of Usher's Well (Child 79)",
     time: ["night"],
     season: ["winter"],
-    // notes: "Replaces retired #22 (two-line fragment). hame\u2192home; o the birk\u2192of the birch. 'carlin'=old woman; 'mirk'=dark. Hats of birch signal the sons have come from Paradise."
+    lyricsKey: "child79",
+    stanzaIndex: 0,
+    // notes: "Replaces retired #22 (two-line fragment). hame→home; o the birk→of the birch. 'carlin'=old woman; 'mirk'=dark. Hats of birch signal the sons have come from Paradise."
   },
   // --- Old Robin of Portingale (Child 80) ---
   {
@@ -671,6 +691,107 @@ const QUOTES = [
 ];
 
 // ============================================================
+//  LYRICS LIBRARY
+//  Each key matches the lyricsKey on a quote object.
+//  stanzas: array of strings, one per stanza (use \n for line breaks within a stanza).
+//  The stanzaIndex on each quote points into this array — that stanza is highlighted.
+//
+//  To add a ballad:
+//    1. Add an entry here with title, version, and stanzas array.
+//    2. Add lyricsKey and stanzaIndex to every quote from that ballad in QUOTES above.
+// ============================================================
+const LYRICS = {
+  "child26": {
+    title: "The Three Ravens",
+    childNumber: "Child 26",
+    version: "Traditional (Percy's Reliques, 1765)",
+    stanzas: [
+      "There were three ravens sat on a tree,\nDown a down, hay down, hay down,\nThere were three ravens sat on a tree,\nWith a down,\nThere were three ravens sat on a tree,\nThey were as black as they might be,\nWith a down, derry, derry, derry, down, down.",
+      "The one of them said to his mate,\n'Where shall we our breakfast take?'\nWith a down, derry, derry, derry, down, down.",
+      "'Down in yonder green field,\nThere lies a knight slain under his shield.'",
+      "'His hounds they lie down at his feet,\nSo well they can their master keep.'",
+      "'His hawks they fly so eagerly,\nNo other fowl dare him come nigh.'",
+      "Down there comes a fallow doe,\nAs great with fawn as she might go.",
+      "She lifted up his bleeding head,\nAnd kissed his wounds that were so red.",
+      "She got him up upon her back,\nAnd carried him to earthen lake.",
+      "She buried him before the prime,\nShe died herself ere evening time.",
+      "God send every gentleman,\nSuch hawks, such hounds, and such a leman.",
+    ],
+  },
+
+  "child39": {
+    title: "Tam Lin",
+    childNumber: "Child 39",
+    version: "Version A (Child's English and Scottish Popular Ballads)",
+    stanzas: [
+      "O I forbid you, maidens all,\nThat wear gowd on your hair,\nTo come or gae by Carterhaugh,\nFor young Tam Lin is there.",
+      "There's none that gaes by Carterhaugh\nBut they leave him a wad,\nEither their rings, or green mantles,\nOr else their maidenhead.",
+      "Janet has kilted her green kirtle\nA little aboon her knee,\nAnd she has braided her yellow hair\nA little aboon her bree,\nAnd she's awa to Carterhaugh,\nAs fast as she can hie.",
+      "When she came to Carterhaugh\nTam Lin was at the well,\nAnd there she fand his steed standing,\nBut away was himsel.",
+      "She had na pu'd a double rose,\nA rose but only tway,\nTill up then started young Tam Lin,\nSays, Lady, thou's pu nae mae.",
+      "'Why pu's thou the rose, Janet,\nAnd why breaks thou the wand?\nOr why comes thou to Carterhaugh\nWithout my command?'",
+      "'Carterhaugh, it is my ain,\nMy daddy gave it me;\nI'll come and gang by Carterhaugh,\nAnd ask nae leave at thee.'",
+      "Janet has kilted her green kirtle\nA little aboon her knee,\nAnd she has braided her yellow hair\nA little aboon her bree,\nAnd she is to her father's ha,\nAs fast as she can hie.",
+      "Four and twenty ladies fair\nWere playing at the ba,\nAnd out then cam the fair Janet,\nThe flower amang them a'.",
+      "Four and twenty ladies fair\nWere playing at the chess,\nAnd out then cam the fair Janet,\nAs green as onie glass.",
+      "Out then spak an auld grey knight,\nLay o'er the castle wa,\nAnd says, 'Alas, fair Janet, for thee\nBut we'll be blamed a'.'",
+      "'Haud your tongue, ye auld fac'd knight,\nSome ill death may ye die!\nFather my bairn on whom I will,\nI'll father nane on thee.'",
+      "Out then spak her father dear,\nAnd he spak meek and mild;\n'And ever alas, sweet Janet,' he says,\n'I think thou gaes wi child.'",
+      "'And if I gae wi child, father,\nMysel maun bear the blame;\nThere's ne'er a laird about your ha\nShall get the bairn's name.",
+      "'If my love were an earthly knight,\nAs he's an elfin grey,\nI wad na gie my ain true-love\nFor nae lord that ye hae.",
+      "'The steed that my true-love rides on\nIs lighter than the wind;\nWi siller he is shod before,\nWi burning gowd behind.'",
+      "Janet has kilted her green kirtle\nA little aboon her knee,\nAnd she has braided her yellow hair\nA little aboon her bree,\nAnd she's awa to Carterhaugh,\nAs fast as she can hie.",
+      "When she cam to Carterhaugh,\nTam Lin was at the well,\nAnd there she fand his steed standing,\nBut away was himsel.",
+      "She had na pu'd a double rose,\nA rose but only tway,\nTill up then started young Tam Lin,\nSays, 'Lady, thou's pu nae mae.'",
+      "'Why pu's thou the rose, Janet,\nAmang the groves sae green,\nAnd a' to kill the bonie babe\nThat we gat us between?'",
+      "'O tell me, tell me, Tam Lin,' she says,\n'For's sake that died on tree,\nIf e'er ye was in holy chapel,\nOr Christendom did see?'",
+      "'Roxbrugh he was my grandfather,\nTook me with him to bide,\nAnd ance it fell upon a day\nThat wae did me betide.",
+      "'And ance it fell upon a day,\nA cauld day and a snell,\nWhen we were frae the hunting come,\nThat frae my horse I fell;\nThe queen o Fairies she caught me\nIn yon green hill to dwell.",
+      "'And pleasant is the fairy land,\nBut, an eerie tale to tell,\nAy at the end of seven years\nWe pay a tiend to hell;\nI am sae fair and fu o flesh,\nI'm feard it be mysel.",
+      "'But the night is Halloween, lady,\nThe morn is Hallowday;\nThen win me, win me, an ye will,\nFor weel I wat ye may.",
+      "'Just at the mirk and midnight hour\nThe fairy folk will ride,\nAnd they that wad their true-love win,\nAt Miles Cross they maun bide.'",
+      "'O they begin at sky-setting,\nRide all the evening tide;\nAnd she that will her true-love borrow,\nAt Miles Cross will him bide.'",
+      "'But how shall I thee ken, Tam Lin,\nOr how my true-love know,\nAmang sae mony unco knights\nThe like I never saw?'",
+      "'O first let pass the black, lady,\nAnd syne let pass the brown,\nBut quickly run to the milk-white steed,\nPull ye his rider down.",
+      "'For I'll ride on the milk-white steed,\nAnd ay nearest the town;\nBecause I was an earthly knight\nThey gie me that renown.",
+      "'My right hand will be gloved, lady,\nMy left hand will be bare,\nCockt up shall my bonnet be,\nAnd kaimed down shall my hair,\nAnd thae's the takens I gie thee,\nNae doubt I will be there.",
+      "'They'll turn me in your arms, lady,\nInto an esk and adder;\nBut hold me fast, and fear me not,\nI am your bairn's father.",
+      "'They'll turn me to a bear sae grim,\nAnd then a lion bold;\nBut hold me fast, and fear me not,\nAs ye shall love your child.",
+      "'Again they'll turn me in your arms\nTo a red het gaud of airn;\nBut hold me fast, and fear me not,\nI'll do to you nae harm.",
+      "'And last they'll turn me in your arms\nInto the burning gleed;\nThen throw me into well water,\nO throw me in wi speed.",
+      "'And then I'll be your ain true-love,\nI'll turn a naked knight;\nThen cover me wi your green mantle,\nAnd cover me out o sight.'",
+      "Gloomy, gloomy was the night,\nAnd eerie was the way,\nAs fair Jenny in her green mantle\nTo Miles Cross she did go.",
+      "About the middle o the night\nShe heard the bridles ring;\nThis lady was as glad at that\nAs any earthly thing.",
+      "First she let the black pass by,\nAnd syne she let the brown;\nBut quickly she ran to the milk-white steed,\nAnd pulled the rider down.",
+      "Sae weel she minded what he did say,\nAnd young Tam Lin did win;\nSyne covered him wi her green mantle,\nAs blythe's a bird in spring.",
+      "Out then spak the queen o fairies,\nOut of a bush o broom:\n'Them that has gotten young Tam Lin\nHas gotten a stately groom.'",
+      "Out then spak the queen o fairies,\nAnd an angry woman was she:\n'Shame betide her ill-far'd face,\nAnd an ill death may she die,\nFor she's taen awa the bonniest knight\nIn a' my companie.",
+      "'But had I kend, Tam Lin,' she says,\n'What now this night I see,\nI wad hae taen out thy twa grey een,\nAnd put in twa een o tree.'",
+    ],
+  },
+
+  "child79": {
+    title: "The Wife of Usher's Well",
+    childNumber: "Child 79",
+    version: "Version A (Child's English and Scottish Popular Ballads)",
+    stanzas: [
+      "It fell about the Martinmas,\nWhen nights are lang and mirk,\nThe carlin wife's three sons came home,\nAnd their hats were of the birch.",
+      "It neither grew in syke nor ditch,\nNor yet in ony sheugh;\nBut at the gates o Paradise\nThat birk grew fair eneugh.",
+      "'Blow up the fire, my maidens!\nBring water from the well!\nFor a' my house shall feast this night,\nSince my three sons are well.'",
+      "The hallow day of Yule are come,\nThe nights are long and dark,\nAnd in it came her own three sons,\nAnd their hats were of birch bark.",
+      "And it grew not in the syke or ditch,\nNor in any haugh or fen;\nBut at the very gates of Paradise\nThat birch tree flourished then.",
+      "'Blow up the fire now, maidens mine,\nBring water from the well;\nFor a' my house shall feast this night,\nSince my three sons are hale and well.'",
+      "And she has made to them a bed,\nShe's made it large and wide;\nAnd she's ta'en her mantle her about,\nSat down at the bedside.",
+      "The young cock crew in the merry morning,\nAnd the wild fowl chirped for day;\nThe elder to the younger did say,\n'Dear brother, we must away.'",
+      "Up then crew the red, red cock,\nAnd up and crew the gray;\nThe eldest to the youngest said,\n'Tis time we were away.",
+      "The cock he hadna crawed but once,\nAnd clapped his wings at a',\nWhen the youngest to the eldest said,\n'Brother, we must awa.",
+      "'The cock doth craw, the day doth daw,\nThe channerin worm doth chide;\nGin we be mist out o our place,\nA sair pain we maun bide.",
+      "'Fare ye weel, my mother dear!\nFareweel to barn and byre!\nAnd fare ye weel, the bonny lass\nThat kindles my mother's fire!'",
+    ],
+  },
+};
+
+// ============================================================
 //  HELPERS
 // ============================================================
 function getTimeOfDay(hour) {
@@ -758,16 +879,63 @@ const TIME_GLYPHS = {
 };
 
 // ============================================================
-//  COMPONENT
+//  LYRICS SCREEN COMPONENT
+// ============================================================
+function LyricsScreen({ entry, stanzaIndex, onClose }) {
+  const highlightRef = React.useRef(null);
+
+  useEffect(() => {
+    if (highlightRef.current) {
+      highlightRef.current.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+  }, []);
+
+  return (
+    <div className="lyrics-overlay">
+      <button className="lyrics-close" onClick={onClose}>X</button>
+      <div className="lyrics-title-block">
+        <div className="lyrics-title">{entry.title}</div>
+        <div className="lyrics-meta">{entry.childNumber} · {entry.version}</div>
+      </div>
+      <div className="lyrics-rule">
+        <div className="rule-line" />
+        <div className="rule-diamond" />
+        <div className="rule-line" />
+      </div>
+      <div className="lyrics-body">
+        {entry.stanzas.map((stanza, i) => {
+          const isHighlight = i === stanzaIndex;
+          return (
+            <p
+              key={i}
+              ref={isHighlight ? highlightRef : null}
+              className={isHighlight ? "lyrics-stanza lyrics-stanza--highlight" : "lyrics-stanza"}
+            >
+              {stanza.split("\n").map((line, j) => (
+                <span key={j}>{line}{j < stanza.split("\n").length - 1 && <br />}</span>
+              ))}
+            </p>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+// ============================================================
+//  MAIN COMPONENT
 // ============================================================
 export default function FolkClock() {
   const [now, setNow] = useState(new Date());
   const [quote, setQuote] = useState(null);
   const [lastQuote, setLastQuote] = useState(null);
   const [showInfo, setShowInfo] = useState(false);
+  const [showLyrics, setShowLyrics] = useState(false);
   const [fadeKey, setFadeKey] = useState(0);
   const [devTime, setDevTime] = useState(getTimeOfDay(new Date().getHours()));
   const [devSeason, setDevSeason] = useState(getSeason(new Date().getMonth()));
+  const [devSearch, setDevSearch] = useState("");
+  const [pinnedQuote, setPinnedQuote] = useState(null);
 
   // Ensure viewport-fit=cover so iOS respects safe-area-inset env() vars
   useEffect(() => {
@@ -791,6 +959,9 @@ export default function FolkClock() {
         setQuote(next);
         setLastQuote(next);
         setFadeKey((k) => k + 1);
+        setShowLyrics(false);
+        setPinnedQuote(null);
+        setDevSearch("");
       }
     },
     [pool]
@@ -822,8 +993,17 @@ export default function FolkClock() {
 
   if (!quote) return null;
 
+  const displayQuote = pinnedQuote || quote;
+
+  const devSearchResults = DEV_MODE && devSearch.trim().length >= 2
+    ? QUOTES.filter((q) =>
+        q.source.toLowerCase().includes(devSearch.toLowerCase()) ||
+        q.text.toLowerCase().includes(devSearch.toLowerCase())
+      ).slice(0, 8)
+    : [];
+
   const styles = `
-    @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1017,7 +1197,117 @@ export default function FolkClock() {
       letter-spacing: 0.08em;
     }
 
-    /* Info overlay */
+    /* Attribution as link */
+    .attribution-link {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      font-family: 'IM Fell English SC', serif;
+      font-size: 1.125rem;
+      letter-spacing: 0.08em;
+      color: ${theme.ink};
+      opacity: 0.6;
+      font-style: normal;
+      text-decoration: underline;
+      text-decoration-color: ${theme.accent};
+      text-underline-offset: 3px;
+      transition: opacity 0.2s;
+    }
+    .attribution-link:hover { opacity: 1; }
+
+    /* Lyrics overlay — fades in */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .lyrics-overlay {
+      position: fixed;
+      inset: 0;
+      background: ${theme.bg};
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 0.2s ease;
+      overflow: hidden;
+    }
+
+
+    .lyrics-close {
+      position: fixed;
+      top: 1.75rem;
+      right: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'IM Fell English SC', serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      color: ${theme.ink};
+      opacity: 0.5;
+      padding: 0.25rem 0.5rem;
+      transition: opacity 0.2s;
+      text-transform: uppercase;
+      z-index: 20;
+    }
+    .lyrics-close:hover { opacity: 1; }
+
+    .lyrics-rule {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      opacity: 0.3;
+      flex-shrink: 0;
+      padding: 0.6rem 90px 0 90px;
+    }
+
+    .lyrics-title-block {
+      flex-shrink: 0;
+      padding: 1.75rem 90px 0 90px;
+    }
+
+    .lyrics-title {
+      font-family: 'IM Fell English', serif;
+      font-size: clamp(1.3rem, 5vw, 1.9rem);
+      letter-spacing: 0.02em;
+      color: ${theme.ink};
+      margin-bottom: 0.2rem;
+    }
+
+    .lyrics-meta {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.02em;
+      opacity: 0.55;
+      margin-top: 0.15rem;
+    }
+
+    .lyrics-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.25rem 90px 2rem 90px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .lyrics-stanza {
+      font-size: clamp(0.9rem, 3vw, 1.05rem);
+      line-height: 1.9;
+      margin-bottom: 2.8rem;
+      color: ${theme.ink};
+      opacity: 0.45;
+      transition: opacity 0.3s;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+    }
+
+    .lyrics-stanza--highlight {
+      opacity: 1;
+      font-weight: 700;
+    }
     .overlay {
       position: fixed;
       inset: 0;
@@ -1050,49 +1340,85 @@ export default function FolkClock() {
       font-size: 0.9rem;
       line-height: 1.8;
       font-style: normal;
+      font-family: 'Lato', sans-serif;
+    }
+    .info-body p + p { margin-top: 1.5rem; }
+
+    .overlay-body .lyrics-rule {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 0.75rem;
     }
 
-    .info-body p + p { margin-top: 0.75rem; }
-
-    .info-close {
-      background: none;
-      border: 1px solid ${theme.accent};
-      color: ${theme.accent};
-      font-family: 'IM Fell English SC', serif;
-      font-size: 0.78rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      padding: 0.5rem 1.4rem;
-      cursor: pointer;
-      transition: background 0.2s, color 0.2s;
-      align-self: center;
-    }
-    .info-close:hover {
-      background: ${theme.accent};
-      color: ${theme.bg};
+    /* Info overlay */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: ${theme.bg};
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.2s ease;
+      overflow: hidden;
     }
 
-    /* Dev toggle */
+    .overlay-body {
+      overflow-y: auto;
+      padding: 1.75rem 90px 2rem 90px;
+      max-width: 720px;
+      width: 100%;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .info-title {
+      font-family: 'IM Fell English', serif;
+      font-size: clamp(1.3rem, 5vw, 1.9rem);
+      letter-spacing: 0.02em;
+      color: ${theme.ink};
+      margin-bottom: 0.75rem;
+    }
+
+    /* Dev panel */
     .dev-bar {
       position: fixed;
       bottom: 1rem;
       right: 1rem;
       z-index: 20;
       display: flex;
-      gap: 0.5rem;
-      align-items: center;
+      flex-direction: column;
+      gap: 0.35rem;
       background: ${theme.bg};
       border: 1px solid ${theme.accent};
-      padding: 0.4rem 0.75rem;
-      opacity: 0.7;
+      padding: 0.5rem 0.75rem;
+      opacity: 0.85;
+      min-width: 280px;
     }
     .dev-bar:hover { opacity: 1; }
+
+    .dev-bar-row {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .dev-search-row {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      border-top: 1px solid ${theme.accent}44;
+      padding-top: 0.35rem;
+    }
+
     .dev-bar label {
       font-family: 'IM Fell English SC', serif;
       font-size: 0.65rem;
       letter-spacing: 0.08em;
       color: ${theme.ink};
+      opacity: 0.6;
       text-transform: uppercase;
+      flex-shrink: 0;
     }
     .dev-bar select {
       background: none;
@@ -1103,6 +1429,73 @@ export default function FolkClock() {
       color: ${theme.accent};
       cursor: pointer;
       text-transform: uppercase;
+    }
+
+    .dev-search-input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid ${theme.accent}66;
+      font-family: 'IM Fell English', serif;
+      font-size: 0.7rem;
+      color: ${theme.ink};
+      padding: 0.1rem 0.2rem;
+      flex: 1;
+      outline: none;
+      min-width: 0;
+    }
+    .dev-search-input::placeholder { opacity: 0.35; }
+
+    .dev-pin-clear {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 0.65rem;
+      color: ${theme.accent};
+      opacity: 0.7;
+      padding: 0;
+      flex-shrink: 0;
+    }
+    .dev-pin-clear:hover { opacity: 1; }
+
+    .dev-results {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      border-top: 1px solid ${theme.accent}44;
+      padding-top: 0.35rem;
+      max-height: 220px;
+      overflow-y: auto;
+    }
+
+    .dev-result-item {
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      padding: 0.25rem 0.3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      border-radius: 2px;
+      transition: background 0.15s;
+    }
+    .dev-result-item:hover { background: ${theme.accent}22; }
+
+    .dev-result-source {
+      font-family: 'IM Fell English SC', serif;
+      font-size: 0.63rem;
+      letter-spacing: 0.06em;
+      color: ${theme.accent};
+    }
+
+    .dev-result-preview {
+      font-family: 'IM Fell English', serif;
+      font-size: 0.67rem;
+      color: ${theme.ink};
+      opacity: 0.6;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   `;
 
@@ -1133,14 +1526,19 @@ export default function FolkClock() {
         <div className="quote-section">
           <div key={fadeKey} className="quote-wrap">
             <blockquote>
-              {quote.text.split("\n").map((line, i) => (
+              {displayQuote.text.split("\n").map((line, i) => (
                 <span key={i}>
                   {line}
-                  {i < quote.text.split("\n").length - 1 && <br />}
+                  {i < displayQuote.text.split("\n").length - 1 && <br />}
                 </span>
               ))}
             </blockquote>
-            <p className="attribution">— {quote.source}</p>
+            <p className="attribution">
+              {displayQuote.lyricsKey && LYRICS[displayQuote.lyricsKey]
+                ? <button className="attribution-link" onClick={() => setShowLyrics(true)}>— {displayQuote.source}</button>
+                : <>— {displayQuote.source}</>
+              }
+            </p>
           </div>
         </div>
 
@@ -1163,9 +1561,15 @@ export default function FolkClock() {
 
         {/* Info overlay */}
         {showInfo && (
-          <div className="overlay" onClick={() => setShowInfo(false)}>
-            <div className="info-box" onClick={(e) => e.stopPropagation()}>
+          <div className="overlay">
+            <button className="lyrics-close" onClick={() => setShowInfo(false)}>X</button>
+            <div className="overlay-body">
               <div className="info-title">About This Collection</div>
+              <div className="lyrics-rule">
+                <div className="rule-line" />
+                <div className="rule-diamond" />
+                <div className="rule-line" />
+              </div>
               <div className="info-body">
                 <p>
                   These verses are drawn from the Child Ballads — 305 traditional English
@@ -1178,37 +1582,76 @@ export default function FolkClock() {
                   The words have been lightly modernised where needed.
                 </p>
                 <p>
-                  The verses are beautiful enough on their own, but they are songs.
-                  Find recordings. Listen to them. Learn them. Sing them.
+                  The verses are beautiful enough on their own, but they are meant to be sung.
+                  Find recordings, listen to them, learn them, and sing them!
                 </p>
                 <p>
-                  A new verse appears every 15 minutes, or press ANOTHER whenever you like.
+                  A new verse appears every 15 minutes, or press "Another" whenever you like.
                 </p>
               </div>
-              <button className="info-close" onClick={() => setShowInfo(false)}>
-                Close
-              </button>
             </div>
           </div>
         )}
 
-        {/* Dev toggle — remove DEV_MODE flag before deploying */}
+        {/* Lyrics overlay */}
+        {showLyrics && displayQuote.lyricsKey && LYRICS[displayQuote.lyricsKey] && (
+          <LyricsScreen
+            entry={LYRICS[displayQuote.lyricsKey]}
+            stanzaIndex={displayQuote.stanzaIndex}
+            onClose={() => setShowLyrics(false)}
+          />
+        )}
         {DEV_MODE && (
           <div className="dev-bar">
-            <label>Time</label>
-            <select value={devTime} onChange={(e) => { setDevTime(e.target.value); setFadeKey((k) => k + 1); }}>
-              <option value="morning">Morning</option>
-              <option value="afternoon">Afternoon</option>
-              <option value="evening">Evening</option>
-              <option value="night">Night</option>
-            </select>
-            <label>Season</label>
-            <select value={devSeason} onChange={(e) => { setDevSeason(e.target.value); setFadeKey((k) => k + 1); }}>
-              <option value="spring">Spring</option>
-              <option value="summer">Summer</option>
-              <option value="autumn">Autumn</option>
-              <option value="winter">Winter</option>
-            </select>
+            <div className="dev-bar-row">
+              <label>Time</label>
+              <select value={devTime} onChange={(e) => { setDevTime(e.target.value); setFadeKey((k) => k + 1); }}>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+                <option value="night">Night</option>
+              </select>
+              <label>Season</label>
+              <select value={devSeason} onChange={(e) => { setDevSeason(e.target.value); setFadeKey((k) => k + 1); }}>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="autumn">Autumn</option>
+                <option value="winter">Winter</option>
+              </select>
+            </div>
+            <div className="dev-search-row">
+              <label>Find</label>
+              <input
+                className="dev-search-input"
+                type="text"
+                value={devSearch}
+                onChange={(e) => { setDevSearch(e.target.value); setPinnedQuote(null); setShowLyrics(false); }}
+                placeholder="source or text…"
+                spellCheck={false}
+              />
+              {pinnedQuote && (
+                <button className="dev-pin-clear" onClick={() => { setPinnedQuote(null); setDevSearch(""); setShowLyrics(false); }}>✕</button>
+              )}
+            </div>
+            {devSearchResults.length > 0 && (
+              <div className="dev-results">
+                {devSearchResults.map((q, i) => (
+                  <button
+                    key={i}
+                    className="dev-result-item"
+                    onClick={() => {
+                      setPinnedQuote(q);
+                      setFadeKey((k) => k + 1);
+                      setShowLyrics(false);
+                      setDevSearch(q.source);
+                    }}
+                  >
+                    <span className="dev-result-source">{q.source}</span>
+                    <span className="dev-result-preview">{q.text.split("\n")[0]}</span>
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
         )}
 
