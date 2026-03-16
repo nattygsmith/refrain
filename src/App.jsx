@@ -2638,12 +2638,12 @@ export default function FolkClock() {
       gap: 0.75rem;
       opacity: 0.3;
       flex-shrink: 0;
-      padding: 0.6rem 90px 0 90px;
+      padding: 0.6rem clamp(1.5rem, 8vw, 90px) 0 clamp(1.5rem, 8vw, 90px);
     }
 
     .lyrics-title-block {
       flex-shrink: 0;
-      padding: 1.75rem 90px 0 90px;
+      padding: 1.75rem clamp(1.5rem, 8vw, 90px) 0 clamp(1.5rem, 8vw, 90px);
     }
 
     .lyrics-title {
@@ -2665,7 +2665,7 @@ export default function FolkClock() {
     .lyrics-body {
       flex: 1;
       overflow-y: auto;
-      padding: 1.25rem 90px 2rem 90px;
+      padding: 1.25rem clamp(1.5rem, 8vw, 90px) 2rem clamp(1.5rem, 8vw, 90px);
       -webkit-overflow-scrolling: touch;
     }
 
@@ -2742,7 +2742,7 @@ export default function FolkClock() {
 
     .overlay-body {
       overflow-y: auto;
-      padding: 1.75rem 90px 2rem 90px;
+      padding: 1.75rem clamp(1.5rem, 8vw, 90px) 2rem clamp(1.5rem, 8vw, 90px);
       max-width: 720px;
       width: 100%;
       -webkit-overflow-scrolling: touch;
