@@ -842,6 +842,127 @@ const QUOTES = [
     stanzaIndex: 0,
     // notes: "'twa knowes'=two hills. No modernisation needed."
   },
+  // ── sharp (─────────────────────────────────────────────)
+  // --- Blow Away the Morning Dew (Sharp 19) ---
+  {
+    text: "There was a farmer's son, kept sheep all on the hill,\nAnd he walked out one May morning to see what he could kill.",
+    source: "Blow Away the Morning Dew (Sharp 19)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "sharp19",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Sharp's version of Child 112 / The Baffled Knight."
+  },
+  // --- The Lark in the Morn (Sharp 62) ---
+  {
+    text: "The lark in the morning she rises from her nest,\nShe mounts into the air with the dew round her breast;\nAnd at night she will return to her own nest again.",
+    source: "The Lark in the Morn (Sharp 62)",
+    time: ["morning", "night"],
+    season: [],
+    lyricsKey: "sharp62",
+    stanzaIndex: 1,
+    // notes: "Chorus stanza. Morning rise and night return both explicit."
+  },
+  // --- Searching for Lambs (Sharp 48) ---
+  {
+    text: "As I went out one May morning,\nOne May morning betime,\nI met a maid, from home had strayed\nJust as the sun did shine.",
+    source: "Searching for Lambs (Sharp 48)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "sharp48",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. 'betime' = early."
+  },
+  // --- The Sweet Primeroses (Sharp 51) ---
+  {
+    text: "As I walked out one midsummer's morning\nFor to view the fields and to take the air,\nDown by the banks of the sweet primeroses,\nThere I beheld a most lovely fair.",
+    source: "The Sweet Primeroses (Sharp 51)",
+    time: ["morning"],
+    season: ["summer"],
+    lyricsKey: "sharp51",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Explicit morning and midsummer."
+  },
+  // --- The Seeds of Love (Sharp 33) ---
+  {
+    text: "I sowed the seeds of love,\nAnd I sowed them in the spring;\nI gathered them up in the morning so soon,\nWhile the small birds so sweetly sing.",
+    source: "The Seeds of Love (Sharp 33)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "sharp33",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. First song Sharp ever collected (1903)."
+  },
+  // --- The Cuckoo (Sharp 35) ---
+  {
+    text: "The cuckoo is a pretty bird, she singeth as she flies,\nShe bringeth us good tidings, she telleth us no lies;\nShe sucketh white flowers to make her voice clear,\nAnd the more she cries 'cuckoo,' the summer draweth near.",
+    source: "The Cuckoo (Sharp 35)",
+    time: [],
+    season: ["spring"],
+    lyricsKey: "sharp35",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Cuckoo as herald of approaching summer; tagged spring."
+  },
+  // --- The Trees They Do Grow High (Sharp 25) ---
+  {
+    text: "And so early in the morning, at the dawning of the day,\nThey went out into the hayfield to have some sport and play.",
+    source: "The Trees They Do Grow High (Sharp 25)",
+    time: ["morning"],
+    season: ["summer"],
+    lyricsKey: "sharp25",
+    stanzaIndex: 4,
+    // notes: "Mid-narrative stanza. Hayfield = summer context. Works as standalone morning image."
+  },
+  // --- Green Bushes (Sharp 40) ---
+  {
+    text: "As I was walking one morning in May,\nTo hear the birds whistle and the nightingales sing,\nI saw a young damsel, so sweetly sang she,\nDown by the green bushes he thinks to meet me.",
+    source: "Green Bushes (Sharp 40)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "sharp40",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Explicit morning and May."
+  },
+  // --- Dabbling in the Dew (Sharp 44) ---
+  {
+    text: "Oh, where are you going to, my pretty little dear,\nWith your red rosy cheeks and your coal black hair?\nI'm going a-milking, kind sir, she answered me,\nAnd it's dabbling in the dew makes the milkmaids fair.",
+    source: "Dabbling in the Dew (Sharp 44)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "sharp44",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Morning tagged by strong dew/milkmaid-at-dawn cultural association."
+  },
+  // --- I'm Seventeen Come Sunday (Sharp 61) ---
+  {
+    text: "As I walked out on a May morning,\nOn a May morning so early,\nI overtook a pretty fair maid\nJust as the day was a-dawning.",
+    source: "I'm Seventeen Come Sunday (Sharp 61)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "sharp61",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Sharp's cleaned-up version. Explicit morning and May."
+  },
+  // --- Farewell Nancy (Sharp 30) ---
+  {
+    text: "Fare you well, my dearest Nancy,\nFor now I must leave you,\nAll across the salt seas\nI am bound for to go;\nDon't let my long absence\nTrouble and grieve you,\nFor I shall return in the spring,\nAs you know.",
+    source: "Farewell Nancy (Sharp 30)",
+    time: [],
+    season: ["spring"],
+    lyricsKey: "sharp30",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. 'Return in the spring' is the emotional core and seasonal marker."
+  },
+  // --- The Low Low Lands of Holland (Sharp 23) ---
+  {
+    text: "There's not a swathe goes round my waist,\nNor a comb goes in my hair,\nNeither firelight nor candlelight\nCan ease my heart's despair.",
+    source: "The Low Low Lands of Holland (Sharp 23)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "sharp23",
+    stanzaIndex: 3,
+    // notes: "Night tagged via firelight/candlelight imagery — domestic evening scene being renounced."
+  },
 ];
 
 // ============================================================
