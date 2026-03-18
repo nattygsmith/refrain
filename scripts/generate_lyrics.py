@@ -3,26 +3,19 @@
 generate_lyrics.py
 ==================
 Merges all per-collection lyrics JSON files into the LYRICS constant
-in src/App.jsx (or src/folk-quotes.jsx — update TARGET_FILE below).
+in src/App.jsx.
 
 Reads from:
   scripts/as-it-fell-lyrics-child.json
   scripts/as-it-fell-lyrics-sharp.json
   scripts/as-it-fell-lyrics-campbell-sharp.json
 
-(Add future collections to LYRICS_FILES in the order you want them merged.)
-
-Writes: replaces the `const LYRICS = { ... };` block in TARGET_FILE.
-
 Run from the repo root:
   python3 scripts/generate_lyrics.py
 """
 
 import json
-import re
 import os
-
-# ── Configuration ──────────────────────────────────────────────────────────────
 
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -36,18 +29,17 @@ LYRICS_FILES = [
 
 TARGET_FILE = os.path.join(SCRIPTS_DIR, "..", "src", "App.jsx")
 
-# ── Helpers ────────────────────────────────────────────────────────────────────
+START_MARKER = "const LYRICS = {"
+END_MARKER = "\n};"
 
 def escape_js_string(s):
-    """Escape a string for use inside a JS template-literal-safe double-quoted string."""
+    """Escape a string for use inside a JS double-quoted string."""
     return s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n")
 
 def entry_to_js(key, entry):
-    """Render one LYRICS entry as a JS object literal."""
     lines = []
     lines.append(f'  "{key}": {{')
     lines.append(f'    title: "{escape_js_string(entry["title"])}",')
-    # Support both childNumber (Child Ballads) and a generic collectionLabel field
     if "childNumber" in entry:
         lines.append(f'    childNumber: "{escape_js_string(entry["childNumber"])}",')
     elif "collectionLabel" in entry:
@@ -60,10 +52,7 @@ def entry_to_js(key, entry):
     lines.append(f'  }},')
     return "\n".join(lines)
 
-# ── Main ───────────────────────────────────────────────────────────────────────
-
 def main():
-    # Merge all lyrics files
     merged = {}
     for path in LYRICS_FILES:
         if not os.path.exists(path):
@@ -79,21 +68,35 @@ def main():
 
     print(f"  Total LYRICS entries: {len(merged)}")
 
-    # Build the JS block
     entry_strings = [entry_to_js(k, v) for k, v in merged.items()]
     new_block = "const LYRICS = {\n" + "\n\n".join(entry_strings) + "\n};"
 
-    # Read target file
     with open(TARGET_FILE, encoding="utf-8") as f:
         source = f.read()
 
-    # Replace the existing LYRICS block
-    pattern = re.compile(r"const LYRICS = \{.*?\};", re.DOTALL)
-    if not pattern.search(source):
-        print("ERROR: Could not find 'const LYRICS = { ... };' in target file.")
+    start = source.find(START_MARKER)
+    if start == -1:
+        print("ERROR: Could not find 'const LYRICS = {' in target file.")
         return
 
-    updated = pattern.sub(new_block, source)
+    # Find the matching closing "};" by scanning forward from start
+    depth = 0
+    i = start + len(START_MARKER)
+    # Account for the opening brace already in START_MARKER
+    depth = 1
+    while i < len(source) and depth > 0:
+        if source[i] == "{":
+            depth += 1
+        elif source[i] == "}":
+            depth -= 1
+        i += 1
+    # i now points just past the closing }
+    # skip the ; after it
+    if i < len(source) and source[i] == ";":
+        i += 1
+
+    end = i
+    updated = source[:start] + new_block + source[end:]
 
     with open(TARGET_FILE, "w", encoding="utf-8") as f:
         f.write(updated)
