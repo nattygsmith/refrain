@@ -3569,6 +3569,14 @@ export default function FolkClock() {
                     them from singers across rural England in the early twentieth century, at a time when
                     many of these songs were on the verge of being forgotten.
                   </li>
+                  <li>
+                    <strong>English Folk Songs from the Southern Appalachians</strong>—122 traditional
+                    English folk songs collected by Olive Dame Campbell and Cecil J. Sharp from singers
+                    in the mountain communities of Virginia, North Carolina, Kentucky, and Tennessee,
+                    and published in 1917. Many of the songs are British ballads brought to America by
+                    settlers generations earlier, preserved in the mountains long after they had faded
+                    from memory elsewhere.
+                  </li>
                 </ul>
                 <p>
                   Each verse is chosen to match the time of day and season where you are.
