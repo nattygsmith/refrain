@@ -124,12 +124,13 @@ const QUOTES = [
   },
   // --- The Broomfield Hill (Child 43) ---
   {
-    text: "The one rode early in the morning,\nThe other in the afternoon.",
+    text: "There was a knight and a lady bright,\nHad a true tryste at the broom;\nThe one went early in the morning,\nThe other in the afternoon.",
     source: "The Broomfield Hill (Child 43)",
-    time: ["afternoon"],
-    season: [],
+    time: ["morning", "afternoon"],
+    season: ["spring"],
     lyricsKey: "child43",
     stanzaIndex: 0,
+    // notes: "Version A, stanza 1. 'ane gaed'→'one went'. No other changes."
   },
   {
     text: "She pulled the blossom of the broom,\nThe blossom it smells sweet.",
@@ -757,7 +758,7 @@ const QUOTES = [
     text: "The sixth of August the muster was,\nEarly in a morning clear;\nOur English archers their bows did bend,\nAnd many a black blade did appear.",
     source: "Durham Field (Child 159)",
     time: ["morning"],
-    season: [],
+    season: ["summer"],
     lyricsKey: "child159",
     stanzaIndex: 0,
     // notes: "'black blade' substituted for 'black bill' (a pole weapon with blackened blade) for readability. No other modernisation."
@@ -834,13 +835,209 @@ const QUOTES = [
   },
   // --- The Broom of Cowdenknows (Child 305) ---
   {
-    text: "There was a troop of merry gentlemen\nWere riding tween twa knowes;\nThey swore they smelled a bonny lass,\nAs they came by the broom of Cowdenknows.\nIt's up then spake the foremost man,\nSaid, I see her standing there;\nA bonny lass in a green mantle,\nCombing down her yellow hair,\nEarly on a May morning.",
+    text: "It's up then spake the foremost man,\nSaid, I see her standing there;\nA bonny lass in a green mantle,\nCombing down her yellow hair,\nEarly on a May morning.",
     source: "The Broom of Cowdenknows (Child 305)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "child305",
+    stanzaIndex: 1,
+    // notes: "Stanza 2. No modernisation needed."
+  },
+  // --- Willie o Couglas Dale (Child 101) ---
+  {
+    text: "O it fell ance upon a day\nTo the green wood she has gane,\nAn Willy he has followd her,\nWith the clear light o the moon.",
+    source: "Willie o Couglas Dale (Child 101)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "child101",
+    stanzaIndex: 3,
+    // notes: "Version B, stanza 4. No modernisation needed."
+  },
+  {
+    text: "But the cocks they crew, and the horns blew,\nAnd the lions took the hill,\nAnd Willie he gaed hame again,\nTo his hard task and till…",
+    source: "Willie o Couglas Dale (Child 101)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "child101",
+    stanzaIndex: 11,
+    // notes: "Version B, stanza 12. First four lines only; truncated with ellipsis. No modernisation needed."
+  },
+  {
+    text: "The cocks do craw, and the day does daw,\nAnd the wild fowl bodes on hill;\nThe lassie she followed her Sweet William,\nAnd let the tears down fall.",
+    source: "Willie o Couglas Dale (Child 101)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "child101",
+    stanzaIndex: 6,
+    // notes: "Version C, stanza 7. No modernisation needed."
+  },
+  // --- Christopher White (Child 108) ---
+  {
+    text: "As I walked forth one morning,\nBy one place that pleased me,\nWherein I heard a wandering wight,\nSays, Christopher White is good company.",
+    source: "Christopher White (Child 108)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "child108",
     stanzaIndex: 0,
-    // notes: "'twa knowes'=two hills. No modernisation needed."
+    // notes: "Opening stanza. 'morninge' modernised to 'morning'; other archaic spellings normalised. No other changes."
+  },
+  // --- The Great Silkie of Sule Skerry (Child 113) ---
+  {
+    text: "An it shall come to pass on a summer's day,\nWhen the sun shines hot on every stone,\nThat I will take my little young son,\nAn teach him for to swim the foam.",
+    source: "The Great Silkie of Sule Skerry (Child 113)",
+    time: ["afternoon"],
+    season: ["summer"],
+    lyricsKey: "child113",
+    stanzaIndex: 5,
+    // notes: "Stanza 6. 'sall'→'shall', 'simmer's'→'summer's', 'sin'→'sun', 'het'→'hot', 'evera'→'every', 'tak'→'take', 'faem'→'foam'. Scots 'An' retained at line 4."
+  },
+  // --- Johnie Cock (Child 114) ---
+  {
+    text: "Johnie rose up in a May morning,\nCalled for water to wash his hands,\nAnd he has called for his good gray hounds,\nThat lay bound in iron bands.",
+    source: "Johnie Cock (Child 114)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "child114",
+    stanzaIndex: 0,
+    // notes: "Version E, stanza 1. 'Calld'→'Called', 'gud'→'good', 'bund'→'bound'. No other changes."
+  },
+  // --- Robin Hood and Guy of Gisborne (Child 118) ---
+  {
+    text: "'Good morrow, good fellow,' quoth Sir Guy;\n'Good morrow, good fellow,' quoth he;\n'Methinks by this bow thou bearest in thy hand,\nA good archer thou seemst to be.'",
+    source: "Robin Hood and Guy of Gisborne (Child 118)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "child118",
+    stanzaIndex: 22,
+    // notes: "Stanza 23. No modernisation needed."
+  },
+  {
+    text: "To see how these yeomen together fought\nTwo hours of a summer's day;\nYet neither Robin Hood nor Sir Guy\nThe other forced to fly away.",
+    source: "Robin Hood and Guy of Gisborne (Child 118)",
+    time: ["afternoon"],
+    season: ["summer"],
+    lyricsKey: "child118",
+    stanzaIndex: 36,
+    // notes: "Stanza 37. 'Them fettled them to fly away' reworded to 'The other forced to fly away' for clarity."
+  },
+  // --- The Jolly Pinder of Wakefield (Child 124) ---
+  {
+    text: "He leaned his back fast unto a thorn,\nAnd his foot unto a stone,\nAnd there he fought all a summer's day,\nA summer's day so long.",
+    source: "The Jolly Pinder of Wakefield (Child 124)",
+    time: ["afternoon"],
+    season: ["summer"],
+    lyricsKey: "child124",
+    stanzaIndex: 5,
+    // notes: "Stanza 6. 'along summer's day' modernised to 'all a summer's day'. No other changes."
+  },
+  // --- Robin Hood and Allen a Dale (Child 138) ---
+  {
+    text: "As Robin Hood next morning stood,\nAmongst the leaves so gay,\nThere did he espy the same young man\nCome drooping along the way.",
+    source: "Robin Hood and Allen a Dale (Child 138)",
+    time: ["morning"],
+    season: ["spring", "summer"],
+    lyricsKey: "child138",
+    stanzaIndex: 3,
+    // notes: "Stanza 4. No modernisation needed."
+  },
+  // --- Gude Wallace (Child 157) ---
+  {
+    text: "Wallace bold, upon a night,\nCame riding over a linn;\nAnd he is to his lover's bower,\nAnd tirled at the pin.",
+    source: "Gude Wallace (Child 157)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "child157",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. 'wicht'→'bold', 'Cam''→'Came', 'leman's'→'lover's'. 'linn' (waterfall/stream) and 'tirled at the pin' (rattled the door-latch) retained. No other changes."
+  },
+  // --- Auld Matrons (Child 249) ---
+  {
+    text: "My love she is a gentlewoman,\nHas her living by the seam;\nI know not how she is provided\nThis night for me and my foot-groom.",
+    source: "Auld Matrons (Child 249)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "child249",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. 'kenna'→'know not'. No other changes. 'foot-groom' = manservant who travels on foot."
+  },
+  // --- Lang Johnny More (Child 251) ---
+  {
+    text: "They ran over hills and dales,\nAnd over mountains high,\nTill they came on to London town,\nAt the dawn o' the third day.",
+    source: "Lang Johnny More (Child 251)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "child251",
+    stanzaIndex: 21,
+    // notes: "Stanza 22. 'o'→'o''. No other changes."
+  },
+  // --- Thomas o Yonderdale (Child 253) ---
+  {
+    text: "One night as he lay on his bed,\nIn a dreary dream dreamed he\nThat Maisry stood by his bedside,\nUpbraiding him for his inconstancy.",
+    source: "Thomas o Yonderdale (Child 253)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "child253",
+    stanzaIndex: 11,
+    // notes: "Stanza 12. 'Ae'→'One', 'for's inconstancie'→'for his inconstancy'. Inverted syntax of line 2 retained."
+  },
+  // --- Lady Isabel (Child 261) ---
+  {
+    text: "'Twas early on a May morning\nLady Isabel combed her hair;\nBut little knew she, ere the morn,\nShe would never comb it more.",
+    source: "Lady Isabel (Child 261)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "child261",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. 'combd'→'combed', 'kent'→'knew', 'or'→'ere', 'woud'→'would', 'mair'→'more'. No other changes."
+  },
+  // --- The Earl of Mar's Daughter (Child 270) ---
+  {
+    text: "It was in a pleasant time,\nUpon a summer's day,\nThe noble Earl of Mar's daughter\nWent forth to sport and play.",
+    source: "The Earl of Mar's Daughter (Child 270)",
+    time: ["afternoon"],
+    season: ["summer"],
+    lyricsKey: "child270",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. 'intill'→'in', 'simmer's'→'summer's'. No other changes."
+  },
+  {
+    text: "When day was gone, and night was come,\nAbout the evening tide,\nThis lady spied a sprightly youth\nStand straight up by her side.",
+    source: "The Earl of Mar's Daughter (Child 270)",
+    time: ["evening"],
+    season: [],
+    lyricsKey: "child270",
+    stanzaIndex: 6,
+    // notes: "Stanza 7. 'gane'→'gone'. No other changes."
+  },
+  // --- Get Up and Bar the Door (Child 275) ---
+  {
+    text: "Then by there came two gentlemen,\nAt twelve o clock at night,\nAnd they could neither see house nor hall,\nNor coal nor candle-light.",
+    source: "Get Up and Bar the Door (Child 275)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "child275",
+    stanzaIndex: 4,
+    // notes: "Version A, stanza 5. No modernisation needed."
+  },
+  // --- The Mermaid (Child 289) ---
+  {
+    text: "Last Easter day, in the morning fair,\nWe was not far from land,\nWhere we spied a mermaid on the rock,\nWith comb and glass in hand.",
+    source: "The Mermaid (Child 289)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "child289",
+    stanzaIndex: 1,
+    // notes: "Version A, stanza 2. 'Last Easter day' provides spring and morning tags. 'We was' retained as period-correct broadside grammar. No other changes."
+  },
+  // --- Young Ronald (Child 304) ---
+  {
+    text: "When cocks did craw, and day did daw,\nAnd mint in meadows sprang,\nYoung Ronald and his little wee boy\nThe way they rode along.",
+    source: "Young Ronald (Child 304)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "child304",
+    stanzaIndex: 17,
+    // notes: "Stanza 18. 'craw' and 'daw' retained for rhyme. 'alang'→'along'. No other changes."
   },
   // ── sharp (─────────────────────────────────────────────)
   // --- Blow Away the Morning Dew (Sharp 19) ---
@@ -1033,6 +1230,17 @@ const QUOTES = [
     lyricsKey: "campbellsharp47",
     stanzaIndex: 0,
     // notes: "Opening stanza. 'Almost day' explicit morning marker. Collected from Mary Sands, Allanstand, Madison County NC, August 1916. Confirmed in 1917 edition. lyricsKey stub needed."
+  },
+  // ── sharp-somerset (────────────────────────────────────)
+  // --- Master Kilby (Folk Songs from Somerset) ---
+  {
+    text: "In the heat of the day when the sun shines so freely,\nI met Master Kilby, so fine and so gay.",
+    source: "Master Kilby (Folk Songs from Somerset)",
+    time: ["afternoon"],
+    season: ["summer"],
+    lyricsKey: "somersetMasterKilby",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Collected by Cecil Sharp from Harry Richards of Curry Rivel, Somerset, 1904/1909. Published in Journal of the English Folk Song Society. 'Heat of the day' is an explicit afternoon time marker."
   },
 ];
 
