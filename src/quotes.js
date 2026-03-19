@@ -1225,4 +1225,95 @@ export const QUOTES = [
     stanzaIndex: 0,
     // notes: "Opening stanza. 'Almost day' explicit morning marker. Collected from Mary Sands, Allanstand, Madison County NC, August 1916. Confirmed in 1917 edition. lyricsKey stub needed."
   },
+  // ── karpeles-newfoundland (─────────────────────────────)
+  // --- The Lover's Ghost (Karpeles 1934, Vol. II, No. 7) ---
+  {
+    text: "Crow up, crow up, my little bird,\nAnd don't you crow before day,\nAnd your cage shall be made of the glittering gold,\nAnd your doors of the silver so gay.",
+    source: "The Lover's Ghost (Karpeles 1934, Vol. II, No. 7)",
+    time: ["night", "morning"],
+    season: [],
+    lyricsKey: "karpelesLoversGhost",
+    stanzaIndex: 3,
+    // notes: "Stanza 4 of the Karpeles Newfoundland text. The plea to hold back the dawn, with gilded cage imagery. Sung by Mr Matthew Aylward at Stock Cove, Bonavista Bay. Text confirmed from 1934 OUP edition Vol. II p. 107. Related to Child 248 / The Grey Cock."
+  },
+  // --- Sweet William's Ghost (Karpeles 1934, Vol. I, No. 1) ---
+  {
+    text: "O she took hold of his white holland sheet,\nAnd tied it around her tight,\nAnd it's over the hills of a cold winter's night\nIn a dead man's company.",
+    source: "Sweet William's Ghost (Karpeles 1934, Vol. I, No. 1)",
+    time: ["night"],
+    season: ["winter"],
+    lyricsKey: "karpelesSweetWilliamsGhost",
+    stanzaIndex: 8,
+    // notes: "Stanza 9 of the Karpeles Newfoundland text (stanzas printed in two columns in the score). Night and winter both explicit. Lady Margaret follows the ghost over the winter hills. Text confirmed from 1934 OUP edition Vol. I p. 2. Child 77."
+  },
+  // --- Henry Martin (Karpeles 1934, Vol. II, No. 6) ---
+  {
+    text: "He had not been sailing but a long winter's night\nAnd part of a short winter's day\nWhen a long, lofty ship he chanced to spy,\nCame bearing down under their lee.",
+    source: "Henry Martin (Karpeles 1934, Vol. II, No. 6)",
+    time: ["night"],
+    season: ["winter"],
+    lyricsKey: "karpelesHenryMartin",
+    stanzaIndex: 2,
+    // notes: "Stanza 3. Night and winter both explicit. Pre-dawn sea watch. Text as sung by Mr John Neville at Clarke's Beach, Conception Bay; tune from Mr Joseph Jackman at Grole, Hermitage Bay. Confirmed from 1934 OUP edition Vol. II p. 104. Child 250."
+  },
+  // --- The Winter's Gone and Past (Karpeles 1934, Vol. II, No. 10) ---
+  {
+    text: "The winter's gone and past and the summer's come at last,\nAnd the small birds are singing on each tree,\nAnd the hearts of those are glad, but mine is low and sad\nSince my true love is sent far from me.",
+    source: "The Winter's Gone and Past (Karpeles 1934, Vol. II, No. 10)",
+    time: [],
+    season: ["summer"],
+    lyricsKey: "karpelesWintersGone",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Summer explicit; seasonal arrival image is the entire emotional engine of the stanza. No time-of-day marker. Sung by Mrs Elizabeth Farrell at Beau Bois, Placentia Bay. Confirmed from 1934 OUP edition Vol. II p. 119."
+  },
+  // --- Proud Nancy (Karpeles 1934, Vol. I, No. 9) ---
+  {
+    text: "As I roved out one evening, all in the month of May,\nThe trees were in full blossom and the meadows in full gay,\nI fell in love with Nancy, she's the girl whom I adore,\nShe is my joy and fancy. How can I love her more?",
+    source: "Proud Nancy (Karpeles 1934, Vol. I, No. 9)",
+    time: ["evening"],
+    season: ["spring"],
+    lyricsKey: "karpelesProudNancy",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Evening and May both explicit. Sung by Mr Robert Morgan at Blow-me-down, Conception Bay. Confirmed from 1934 OUP edition Vol. I p. 47."
+  },
+  // --- Earl Brand (Karpeles 1934, Vol. II, No. 2) ---
+  {
+    text: "Lord Robert he died about midnight,\nLady Margaret she died before day.\nI hope every couple that may now be together\nMay find more enjoyment than they.",
+    source: "Earl Brand (Karpeles 1934, Vol. II, No. 2)",
+    time: ["night", "morning"],
+    season: [],
+    lyricsKey: "karpelesEarlBrand",
+    stanzaIndex: 9,
+    // notes: "Final stanza (stanza 10). Midnight and before-day both explicit. The closing couplet is a death announcement and an elegy compressed into two lines. Sung by Mr Thomas Chaney at Colliers, Conception Bay. Confirmed from 1934 OUP edition Vol. II p. 83. Child 7."
+  },
+  // --- Lamkin (Karpeles 1934, Vol. I, No. 4) ---
+  {
+    text: "How can I come downstairs\nOn a cold winter's night,\nNo spark of fire burning,\nNo candle alight.\nYou've got two white holland sheets\nAs white as the snow,\nI pray you come down\nBy the light of them so.",
+    source: "Lamkin (Karpeles 1934, Vol. I, No. 4)",
+    time: ["night"],
+    season: ["winter"],
+    lyricsKey: "karpelesLamkin",
+    stanzaIndex: 4,
+    // notes: "Stanza 5. Night and winter both explicit. The nurse lures the lady downstairs — darkness, cold, the uncanny invitation of the white sheets. Sung by Mrs Theresa Corbett at Conception Harbour (text with verbal alterations from Mrs Violet McCabe at North River). Confirmed from 1934 OUP edition Vol. I p. 17. Child 93."
+  },
+  // --- Young Floro (Karpeles 1934, Vol. II, No. 9) ---
+  {
+    text: "As I roved out one morning in Spring,\nTo hear the larks whistle and the nightingales sing,\nO green grow the rushes all covered with young,\nAnd small birds all around me how joyful they sound.",
+    source: "Young Floro (Karpeles 1934, Vol. II, No. 9)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "karpelesYoungFloro",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Morning and spring both explicit. Larks, nightingales, rushes — a rich spring morning pastoral. Sung by Mrs Bridget Hall at North River, Conception Bay. Confirmed from 1934 OUP edition Vol. II p. 114."
+  },
+  // --- Sweet William (Karpeles 1934, Vol. I, No. 12) ---
+  {
+    text: "It's early, early all in the Spring,\nMy love roved out for to serve the king,\nWith the raging seas and the winds blowing high,\nWhich parted me from my sailor boy.",
+    source: "Sweet William (Karpeles 1934, Vol. I, No. 12)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "karpelesSweetWilliamSong",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. 'Early, early' implies pre-dawn departure; spring explicit. Note: this is the broadside song 'Sweet William' (not the ballad Sweet William's Ghost). Sung by Mrs Bride Curran at Conception Harbour. Confirmed from 1934 OUP edition Vol. I p. 59. See also Appalachians No. 106."
+  },
 ];

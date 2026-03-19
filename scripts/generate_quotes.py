@@ -24,6 +24,7 @@ QUOTE_FILES = [
     "scripts/as-it-fell-quotes-sharp.json",
     "scripts/as-it-fell-quotes-sharp-somerset.json",
     "scripts/as-it-fell-quotes-campbell-sharp.json",
+    "scripts/as-it-fell-quotes-karpeles-newfoundland.json",
     # Add future collection files here:
     # "scripts/as-it-fell-quotes-lloyd.json",
     # "scripts/as-it-fell-quotes-karpeles.json",

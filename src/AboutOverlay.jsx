@@ -46,6 +46,9 @@ export default function AboutOverlay({ onClose }) {
               settlers generations earlier, preserved in the mountains long after they had faded
               from memory elsewhere.
             </li>
+            <li>
+              <strong>Folk Songs from Newfoundland</strong>—30 traditional folk songs collected by Maud Karpeles in Newfoundland in 1929–30 during two six-week visits. Karpeles collected most of the songs from fishermen and their families in the “outports” of St. Johns. She collected 200 songs (including variants), from which this collection was established. It was published in 1934 with piano accompaniments by Vaughan Williams and his associates.
+            </li>
           </ul>
           <p>
             Each verse is chosen to match the time of day and season where you are.
