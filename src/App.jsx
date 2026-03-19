@@ -1034,17 +1034,6 @@ const QUOTES = [
     stanzaIndex: 0,
     // notes: "Opening stanza. 'Almost day' explicit morning marker. Collected from Mary Sands, Allanstand, Madison County NC, August 1916. Confirmed in 1917 edition. lyricsKey stub needed."
   },
-  // ── sharp-somerset (────────────────────────────────────)
-  // --- Master Kilby (Folk Songs from Somerset) ---
-  {
-    text: "In the heat of the day when the sun shines so freely,\nI met Master Kilby, so fine and so gay.",
-    source: "Master Kilby (Folk Songs from Somerset)",
-    time: ["afternoon"],
-    season: ["summer"],
-    lyricsKey: "somersetMasterKilby",
-    stanzaIndex: 0,
-    // notes: "Opening stanza. Collected by Cecil Sharp from Harry Richards of Curry Rivel, Somerset, 1904/1909. Published in Journal of the English Folk Song Society. 'Heat of the day' is an explicit afternoon time marker."
-  },
 ];
 
 // ============================================================
@@ -2769,20 +2758,6 @@ const LYRICS = {
       "Well, if I were a turtle dove, had wings and could fly,\nI would fly to my love's lodging and there I'd draw nigh.\nAnd in her lily white arms all night I would lay\nAnd watch those little winders till the dawning of day.",
     ],
   },
-
-  "somersetMasterKilby": {
-    title: "Master Kilby",
-    version: "Cecil Sharp, Folk Songs from Somerset (Simpkin & Co., 1904–1911). Collected from Harry Richards, Curry Rivel, Somerset, 1904/1909.",
-    stanzas: [
-      "In the heat of the day when the sun shines so freely,\nI met Master Kilby, so fine and so gay.",
-      "Well, I pulled off my hat and I bowed to the ground,\nAnd I said, \"Master Kilby, oh, where are you bound?\"",
-      "\"I'm bound for the west in hopes to find rest;\nAnd in the arms of my dear Nancy I'll build a new nest.",
-      "And if I was the master of ten thousand pounds\nIn bright gold and silver or in King William's crowns,",
-      "I would part with it all with my own heart so freely:\nIt's all for the sake of my charming Nancy.",
-      "She's the fairest of girls, she's the choice of my heart;\nAnd her skin shines like silver in every part.",
-      "Oh, I gave her some kisses, it was down by the sea shore;\nBut still she lay asking, lay asking for more.\"",
-    ],
-  },
 };
 
 // ============================================================
@@ -3593,6 +3568,12 @@ export default function FolkClock() {
                     collected by Cecil Sharp from roughly 1903–1913 and published in 1916. Sharp gathered
                     them from singers across rural England in the early twentieth century, at a time when
                     many of these songs were on the verge of being forgotten.
+                  </li>
+                  <li>
+                    <strong>Folk Songs from Somerset</strong>—130 traditional English folk songs
+                    collected by Cecil J. Sharp and Charles L. Marson from singers across Somerset,
+                    and published in five series between 1904 and 1911. Sharp later drew on many of
+                    these songs for his 1916 collection.
                   </li>
                   <li>
                     <strong>English Folk Songs from the Southern Appalachians</strong>—122 traditional
