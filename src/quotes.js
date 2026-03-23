@@ -1193,7 +1193,7 @@ export const QUOTES = [
     season: [],
     lyricsKey: "campbellsharp76",
     stanzaIndex: 3,
-    // notes: "Fourth stanza (order varies by version). Night tagged via 'all night'; morning via 'dawning of day'. Text from the Appalachian tradition Sharp collected; multiple versions in the 1917 edition. lyricsKey stub needed."
+    // notes: "Fourth stanza. Night tagged via 'all night'; morning via 'dawning of day'."
   },
   // --- Come All You Fair and Tender Ladies (Campbell/Sharp 1917, No. 65) ---
   {
@@ -1203,7 +1203,7 @@ export const QUOTES = [
     season: ["summer"],
     lyricsKey: "campbellsharp65",
     stanzaIndex: 0,
-    // notes: "Opening stanza. Morning and summer both explicit. Sharp collected 18 versions; this stanza appears consistently across them. lyricsKey stub needed."
+    // notes: "Opening stanza. Morning and summer both explicit."
   },
   // --- Early, Early in the Spring (Campbell/Sharp 1917, No. 72) ---
   {
@@ -1213,7 +1213,7 @@ export const QUOTES = [
     season: ["spring"],
     lyricsKey: "campbellsharp72",
     stanzaIndex: 0,
-    // notes: "Opening stanza. Spring explicit; 'early, early' implies pre-dawn departure. Confirmed in 1917 edition. lyricsKey stub needed."
+    // notes: "Opening stanza. Spring explicit; 'early, early' implies pre-dawn departure."
   },
   // --- Awake! Awake! (Campbell/Sharp 1917, No. 47) ---
   {
@@ -1223,7 +1223,176 @@ export const QUOTES = [
     season: [],
     lyricsKey: "campbellsharp47",
     stanzaIndex: 0,
-    // notes: "Opening stanza. 'Almost day' explicit morning marker. Collected from Mary Sands, Allanstand, Madison County NC, August 1916. Confirmed in 1917 edition. lyricsKey stub needed."
+    // notes: "Opening stanza. 'Almost day' explicit morning marker. Sung by Mary Sands, Allanstand, NC, Aug. 1916."
+  },
+  // --- Good Morning, My Pretty Little Miss (Campbell/Sharp 1917, No. 107) ---
+  {
+    text: "The night has passed and the day has come,\nThe morning sun do shine.\nI will arise, said he, put on my clothes,\nAnd then, sweet love, I'm gone.",
+    source: "Good Morning, My Pretty Little Miss (Campbell/Sharp 1917, No. 107)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "campbellsharp107",
+    stanzaIndex: 3,
+    // notes: "Fourth stanza. Dawn departure. Version A, sung by Mrs. Hester House at Hot Springs, NC, Sept. 14, 1916."
+  },
+  // --- The Sheffield Apprentice (Campbell/Sharp 1917, No. 97) ---
+  {
+    text: "I stepped out one evening to take the pleasant air,\nI find Miss in the garden, a-viewing the lilies fair.\nThe gold rings on her fingers, as she come past by me,\nShe dropped them in my pocket, and for it I must die.",
+    source: "The Sheffield Apprentice (Campbell/Sharp 1917, No. 97)",
+    time: ["evening"],
+    season: [],
+    lyricsKey: "campbellsharp97",
+    stanzaIndex: 3,
+    // notes: "Fourth stanza. Evening walk; garden and lilies. Version A, sung by Mrs. Mary Sands at Allanstand, NC, Aug. 3, 1916."
+  },
+  // --- The False Young Man (Campbell/Sharp 1917, No. 94) ---
+  {
+    text: "I walked out one May morning\nTo hear the small birds sing,\nAnd I leaned my back 'gainst a cottage door\nFor to hear what they had to say.",
+    source: "The False Young Man (Campbell/Sharp 1917, No. 94)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "campbellsharp94",
+    stanzaIndex: 0,
+    // notes: "Opening stanza, version C. Sung by Mrs. Anelize Chandler at Alleghany, NC, Aug. 28, 1916."
+  },
+  // --- My Parents Treated Me Tenderly (Campbell/Sharp 1917, No. 96) ---
+  {
+    text: "I walked out one evening\nAll down the George's Square;\nThe mail coach ship had just arose,\nWhen the post-boy met me there.",
+    source: "My Parents Treated Me Tenderly (Campbell/Sharp 1917, No. 96)",
+    time: ["evening"],
+    season: [],
+    lyricsKey: "campbellsharp96",
+    stanzaIndex: 8,
+    // notes: "Ninth stanza. Evening marker explicit. Version A, sung by Mr. Frankland B. Shelton at Allanstand, NC, July 31, 1916."
+  },
+  // --- Loving Reilly (Campbell/Sharp 1917, No. 104) ---
+  {
+    text: "One night as I lay sleeping, so sound as I did sleep,\nI heard the voice of my true love a-calling at my feet,\nSaying: Rise up, William Riley, come go along with me\nInto some foreign country land, and married we will be.",
+    source: "Loving Reilly (Campbell/Sharp 1917, No. 104)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "campbellsharp104",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Night call from sleep. Version A, sung by Mrs. Moore at Rabun Co., GA, May 1, 1909. Stanza reconstructed from score notation."
+  },
+  // --- Locks and Bolts (Campbell/Sharp 1917, No. 80) ---
+  {
+    text: "I dreamed of my true love last night,\nAll in my arms I had her,\nBut when I woke it was a dream;\nI was forced to lay without her.",
+    source: "Locks and Bolts (Campbell/Sharp 1917, No. 80)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "campbellsharp80",
+    stanzaIndex: 0,
+    // notes: "Opening stanza, version B. Night dream and waking. Sung by Mrs. Hester House at Hot Springs, NC, Sept. 14, 1916."
+  },
+  // --- William Taylor (Campbell/Sharp 1917, No. 51) ---
+  {
+    text: "As she rose early the very next morning,\nJust about the break of day,\nAnd she saw her own dear William Taylor\nA-walking with his lady gay.",
+    source: "William Taylor (Campbell/Sharp 1917, No. 51)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "campbellsharp51",
+    stanzaIndex: 2,
+    // notes: "Third stanza. 'Break of day' explicit. Sung by Mrs. Rosie Hensley at Carmen, NC, Aug. 28, 1916."
+  },
+  // --- The Wagoner's Lad (Campbell/Sharp 1917, No. 64) ---
+  {
+    text: "As soon as the dewdrops\nGrow on the green grass.\nLast night she was with me,\nBut to-night she is gone.",
+    source: "The Wagoner's Lad (Campbell/Sharp 1917, No. 64)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "campbellsharp64",
+    stanzaIndex: 11,
+    // notes: "Twelfth stanza, version A. Night contrast: last night/tonight. Sung by Miss Memory Shelton at Alleghany, NC, July 29, 1916."
+  },
+  {
+    text: "It's a-raining, it's a-hailing,\nThe moon it gives no light,\nYour horses can't travel\nThis dark, lonesome night.",
+    source: "The Wagoner's Lad (Campbell/Sharp 1917, No. 64)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "campbellsharp64",
+    stanzaIndex: 5,
+    // notes: "Sixth stanza, version A. Moon, rain, darkness. Sung by Miss Memory Shelton at Alleghany, NC, July 29, 1916."
+  },
+  // --- The Gypsy Laddie (Campbell/Sharp 1917, No. 27) ---
+  {
+    text: "The night before last I lay on a feather bed,\nLord Thomas he lay with me.\nLast night I lay on a cold straw bed\nAnd with the calves a-bawling all around me.",
+    source: "The Gypsy Laddie (Campbell/Sharp 1917, No. 27)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "campbellsharp27",
+    stanzaIndex: 3,
+    // notes: "Fourth stanza, version D. Night contrast: luxury then ruin. Sung by Mrs. Jane Gentry at Hot Springs, NC, Sept. 14, 1916."
+  },
+  // --- The Grey Cock (Campbell/Sharp 1917, No. 30) ---
+  {
+    text: "All on one summer's evening when the fever were a-dawning\nI heard a fair maid make a mourn.\nShe was a-weeping for her father and a-grieving for her mother,\nAnd a-thinking all on her true love John.",
+    source: "The Grey Cock (Campbell/Sharp 1917, No. 30)",
+    time: ["evening"],
+    season: ["summer"],
+    lyricsKey: "campbellsharp30",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Evening and summer both explicit. 'Fever were a-dawning' = fever at dusk/eventide. Sung by Mrs. Jane Gentry at Hot Springs, NC, Aug. 24, 1916."
+  },
+  // --- The Rejected Lover (Campbell/Sharp 1917, No. 56) ---
+  {
+    text: "One cold winter night when I was a-riding\nAnd a-drinking of good wine,\nAnd a-thinking of the pretty little girl\nThat stole that heart of mine.",
+    source: "The Rejected Lover (Campbell/Sharp 1917, No. 56)",
+    time: ["night"],
+    season: ["winter"],
+    lyricsKey: "campbellsharp56",
+    stanzaIndex: 5,
+    // notes: "Sixth stanza, version A. Night and winter both explicit. Sung by Mrs. Jane Gentry at Hot Springs, NC, Aug. 25, 1916."
+  },
+  // --- The Dear Companion (Campbell/Sharp 1917, No. 58) ---
+  {
+    text: "Last night while you were sweetly sleeping\nDreaming of some sweet repose,\nWhile me a poor girl broken, broken hearted,\nListen to the wind that blows.",
+    source: "The Dear Companion (Campbell/Sharp 1917, No. 58)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "campbellsharp58",
+    stanzaIndex: 2,
+    // notes: "Third stanza. His sleep vs. her wakeful grief. Sung by Mrs. Rosie Hensley at Carmen, NC, Aug. 8, 1916."
+  },
+  // --- Young Hunting (Campbell/Sharp 1917, No. 15) ---
+  {
+    text: "Come in, come in, my own true love,\nAnd stay all night with me,\nFor I have a bed and a very fine bed,\nAnd I'll give it up to thee.",
+    source: "Young Hunting (Campbell/Sharp 1917, No. 15)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "campbellsharp15",
+    stanzaIndex: 0,
+    // notes: "Opening stanza, version B. Night invitation; stands alone without plot context. Sung by Mr. Floyd Chandler at Alleghany, NC, Aug. 29, 1916. Stanza reconstructed from score notation."
+  },
+  // --- The Wife of Usher's Well (Campbell/Sharp 1917, No. 19) ---
+  {
+    text: "Rise up, rise up, said the oldest one,\nI think it's almost day.\nSee my Saviour standing by\nTo welcome us three home.",
+    source: "The Wife of Usher's Well (Campbell/Sharp 1917, No. 19)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "campbellsharp19",
+    stanzaIndex: 6,
+    // notes: "Seventh stanza, version C. Ghost children departing at almost-day. 'Almost day' explicit. Sung by Mr. T. Jeff Stockton at Flag Pond, TN, Sept. 4, 1916."
+  },
+  // --- The Cherry-Tree Carol (Campbell/Sharp 1917, No. 13) ---
+  {
+    text: "On old Christmas morning my birthday shall be,\nWhen the hills and high mountains shall bow unto me.",
+    source: "The Cherry-Tree Carol (Campbell/Sharp 1917, No. 13)",
+    time: ["morning"],
+    season: ["winter"],
+    lyricsKey: "campbellsharp13",
+    stanzaIndex: 7,
+    // notes: "Eighth stanza, version A. Two lines only — the baby speaks from the womb. Christmas morning explicit; winter implied. Variant reading in edition: 'or, it'll be just before day'. Sung by Mrs. Tom Rice at Big Laurel, NC, Aug. 17, 1916."
+  },
+  // --- Lady Isabel and the Elf Knight (Campbell/Sharp 1917, No. 2) ---
+  {
+    text: "She rode on the milk-white steed,\nAnd by her went the bay,\nAnd together they came to her father's castle\nThree hours before it was day.",
+    source: "Lady Isabel and the Elf Knight (Campbell/Sharp 1917, No. 2)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "campbellsharp2",
+    stanzaIndex: 9,
+    // notes: "Tenth stanza, version A. Pre-dawn return; 'three hours before it was day' is the time marker. Sung by Miss Elizabeth Coit at Amherst, MA, July 1916."
   },
   // ── karpeles-newfoundland (─────────────────────────────)
   // --- The Lover's Ghost (Karpeles 1934, Vol. II, No. 7) ---

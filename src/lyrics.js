@@ -1682,6 +1682,27 @@ export const LYRICS = {
     ],
   },
 
+  "campbellsharp27": {
+    title: "The Gypsy Laddie",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "When Lord Thomas he came home\nEnquiring for his lady,\nThe answer that they made to him:\nShe's gone with the gypsy Davy.",
+      "It's will you forsake your house and land?\nAnd will you forsake your baby?\nAnd will you forsake your own wedded lord\nAnd go with the gypsy Davy?",
+      "I'll forsake my house and land,\nAnd I'll forsake my baby;\nAnd I'll forsake my own wedded lord\nAnd go with the gypsy Davy.",
+      "The night before last I lay on a feather bed,\nLord Thomas he lay with me.\nLast night I lay on a cold straw bed\nAnd with the calves a-bawling all around me.",
+    ],
+  },
+
+  "campbellsharp30": {
+    title: "The Grey Cock",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "All on one summer's evening when the fever were a-dawning\nI heard a fair maid make a mourn.\nShe was a-weeping for her father and a-grieving for her mother,\nAnd a-thinking all on her true love John.",
+      "All around the waist he caught her and unto the bed he brought her,\nAnd they lay there a-talking awhile.\nShe says: O you feathered fowls, you pretty feathered fowls,\nDon't you crow till 'tis almost day,\nAnd your comb it shall be of the pure ivory\nAnd your wings of the bright silver grey.\nBut him a-being young, he crowed very soon,\nHe crowed two long hours before day;\nAnd she sent her love away, for she thought 'twas almost day,\nAnd 'twas all by the light of the moon.",
+      "It's when will you be back, dear Johnny,\nWhen will you be back to see me?\nWhen the seventh moon is done and passed and shines on yonder lea,\nAnd you know that will never be.\nWhat a foolish girl was I when I thought he was as true\nAs the rocks that grow to the ground;\nBut since I do find he has altered in his mind,\nIt's better to live single than bound.",
+    ],
+  },
+
   "campbellsharp47": {
     title: "Awake! Awake!",
     version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
@@ -1690,6 +1711,61 @@ export const LYRICS = {
       "\"Oh, who is this beneath my window,\nThat speaks my name so speedily?\"\n\"It is your own and dear true lover,\nWho wants to speak a word with you.\"",
       "\"Hush, oh hush! you'll wake my father,\nWho lies on yonder bed so near;\nAll in his hand he holds a weapon,\nTo kill the one that I love dear.\"",
       "\"I won't go off and court another;\nWhat I say, I mean no harm;\nI mean to wean you from your mother,\nAnd rest you in your true lover's arm.\"",
+    ],
+  },
+
+  "campbellsharp51": {
+    title: "William Taylor",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "If you're on pursuit for your own true lover,\nPray tell me what be his name.\nHis name may be one William Taylor\nWho sailed away the other year.",
+      "If his name may be one William Taylor,\nVery like, very like I know the man.\nIf you'll rise early in the morning,\nYou'll see him walking down the strand.",
+      "As she rose early the very next morning,\nJust about the break of day,\nAnd she saw her own dear William Taylor\nA-walking with his lady gay.",
+      "If this here is my William Taylor,\nGood lord, good lass, what shall I do?\nShe wrung her lily-white hands and crying,\nAnd overboard her body threw.",
+    ],
+  },
+
+  "campbellsharp56": {
+    title: "The Rejected Lover",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "I once courted a pretty little girl\nAnd I loved her as my life.\nI'd freely give my heart and hand\nTo have made her my wife.",
+      "I took her by the hand\nAnd I led her to the door.\nI kindly asked this pretty girl\nTo kiss me once more.",
+      "O who will shoe your feet, my love,\nAnd who will glove your hands,\nAnd who will kiss your ruby lips\nWhen I'm in the far-off land?",
+      "My father'll shoe my feet, my love,\nMy mother will glove my hand,\nAnd you may kiss my ruby lips\nWhen you come from far-off land.",
+      "My being gone six long months,\nIt gave her room to complain,\nAnd she wrote me a letter, saying:\nYou can't come again.",
+      "One cold winter night when I was a-riding\nAnd a-drinking of good wine,\nAnd a-thinking of the pretty little girl\nThat stole that heart of mine.",
+      "I wish I'd a-died when I was young,\nOr never had a-been born,\nFor I never would have met her rosy cheeks,\nNor heard her flattering tongue.",
+    ],
+  },
+
+  "campbellsharp58": {
+    title: "The Dear Companion",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "I once did have a dear companion;\nIndeed I thought his love my own,\nUntil a black-eyed girl betrayed me,\nAnd then he cares no more for me.",
+      "Just go and leave me if you wish to,\nIt will never trouble me,\nFor in your heart you love another\nAnd in my grave I'd rather die.",
+      "Last night while you were sweetly sleeping\nDreaming of some sweet repose,\nWhile me a poor girl broken, broken hearted,\nListen to the wind that blows.",
+      "When I see your babe a-laughing\nIt makes me think of your sweet face,\nBut when I see your babe a-crying\nIt makes me think of my disgrace.",
+    ],
+  },
+
+  "campbellsharp64": {
+    title: "The Wagoner's Lad",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "On top of old Smokey,\nAll covered in snow,\nI lost my true lover\nBy sparking too slow.",
+      "Sparking is pleasure,\nParting is grief,\nAnd a false-hearted lover\nIs worse than a thief.",
+      "A thief will only rob you,\nWill take what you have,\nAnd a false-hearted lover\nWill take you to the grave.",
+      "The grave will only decay you,\nWill turn you to the dust.\nThere is not one girl out of a hundred\nA poor boy can trust.",
+      "They will tell you they love you\nTo give your heart ease,\nAnd as soon as you back up on them\nThey'll court who they please.",
+      "It's a-raining, it's a-hailing,\nThe moon it gives no light,\nYour horses can't travel\nThis dark, lonesome night.",
+      "Go put up your horses,\nFeed them some hay;\nCome sit down here by me, love,\nAs long as you stay.",
+      "My horses are not hungry,\nWon't eat your hay,\nSo farewell, my little darling,\nI'll feed on my way.",
+      "I will drive on to Georgia,\nWrite you my mind;\nMy mind is to marry, love,\nAnd leave you behind.",
+      "Your parents is against me,\nMine is the same.\nIf I'm down on your book, love,\nPlease rub off my name.",
+      "I go upon old Smokey\nOn the mountain so high,\nWhere the wild birds and the turtle doves\nCan hear my sad cries.",
+      "As soon as the dewdrops\nGrow on the green grass.\nLast night she was with me,\nBut to-night she is gone.",
     ],
   },
 
@@ -1726,6 +1802,163 @@ export const LYRICS = {
       "My love she won't have me, so I understand;\nShe wants a freeholder who owns house and land.\nI cannot maintain her with silver and gold,\nNor buy all the fine things that a big house can hold.",
       "If I were a merchant and could write a fine hand,\nI would write my love a letter that she'd understand;\nI'd write it by the river where the waters o'erflow,\nAnd I'll dream of Pretty Saro wherever I go.",
       "Well, if I were a turtle dove, had wings and could fly,\nI would fly to my love's lodging and there I'd draw nigh.\nAnd in her lily white arms all night I would lay\nAnd watch those little winders till the dawning of day.",
+    ],
+  },
+
+  "campbellsharp80": {
+    title: "Locks and Bolts",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "I dreamed of my true love last night,\nAll in my arms I had her,\nBut when I woke it was a dream;\nI was forced to lay without her.",
+      "Her yellow hair, like strands of gold,\nCome rolling down my pillow;\nHer yellow hair, like strands of gold,\nCome rolling down my pillow.",
+      "I went unto her uncle's house\nEnquiring for my darling.\nThe answer was: She is not here,\nI've no such in my keeping.",
+      "Her voice from the roof above\nCame straightway to the window.\nO love, O love, it's I'd be yours,\nBut locks and bolts doth hinder.",
+      "O passion flew, my sword I drew,\nAll in that room I entered;\nO passion flew, my sword I drew,\nAll in that room I entered.",
+      "I took my sword in my right hand,\nAnd my love all in the other.\nCome all young men that love like me,\nFight on and take another.",
+      "Her uncle and three other men\nStraightway after me did follow,\nSaying: Leave this room, you villain, you,\nOr in your heart's blood you shall wallow.",
+    ],
+  },
+
+  "campbellsharp94": {
+    title: "The False Young Man",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "I walked out one May morning\nTo hear the small birds sing,\nAnd I leaned my back 'gainst a cottage door\nFor to hear what they had to say.",
+      "It's come you in, my dear,\nAnd talk awhile with me.\nI won't come in, nor I shan't sit down,\nFor I have not a moment to stay.\nI suppose you have some other true love\nAnd your heart is no more mine.",
+      "I'm a-going tomorrow, my dear,\nIt is for a little while,\nBut I'm a-coming back again, my love,\nIf I go ten thousand mile.",
+      "If I go away and prove false to you, my dear,\nAnd never no more return,\nThe rocks will run and the sea will burn\nAnd the earth will melt with fervent heat.",
+      "Who will shoe my feet, my love,\nOr who will glove my hands,\nOr who will kiss my ruby lips\nWhen you're in the foreign land?",
+      "Tell your father to shoe your feet, my love,\nAnd tell your mother to glove your hands,\nAnd I will kiss your ruby lips\nWhen I come from the foreign land.",
+      "He laid his right arm on my shoulder,\nHe laid his left one on my breast,\nWhich might have made me a-believe\nThat the sun rose in the west.",
+      "There's many a star in the heavens above,\nAnd a green bunch of grass below.\nWhat a heavy, heavy cross will hang on a man\nThat will treat a poor girl so.",
+      "I wish to God I'd a-never been born,\nOr a-died when I was young;\nI never would have wet my cheeks with tears\nFor the loss of no other woman's son.",
+    ],
+  },
+
+  "campbellsharp96": {
+    title: "My Parents Treated Me Tenderly",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "My parents treated me tenderly,\nThey had no child but me,\nBut my mind was bent on roving,\nWith them I couldn't agree.",
+      "My parents did treat me tenderly,\nThey had no child but me,\nBut my mind was bent on roving,\nWith them I couldn't agree.",
+      "There was a noble gentleman\nIn yonder town drew nigh;\nHe had one only daughter,\nOn her I cast my eye.",
+      "She was young and tall and handsome,\nMost beautiful and fair;\nThere wasn't a girl in that whole town\nWith her I could compare.",
+      "I told her my intention;\nIt was to cross the main.\nIt's, love, will you prove faithful\nTill I return again?",
+      "She said she would prove faithful\nTill death did prove unkind.\nWe kissed, shook hands and parted,\nI left my girl behind.",
+      "It's when I left old Ireland,\nTo Scotland I was bound.\nI'll march from Zion to me\nTo view the country round.",
+      "The girls were fair and plenty there\nAnd all to me proved kind,\nBut the dearest object of my heart\nWas the girl I left behind.",
+      "I walked out one evening\nAll down the George's Square;\nThe mail coach ship had just arose,\nWhen the post-boy met me there.",
+      "He handed me a letter\nThat gave me to understand\nThat the girl I left behind me\nHad wedded to another man.",
+      "I advanced a little further,\nI found the news quite true;\nI turned myself all round about,\nI knew not what to do.",
+      "I'll serve my trade, I'll quit my woe,\nBad company I'll resign;\nI'll rove around from town to town\nFor the girl I left behind.",
+    ],
+  },
+
+  "campbellsharp97": {
+    title: "The Sheffield Apprentice",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "As I grew up in Boston in such a low degree,\nMy parents they adore me, no other child but me.\nUnbeknownst to friends or parents, from them I stole my way,\nAnd steered my course to London, and bitter be the day.",
+      "And when I got to London a fair lady met me there\nAnd offered me in wages to live with her one year;\nAnd offered me in wages fine house and fine land,\nIf I'd give consent and marry her, she'd be at my command.",
+      "I said: Dear Miss, excuse me, I cannot wed you both,\nI'm promised to pretty Polly and bounded with an oath.\nThen Miss she grew angry and from me fled away,\nA-swearing by all her vengeance she'd be my overthrow.",
+      "I stepped out one evening to take the pleasant air,\nI find Miss in the garden, a-viewing the lilies fair.\nThe gold rings on her fingers, as she come past by me,\nShe dropped them in my pocket, and for it I must die.",
+      "They put me on a east bound train one cold December day,\nAnd every station I rode through I heard the people say:\nYonder goes a young man, in iron chains he's bound,\nFor some crime or other he's bound for Charlestown.",
+      "Here is my dear old father, he's pleading at the bar,\nLikewise my aged mother pulling out grey locks of hair,\nA-pulling out those old grey locks, the tears come trinkling down.\nSon, O son, what have you done? You're bound for Charlestown.",
+      "Then I was executed and on the gallows hung,\nMy friends and my relations all round me they did mourn,\nAnd my father and my mother all round me they did cry.\nFarewell, my dear old parents, now I am bound to die.",
+    ],
+  },
+
+  "campbellsharp104": {
+    title: "Loving Reilly",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "One night as I lay sleeping, so sound as I did sleep,\nI heard the voice of my true love a-calling at my feet,\nSaying: Rise up, William Riley, come go along with me\nInto some foreign country land, and married we will be.",
+      "I'll leave my father's dwelling, forsake my mother's fee,\nGo through the howling wilderness and married we will be.\nHer old father followed after them with seven armed men.\nOvertaken was poor Riley with his lovely Polly Anne.",
+      "And then next morning early the jailor's son come down,\nSaying: Rise up, William Riley, your trial is at hand.\nBefore yon bunch of jurors your trial you must stand.\nI'm afraid you'll suffer sorely by your lovely Polly Anne.",
+      "Then up spoke an aged lawyer, these words he did say:\nTo hang a man for love, boys, I call it murder-y,\nTo hang a man for love, boys, 'tis murder you plainly see.\nO spare the life of Riley, and let him leave his country.",
+      "Then up spoke her old father, these words he did say:\nHe's taken from me gold watches, he's taken from me gold rings,\nHe's took a silver brooch pin, 'twas worth a thousand pounds.\nI'll have the life of Riley, or spend ten thousand pounds.",
+      "There is a ring amongst the rest I'll have you for to wear.\nThe ring has forty diamonds and plaited with my hair.\nO when you wear it, Riley, wear it on your right hand,\nAnd think of my poor broken heart when you're in foreign land.",
+    ],
+  },
+
+  "campbellsharp107": {
+    title: "Good Morning, My Pretty Little Miss",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "Good morning, good morning, my pretty little Miss,\nThe beginning of my song.\nLor, says he, won't you marry me?\nShe answers: I'm too young.",
+      "The younger you be the better for me,\nMore fitting for to be my bride,\nFor I wanted to say on my wedding day\nThat I married my bride in maze.",
+      "He courted her by compliment\nTill he got her to comply;\nHe courted her with a merry mood,\nAll night with him she lay.",
+      "The night has passed and the day has come,\nThe morning sun do shine.\nI will arise, said he, put on my clothes,\nAnd then, sweet love, I'm gone.",
+      "O that's not what you promised me\nAll down by the greenwood side.\nYou promised for to marry me\nAnd make me your sweet bride.",
+      "If ever I promised to marry you,\nIt was all in a merry mood.\nFor I'll avow and will swear,\nI never was born for you.",
+      "I never will believe another man,\nCounty, city nor town,\nUnless the gallows was around him tied,\nAnd wishing himself safe down.",
+      "For girls can go to market town,\nGo dressed so neat and fine,\nWhile me a poor girl must stay at home\nAnd rock the cradle and spin.",
+      "I can sing as lonesome a song\nAs any little bird in the cage.\nO sixteen weeks astray have been gone,\nAnd scarcely fifteen years of age.",
+    ],
+  },
+
+  "campbellsharp13": {
+    title: "The Cherry-Tree Carol",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "As Joseph and Mary were a-walking the green,\nThere was apples and cherries plenty there to be seen.",
+      "And then Mary said to Joseph so meek and so mild:\nGather me some cherries, Joseph, for I am with child.",
+      "Then Joseph said to Mary so rough and unkind:\nLet the daddy of the baby get the cherries for thine.",
+      "Then the baby spoke out of its mother's womb:\nBow down you lofty cherry trees, let my mammy have some.",
+      "Then the cherry tree bent and it bowed like a bow,\nSo that Mary picked cherries from the uppermost bough.",
+      "Then Joseph took Mary all on his left knee,\nSaying: Lord have mercy on me and what I have done.",
+      "Then Joseph took Mary all on his right knee,\nSaying: O my little Saviour, when your birthday shall be,\nThe hills and high mountains shall bow unto thee.",
+      "Then the baby spoke out of its mother's womb:\nOn old Christmas morning my birthday shall be,\nWhen the hills and high mountains shall bow unto me.",
+    ],
+  },
+
+  "campbellsharp15": {
+    title: "Young Hunting",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "Come in, come in, my own true love,\nAnd stay all night with me,\nFor I have a bed and a very fine bed,\nAnd I'll give it up to thee.",
+      "I can't come in, nor I'm not coming in\nTo stay all night with thee,\nFor I have a wife in the old Scotland,\nThis night she waits for me.",
+      "She did have a little penknife,\nIt was both keen and sharp.\nShe gave him a deathlike blow\nAnd pierced him through the heart.",
+      "She picked him up all in her arms,\nBeing very active and strong,\nAnd she throwed him into an old dry well\nAbout sixty feet.",
+      "One day she was sitting in her father's parlour door,\nThinking of no harm.\nShe saw a bird and a pretty little bird\nAll among the leaves so green.",
+      "Come down, come down, my pretty little bird\nAnd parley on my knee.\nI'm afeard you'd rob me of my life\nLike you did the poor Scotchee.",
+      "I wish I had my bow and arrow,\nMy arrow and my string;\nI'd shoot you through your tender little heart,\nFor you never no more could sing.",
+      "I wish you had your bow and arrow,\nYour arrow and your string;\nI'd fly away to the heavens so high,\nWhere I could for evermore sing.",
+    ],
+  },
+
+  "campbellsharp19": {
+    title: "The Wife of Usher's Well",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "There was a lady and gay was she\nAnd children she had three.\nShe sent them away to the western country\nTo learn all grammary.",
+      "They hadn't been gone but a very short time,\nScarcely three weeks and a day,\nTill death came along through them dark woods\nAnd swept them all away.",
+      "There is a King in the Heavens all bright,\nHe used to wear a crown.\nI hope he'll send me my three babes to-night\nOr in the morning soon.",
+      "The beds was fixed in the back wall room,\nSpread over with clean sheets,\nAnd on the top was a golden cloth\nThat they might rest and sleep.",
+      "The table was set in the dining-room,\nSpread over with cakes and wine.\nGo sit down, my three little babes,\nAnd eat and drink of mine.",
+      "Take it off, take it off, dear mother, said they,\nTake it off, I say again,\nFor we'll not be here till the break of day;\nMy Saviour will call us away.",
+      "Rise up, rise up, said the oldest one,\nI think it's almost day.\nSee my Saviour standing by\nTo welcome us three home.",
+    ],
+  },
+
+  "campbellsharp2": {
+    title: "Lady Isabel and the Elf Knight",
+    version: "Olive Dame Campbell and Cecil J. Sharp, English Folk Songs from the Southern Appalachians (G.P. Putnam's Sons, 1917)",
+    stanzas: [
+      "O bring down some of your father's gold\nAnd more of your mother's money,\nAnd two of the best horses in your father's stable\nThat daily are thirty-three.",
+      "She brought down some of her father's gold\nAnd more of her mother's money,\nAnd two of the best horses in her father's stable\nThat daily are thirty-three.",
+      "He rode on the milk-white steed\nAnd she rode on the bay,\nAnd together they came to the North of Scotland\nThree hours before it was day.",
+      "Light down, light down, my pretty colleen,\nI've something here to tell thee.\nSix kings' daughters lie drowned here\nAnd thou the seventh shall be.",
+      "O turn your back to the billowy waves,\nYour face to the leaves of the tree,\nFor it ill beseems an outlandish knight\nShould view a stark lady.",
+      "He turned his back to the billowy waves,\nHis face to the leaves of the tree,\nWhen quickly she threw both her arms round his neck\nAnd tossed him into the sea.",
+      "Lie there, lie there, thou false young man,\nLie there instead of me.\nYou promised to take me to the North of Scotland,\nAnd there you would marry me.",
+      "O give me hold of your little finger\nAnd hold of your lily-white hand,\nAnd I'll make you the ruler of all my estates\nAnd the ruler of all my land.",
+      "No, I won't give you hold of my little finger,\nNor hold of my lily-white hand,\nAnd I won't be the mistress of all your estates\nAnd the ruler of all your land.",
+      "She rode on the milk-white steed,\nAnd by her went the bay,\nAnd together they came to her father's castle\nThree hours before it was day.",
+      "'Twas then the pretty parrot spoke\nFrom his cage upon the wall:\nO what is the matter, my pretty colleen,\nWhy did you not answer my call?",
+      "O hush, O hush, my pretty parrot,\nDon't tell any tales upon me,\nAnd your cage shall be of the beaten gold\nAnd your perch of the almond tree.",
+      "'Twas then her father spoke\nFrom the chamber where he lay:\nO what is the matter, my pretty parrot,\nThat you're calling so long before day?",
+      "O these rats, these rats are at my cage door;\nThey're trying to take me away,\nSo I am just calling my pretty colleen\nTo drive these rats away.",
     ],
   },
 
