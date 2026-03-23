@@ -2165,4 +2165,124 @@ export const LYRICS = {
       "Come all you brave shanty-boys, I'd have you call and see\nTwo green graves by the river side where grows the hemlock tree;\nThe shanty-boys cut off the wood where lay those lovers low—\n'Tis the handsome Clara Clark and her true love, brave Monroe.",
     ],
   },
+
+  "karpelesappalachianEveryNight": {
+    title: "Every Night When the Sun Goes In",
+    version: "Cecil J. Sharp and Maud Karpeles, English Folk Songs from the Southern Appalachians (Oxford University Press, 1932)",
+    stanzas: [
+      "Every night when the sun goes in,\nEvery night when the sun goes in,\nI hang down my head and mournful cry.",
+      "True love, don't weep, true love, don't mourn,\nTrue love, don't weep nor mourn for me,\nI'm going away to Marble town.",
+      "I wish to the Lord that train would come\nTo take me back where I come from.",
+      "It's once my apron hung down low,\nHe'd follow me through both sleet and snow.",
+      "It's now my apron's to my chin,\nHe'll face my door and won't come in.",
+      "I wish to the Lord my babe was born,\nA-sitting upon his pappy's knee,\nAnd me, poor girl, was dead and gone,\nAnd the green grass growing over me.",
+    ],
+  },
+
+  "karpelesappalachianChickens": {
+    title: "The Chickens They Are Crowing",
+    version: "Cecil J. Sharp and Maud Karpeles, English Folk Songs from the Southern Appalachians (Oxford University Press, 1932)",
+    stanzas: [
+      "The chickens they are crowing, a-crowing, a-crowing,\nThe chickens they are crowing, for it is almost daylight.",
+      "My mother she will scold me, will scold me, will scold me,\nMy mother she will scold me for staying away all night.",
+      "My father he'll uphold me, uphold me, uphold me,\nMy father he'll uphold me and say I'd a-done just right.",
+      "I won't go home till morning, till morning, till morning,\nI won't go home till morning, and I'll stay with the girls all night.",
+      "The chickens they are crowing, a-crowing, a-crowing,\nThe chickens they are crowing, for it is almost daylight.",
+    ],
+  },
+
+  "karpelesappalachianBrightMorningStar": {
+    title: "Bright Morning Star",
+    version: "Cecil J. Sharp and Maud Karpeles, English Folk Songs from the Southern Appalachians (Oxford University Press, 1932)",
+    stanzas: [
+      "Bright morning stars are rising,\nBright morning stars are rising,\nBright morning stars are rising,\nDay is a-breaking in my soul.",
+      "Oh, where are our dear fathers?\nOh, where are our dear fathers?\nOh, where are our dear fathers?\nDay is a-breaking in my soul.",
+      "They are down in the valley praying,\nThey are down in the valley praying,\nThey are down in the valley praying,\nDay is a-breaking in my soul.",
+      "Oh, where are our dear mothers?\nOh, where are our dear mothers?\nOh, where are our dear mothers?\nDay is a-breaking in my soul.",
+      "Some have gone to heaven shouting,\nSome have gone to heaven shouting,\nSome have gone to heaven shouting,\nDay is a-breaking in my soul.",
+      "Bright morning stars are rising,\nBright morning stars are rising,\nBright morning stars are rising,\nDay is a-breaking in my soul.",
+    ],
+  },
+
+  "karpelesappalachianOneMorningInMay": {
+    title: "One Morning in May",
+    version: "Cecil J. Sharp and Maud Karpeles, English Folk Songs from the Southern Appalachians (Oxford University Press, 1932)",
+    stanzas: [
+      "One morning in May, as I carelessly did stray,\nI met a bold grenadier on my way.",
+      "\"Good morning, good morning, good morning,\" said he,\n\"Oh, where are you going, my pretty lady?\"",
+      "\"I am going to the banks of the sea,\nTo see the waters gliding, hear the nightingale sing.\"",
+      "They hadn't been standing but a minute or two\nWhen out of his knapsack a fiddle he drew.",
+      "And the tune that he played made the valleys ring,\nMade the waters go gliding, made the nightingale sing.",
+      "\"Bold soldier, kind soldier, will you marry me?\"\n\"Oh, no, pretty lady, that never can be.",
+      "I've a wife in the army in my own country,\nTwo children beside her, and she would not like me.\"",
+      "\"I'll go back to the army and stay there a year,\nAnd often I'll think of you, my little dear.",
+      "And if ever I return, it will be in the spring,\nAnd we'll both sit down together, hear the nightingale sing.\"",
+    ],
+  },
+
+  "karpelesappalachianLittleMusgrave": {
+    title: "Little Musgrave and Lady Barnard",
+    version: "Cecil J. Sharp and Maud Karpeles, English Folk Songs from the Southern Appalachians (Oxford University Press, 1932)",
+    stanzas: [
+      "One day, one day, one holiday,\nThe first one of the year,\nLittle Matty Groves went to the church\nThe holy word to hear.",
+      "Lord Darnell's wife was standing by,\nShe cast her eye on him,\n\"Go home with me, little Matty Groves,\nA wedded wife to be.\"",
+      "\"I can't come home, and I won't come home,\nI cannot spare my life,\nBut by the rings upon your hands\nYou are Lord Darnell's wife.\"",
+      "\"It's if I am Lord Darnell's wife,\nLord Darnell's gone today,\nHe's across the waterside,\nHe's gone over there to stay.\"",
+      "But the little foot-page was standing by\nAnd hearing what was said,\nHe swore Lord Darnell he would know\nBefore the sun was set.",
+      "He ran till he came to the riverside,\nHe bent his breast and swam,\nHe swam till he came to the other side\nAnd he picked up his heels and ran.",
+      "\"Oh, no your bower's not falling down,\nOr does your castle burn,\nBut little Matty Groves he sleeps tonight\nKeeping your lady warm.\"",
+      "Then Lord Darnell took his men\nAnd lined them in a row;\nThe orders that he gave to them\nThat ne'er a horn should blow.",
+      "Matty Groves he was laid down,\nHe took a little sleep;\nWhen he woke up Lord Darnell\nWas standing at his feet.",
+      "\"Rise up, rise up, little Matty Groves,\nRise up as quick as you can;\nIt shalln't be said in old Scotland\nI slew a naked man.\"",
+      "\"I've got two swords by my side,\nThey cost me from my purse;\nYou can have the very best\nAnd I shall have the worst.\"",
+      "The very first stroke that Matty did give\nHe wounded Lord Darnell sore;\nThe very next stroke Lord Darnell gave\nA word he spoke no more.",
+      "Then Lord Darnell took his wife\nAnd set her on his knee;\n\"Who do you like best of all,\nLittle Matty Groves or me?\"",
+      "\"Very well I like your rosy cheeks,\nVery well I like your chin,\nBut better I like little Matty Groves\nThan you and all your kin.\"",
+    ],
+  },
+
+  "karpelesappalachianFairMargaret": {
+    title: "Fair Margaret and Sweet William",
+    version: "Cecil J. Sharp and Maud Karpeles, English Folk Songs from the Southern Appalachians (Oxford University Press, 1932)",
+    stanzas: [
+      "Sweet William rose one morning bright\nAnd dressed himself in blue,\n\"Come tell me now, you pretty little page,\nWhat love there is 'twixt Lady Margaret and you.\"",
+      "\"I know no harm of Lady Margaret,\nAnd I hope she knows none of me;\nBut tomorrow morning at eight o'clock\nLady Margaret my bride shall be.\"",
+      "Lady Margaret sat in her chamber high\nA-combing back her hair;\nShe spied Sweet William and his new bride\nAs they drew near to her.",
+      "Oh, down she laid her ivory comb\nAnd back she tossed her hair,\nAnd from her room a fair lady came\nThat was seen in there no more.",
+      "The day being gone and the night being come,\nWhen most men were asleep,\nSweet William spied Lady Margaret's ghost\nA-standing at his bed feet.",
+      "\"How do you like your bed?\" she said,\n\"And how do you like your sheet?\nAnd how do you like that fair young bride\nThat lies in your arms asleep?\"",
+      "\"Full well I like my bed,\" he said,\n\"Full well I like my sheet,\nBut better I like that fair young maid\nThat stands at my bed feet.\"",
+      "He called up his merry men all,\nBy one, by two, by three;\n\"Go fetch me down Lady Margaret's corpse\nFor tomorrow she'll bury me.\"",
+      "He kissed her on her lily-white cheek,\nHe kissed her on her chin;\nHe kissed her on her clay-cold lips,\nBut never a smile came in.",
+      "Lady Margaret she died on the self-same day,\nSweet William he died the morrow;\nLady Margaret she died for love so true,\nSweet William he died for sorrow.",
+      "They buried her in the lower churchyard,\nAnd him in the higher;\nAnd out of her grave there grew a red rose,\nAnd out of his a briar.",
+      "They grew and they grew to the church tower top\nUntil they could grow no higher,\nAnd then they tied in a true lover's knot,\nThe red rose around the briar.",
+    ],
+  },
+
+  "karpelesappalachianCruelShipsCarpenter": {
+    title: "The Cruel Ship's Carpenter",
+    version: "Cecil J. Sharp and Maud Karpeles, English Folk Songs from the Southern Appalachians (Oxford University Press, 1932)",
+    stanzas: [
+      "Early one morning before the break of day,\nHe went to his Polly, these words he did say:\n\"O Polly, O Polly, you must go with me,\nBefore we are married my friends for to see.\"",
+      "He led her through groves and through valleys so deep,\nWhich caused pretty Polly to sigh and to weep;\n\"O Willie, O Willie, you've led me astray,\nOn purpose my innocent life to betray.\"",
+      "\"It's true, it's true, those words you have said,\nFor all of this night long I've been digging your grave.\"\nThe grave being open and she standing by,\nWhich caused this poor maiden to sigh and to cry.",
+      "\"O pardon, O pardon, O pardon,\" she cried,\n\"And I'll freely forgive you for the rest of my life.\"\n\"No pardon, no pardon, no pardon,\" said he,\n\"And into the grave her fair body threw.\"",
+      "He covered her up and he hastened away,\nHe left nothing behind but the wild birds to mourn.",
+    ],
+  },
+
+  "karpelesappalachianGeordie": {
+    title: "Geordie",
+    version: "Cecil J. Sharp and Maud Karpeles, English Folk Songs from the Southern Appalachians (Oxford University Press, 1932)",
+    stanzas: [
+      "As I walked out over London Bridge,\nOne misty morning early,\nI overheard a fair, pretty maid\nWas lamenting for her Geordie.",
+      "\"My Geordie will be hanged in a golden chain,\n'Tis not the chain of many;\nHe was born of a king's royal blood\nAnd was loved by a virtuous lady.\"",
+      "\"Go saddle me my milk-white steed,\nGo saddle me my pony,\nThat I may ride to London's court\nTo plead for the life of Geordie.\"",
+      "\"My Geordie never stole cow nor calf,\nHe never hurted any;\nHe stole sixteen of the king's royal deer\nAnd he sold them in Bohenny.\"",
+      "\"Six pretty babies have I born,\nThe seventh lies in my body;\nI'd freely part with them every one\nIf you'd spare me the life of Geordie.\"",
+      "The judge looked over his left shoulder,\nHe said, \"Fair maid, I'm sorry;\nFair maid, you must be gone,\nFor I cannot pardon Geordie.\"",
+      "\"Let Geordie hang in a golden chain,\n'Tis not the chain of many;\nHe was born of a king's royal blood\nAnd was loved by a virtuous lady.\"",
+    ],
+  },
 };

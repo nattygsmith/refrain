@@ -1655,4 +1655,94 @@ export const QUOTES = [
     stanzaIndex: 1,
     // notes: "Second stanza. Text verified against 1934 edition p. 448-449. Classic lumberjack ballad, traditional/anonymous, North American origin. Lomax sourced from Franz L. Rickaby's Ballads and Songs of the Shanty-Boy. Sunday morning explicit. Lomax's version uses 'Eagletown' rather than 'Agonstown' found in other variants."
   },
+  // ── karpeles-appalachian (──────────────────────────────)
+  // --- Geordie (Sharp/Karpeles 1932, Vol. I, No. 28) ---
+  {
+    text: "As I walked out over London Bridge,\nOne misty morning early,\nI overheard a fair, pretty maid\nWas lamenting for her Geordie.",
+    source: "Geordie (Sharp/Karpeles 1932, Vol. I, No. 28)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "karpelesappalachianGeordie",
+    stanzaIndex: 0,
+    // notes: "Opening stanza. Morning tag explicit: 'one misty morning early'. The mist and bridge are atmospheric. Standard English broadside opening; confirmed in Sharp's Appalachian manuscripts (VWML CJS2/9/423 and CJS2/9/2542). Child 209."
+  },
+  // --- The Cruel Ship's Carpenter (Sharp/Karpeles 1932, Vol. I, No. 39) ---
+  {
+    text: "Early one morning before the break of day,\nHe went to his Polly, these words he did say:\n\"O Polly, O Polly, you must go with me,\nBefore we are married my friends for to see.\"",
+    source: "The Cruel Ship's Carpenter (Sharp/Karpeles 1932, Vol. I, No. 39)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "karpelesappalachianCruelShipsCarpenter",
+    stanzaIndex: 0,
+    // notes: "Opening stanza, standard Appalachian text. Morning marker explicit: 'before the break of day'. Pre-dawn approach; stands alone as image without murder context. Confirmed in multiple Sharp-collected versions including Sharp R (Clinton Fitzgerald, Royal Orchard, Afton, VA, April 28, 1918)."
+  },
+  // --- Little Musgrave and Lady Barnard (Sharp/Karpeles 1932, Vol. I, No. 23) ---
+  {
+    text: "Little Matty Groves he sleeps tonight,\nKeeping your lady warm.",
+    source: "Little Musgrave and Lady Barnard (Sharp/Karpeles 1932, Vol. I, No. 23)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "karpelesappalachianLittleMusgrave",
+    stanzaIndex: 6,
+    // notes: "The page's message to Lord Darnell. Night explicit; warmth in the dark. Two lines stand alone as image. Version A, sung by Mrs. Becky Griffin, Big Laurel, NC, Aug. 17, 1916. Not in as-it-fell-quotes-campbell-sharp.json — confirmed absent."
+  },
+  // --- Fair Margaret and Sweet William (Sharp/Karpeles 1932, Vol. I, No. 17) ---
+  {
+    text: "Sweet William rose one morning bright\nAnd dressed himself in blue.",
+    source: "Fair Margaret and Sweet William (Sharp/Karpeles 1932, Vol. I, No. 17)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "karpelesappalachianFairMargaret",
+    stanzaIndex: 0,
+    // notes: "Opening lines. Morning explicit: 'one morning bright'. Some versions read 'one May morning' adding spring, but the Appalachian Stockton text has 'morning bright' without May. Collected from Jeff Stockton, Flag Pond, Unicoi Co., TN, Sept. 4, 1916."
+  },
+  {
+    text: "The day being gone and the night being come,\nWhen most men were asleep,\nSweet William spied Lady Margaret's ghost\nA-standing at his bed feet.",
+    source: "Fair Margaret and Sweet William (Sharp/Karpeles 1932, Vol. I, No. 17)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "karpelesappalachianFairMargaret",
+    stanzaIndex: 4,
+    // notes: "Ghost-at-the-foot-of-the-bed stanza. Night and sleep both explicit. 'When most men were asleep' is the time marker; ghost appearance is the image. Mid-ballad. Appalachian text from Jeff Stockton / related versions in Sharp/Karpeles 1932."
+  },
+  // --- Every Night When the Sun Goes In (Sharp/Karpeles 1932, Vol. II) ---
+  {
+    text: "Every night when the sun goes in,\nEvery night when the sun goes in,\nI hang down my head and mournful cry.",
+    source: "Every Night When the Sun Goes In (Sharp/Karpeles 1932, Vol. II)",
+    time: ["evening"],
+    season: [],
+    lyricsKey: "karpelesappalachianEveryNight",
+    stanzaIndex: 0,
+    // notes: "Opening verse. Evening marker explicit: 'when the sun goes in'. Triple repetition is structural to the song. Refrain ('True love, don't weep') omitted — first verse stands alone. Sung by Mrs. Wilson, Pineville, Bell County, KY, 1917. Text also reprinted in Lomax/Lomax, American Ballads and Folk Songs (1934), p. 149, which cites Sharp/Karpeles 1932 Vol. II as source."
+  },
+  // --- The Chickens They Are Crowing (Sharp/Karpeles 1932, Vol. II) ---
+  {
+    text: "The chickens they are crowing, a-crowing, a-crowing,\nThe chickens they are crowing, for it is almost daylight.",
+    source: "The Chickens They Are Crowing (Sharp/Karpeles 1932, Vol. II)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "karpelesappalachianChickens",
+    stanzaIndex: 0,
+    // notes: "Opening verse, play-party section (new to 1932 edition; not in 1917 Campbell/Sharp). Dawn-threshold morning marker explicit: 'almost daylight'. Collected from Ben Finlay, Goose Creek (Little Goose Creek), Clay Co., KY, 1917."
+  },
+  // --- Bright Morning Star (Sharp/Karpeles 1932, Vol. II) ---
+  {
+    text: "Bright morning stars are rising,\nBright morning stars are rising,\nBright morning stars are rising,\nDay is a-breaking in my soul.",
+    source: "Bright Morning Star (Sharp/Karpeles 1932, Vol. II)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "karpelesappalachianBrightMorningStar",
+    stanzaIndex: 0,
+    // notes: "Opening verse, hymns section (new to 1932 edition; not in 1917 Campbell/Sharp). Morning and pre-dawn markers explicit. Appalachian spiritual rather than British-derived ballad — distinct tradition within the collection."
+  },
+  // --- One Morning in May (Sharp/Karpeles 1932, Vol. II) ---
+  {
+    text: "One morning in May, as I carelessly did stray,\nI met a bold grenadier on my way.",
+    source: "One Morning in May (Sharp/Karpeles 1932, Vol. II)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "karpelesappalachianOneMorningInMay",
+    stanzaIndex: 0,
+    // notes: "Opening two lines. Morning and spring both explicit. Collected in Kentucky. Cross-checked against as-it-fell-quotes-sharp.json — not a duplicate (Sharp 1916 has Down by the Green Bushes, a different song with a similar opening formula)."
+  },
 ];
