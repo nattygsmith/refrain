@@ -34,7 +34,7 @@ QUOTE_FILES = [
     # "scripts/refrain-quotes-karpeles.json",
 ]
 
-TARGET_FILE = "ios/Refrain/Resources/quotes.json"
+TARGET_FILE = "ios/Refrain/Refrain/Resources/quotes.json"
 
 # ── Fields to include in the output ──────────────────────────────────────────
 # 'id', 'collection', 'status', and 'notes' are omitted — they are curation

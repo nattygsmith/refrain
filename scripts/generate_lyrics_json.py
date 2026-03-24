@@ -45,7 +45,7 @@ LYRICS_FILES = [
     # os.path.join(SCRIPTS_DIR, "refrain-lyrics-lloyd.json"),
 ]
 
-TARGET_FILE = os.path.join(SCRIPTS_DIR, "..", "ios", "Refrain", "Resources", "lyrics.json")
+TARGET_FILE = os.path.join(SCRIPTS_DIR, "..", "ios", "Refrain", "Refrain", "Resources", "lyrics.json")
 
 # Fields to carry through to the iOS output (everything except internal metadata)
 SKIP_FIELDS = {"description", "collection", "last_updated"}
@@ -68,7 +68,7 @@ def load_file(path):
             key = entry.get("key")
             if not key:
                 continue
-            cleaned = {k: v for k, v in entry.items() if k not in ("key",) | SKIP_FIELDS}
+            cleaned = {k: v for k, v in entry.items() if k not in {"key"} | SKIP_FIELDS}
             result[key] = cleaned
         return result
 
