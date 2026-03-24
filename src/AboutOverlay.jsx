@@ -32,11 +32,13 @@ export default function AboutOverlay({ onClose }) {
           <p>
             A new verse appears every 15 minutes, or press "Another" whenever you like.
           </p>
+          <br />
           <div className="lyrics-rule">
             <div className="rule-line" />
             <div className="rule-diamond" />
             <div className="rule-line" />
           </div>
+          <br />
           <p>
             The verses come from a number of fieldwork collections, most gathered in the
             late nineteenth and early twentieth centuries, when collectors feared these
