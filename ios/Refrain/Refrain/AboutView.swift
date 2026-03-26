@@ -40,7 +40,7 @@ struct AboutView: View {
                     .padding(.top, 8)
 
                     Text("Refrain")
-                        .font(.custom("IMFellEnglish-Regular", size: 26))
+                        .font(.custom("IM_FELL_English_Roman", size: 26))
                         .foregroundStyle(theme.ink)
                         .padding(.bottom, 16)
 
@@ -52,15 +52,15 @@ struct AboutView: View {
                     VStack(alignment: .leading, spacing: 16) {
 
                         Text("These verses are drawn from several collections of folk songs, predominantly from the British Isles, the United States, and Canada. Each verse is chosen to match the time of day and season of your location. The words have been lightly modernized where needed.")
-                            .font(.custom("IMFellEnglish-Regular", size: 15))
+                            .font(.custom("IM_FELL_English_Roman", size: 15))
                             .foregroundStyle(theme.ink.opacity(0.85))
 
                         Text("The verses are beautiful enough on their own, but they are meant to be sung. Find recordings, listen to them, learn them, and sing them!")
-                            .font(.custom("IMFellEnglish-Italic", size: 15))
+                            .font(.custom("IM_FELL_English_Italic", size: 15))
                             .foregroundStyle(theme.ink.opacity(0.85))
 
                         Text("A new verse appears every 15 minutes, or tap Another whenever you like.")
-                            .font(.custom("IMFellEnglish-Regular", size: 15))
+                            .font(.custom("IM_FELL_English_Roman", size: 15))
                             .foregroundStyle(theme.ink.opacity(0.85))
                     }
                     .padding(.horizontal, 32)
@@ -74,14 +74,14 @@ struct AboutView: View {
                     VStack(alignment: .leading, spacing: 0) {
 
                         Text("The verses come from a number of fieldwork collections, most gathered in the late nineteenth and early twentieth centuries:")
-                            .font(.custom("IMFellEnglish-Regular", size: 14))
+                            .font(.custom("IM_FELL_English_Roman", size: 14))
                             .foregroundStyle(theme.ink.opacity(0.7))
                             .padding(.bottom, 20)
 
                         ForEach(collections, id: \.title) { collection in
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(collection.title)
-                                    .font(.custom("IMFellEnglish-Italic", size: 14))
+                                    .font(.custom("IM_FELL_English_Italic", size: 14))
                                     .foregroundStyle(theme.accent)
                                 Text(collection.description)
                                     .font(.system(size: 13))

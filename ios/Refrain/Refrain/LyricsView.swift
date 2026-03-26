@@ -18,7 +18,7 @@ struct LyricsView: View {
                     // ── Header ──────────────────────────────────────────
                     VStack(spacing: 4) {
                         Text(entry.title)
-                            .font(.custom("IMFellEnglish-Regular", size: 20))
+                            .font(.custom("IM_FELL_English_Roman", size: 20))
                             .foregroundStyle(theme.ink)
                             .multilineTextAlignment(.center)
 
@@ -46,7 +46,7 @@ struct LyricsView: View {
                     VStack(spacing: 20) {
                         ForEach(Array(entry.stanzas.enumerated()), id: \.offset) { index, stanza in
                             Text(stanza)
-                                .font(.custom("IMFellEnglish-Regular", size: 16))
+                                .font(.custom("IM_FELL_English_Roman", size: 16))
                                 .foregroundStyle(
                                     index == stanzaIndex
                                         ? theme.ink

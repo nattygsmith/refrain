@@ -60,7 +60,7 @@ struct ContentView: View {
                 if let quote = clock.quote {
                     VStack(spacing: 12) {
                         Text(quote.text)
-                            .font(.custom("IMFellEnglish-Regular", size: 22))
+                            .font(.custom("IM_FELL_English_Roman", size: 22))
                             .foregroundStyle(theme.ink)
                             .multilineTextAlignment(.center)
                             .lineSpacing(6)
@@ -72,7 +72,7 @@ struct ContentView: View {
                             if hasLyrics { showLyrics = true }
                         } label: {
                             Text("— \(quote.source)")
-                                .font(.custom("IMFellEnglish-Italic", size: 14))
+                                .font(.custom("IM_FELL_English_Italic", size: 14))
                                 .foregroundStyle(
                                     hasLyrics
                                         ? theme.accent
@@ -105,7 +105,7 @@ struct ContentView: View {
                     Button("Another") {
                         clock.next()
                     }
-                    .font(.custom("IMFellEnglish-Regular", size: 16))
+                    .font(.custom("IM_FELL_English_Roman", size: 16))
                     .foregroundStyle(theme.ink)
                     .padding(.horizontal, 20)
                     .padding(.vertical, 8)
