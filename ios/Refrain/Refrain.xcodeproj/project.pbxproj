@@ -51,6 +51,13 @@
 			);
 			target = B8840D322F73126E00C205D7 /* Refrain */;
 		};
+		B87A02582F75BDE2000FCF9D /* Exceptions for "RefrainWidget" folder in "Refrain" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = B8840D322F73126E00C205D7 /* Refrain */;
+		};
 		B8840D6D2F7315CA00C205D7 /* Exceptions for "RefrainWidget" folder in "RefrainWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -83,6 +90,7 @@
 		B8840D5E2F7315C800C205D7 /* RefrainWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				B87A02582F75BDE2000FCF9D /* Exceptions for "RefrainWidget" folder in "Refrain" target */,
 				B8840D6D2F7315CA00C205D7 /* Exceptions for "RefrainWidget" folder in "RefrainWidgetExtension" target */,
 			);
 			path = RefrainWidget;

@@ -38,7 +38,13 @@ struct AboutView: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.top, 8)
+                    Image("RefrainLogo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 80, height: 80)
+                        .padding(.bottom, 8)
 
+ 
                     Text("Refrain")
                         .font(.custom("IM_FELL_English_Roman", size: 26))
                         .textCase(.uppercase)
