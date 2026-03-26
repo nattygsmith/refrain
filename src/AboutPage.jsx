@@ -1,32 +1,25 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-// ============================================================
-//  AboutOverlay
-//  Full-screen page describing the app's source collections.
-//
-//  Props:
-//    onClose  — fn() called when the overlay is dismissed
-// ============================================================
-export default function AboutOverlay({ onClose }) {
+export default function AboutPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="overlay">
 
-      {/* Back button — top left */}
-      <button className="about-back" onClick={onClose}>
+      <button className="about-back" onClick={() => navigate("/")}>
         ← Back
       </button>
 
-      {/* Scrollable body */}
       <div className="overlay-body">
 
-        {/* Logo + title */}
         <div className="about-hero">
           <img
             className="about-logo"
             src="/Refrain_logo.png"
             alt="Refrain"
           />
-<div className="about-hero-title">About Refrain</div>
+          <div className="about-hero-title">About Refrain</div>
         </div>
 
         <div className="lyrics-rule">
