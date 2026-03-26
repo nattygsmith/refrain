@@ -44,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B84A2AF82F74401100372D2E /* Exceptions for "Refrain" folder in "Refrain" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B8840D322F73126E00C205D7 /* Refrain */;
+		};
 		B8840D6D2F7315CA00C205D7 /* Exceptions for "RefrainWidget" folder in "RefrainWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -67,6 +74,7 @@
 		B8840D352F73126F00C205D7 /* Refrain */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				B84A2AF82F74401100372D2E /* Exceptions for "Refrain" folder in "Refrain" target */,
 				B8840D752F7316C700C205D7 /* Exceptions for "Refrain" folder in "RefrainWidgetExtension" target */,
 			);
 			path = Refrain;
@@ -391,6 +399,7 @@
 				DEVELOPMENT_TEAM = W3QL578QKC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Refrain/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -423,6 +432,7 @@
 				DEVELOPMENT_TEAM = W3QL578QKC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Refrain/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

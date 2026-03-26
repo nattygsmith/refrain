@@ -41,7 +41,8 @@ struct AboutView: View {
 
                     Text("Refrain")
                         .font(.custom("IM_FELL_English_Roman", size: 26))
-                        .foregroundStyle(theme.ink)
+                        .textCase(.uppercase)
+                        .foregroundStyle(theme.accent)
                         .padding(.bottom, 16)
 
                     Divider()
@@ -50,18 +51,13 @@ struct AboutView: View {
 
                     // ── Body ────────────────────────────────────────────
                     VStack(alignment: .leading, spacing: 16) {
-
-                        Text("These verses are drawn from several collections of folk songs, predominantly from the British Isles, the United States, and Canada. Each verse is chosen to match the time of day and season of your location. The words have been lightly modernized where needed.")
-                            .font(.custom("IM_FELL_English_Roman", size: 15))
-                            .foregroundStyle(theme.ink.opacity(0.85))
-
-                        Text("The verses are beautiful enough on their own, but they are meant to be sung. Find recordings, listen to them, learn them, and sing them!")
-                            .font(.custom("IM_FELL_English_Italic", size: 15))
-                            .foregroundStyle(theme.ink.opacity(0.85))
-
-                        Text("A new verse appears every 15 minutes, or tap Another whenever you like.")
-                            .font(.custom("IM_FELL_English_Roman", size: 15))
-                            .foregroundStyle(theme.ink.opacity(0.85))
+                        Group {
+                            Text("These verses are drawn from several collections of folk songs, predominantly from the British Isles, the United States, and Canada. Each verse is chosen to match the time of day and season of your location. The words have been lightly modernized where needed.")
+                            Text("The verses are beautiful enough on their own, but they are meant to be sung. Find recordings, listen to them, learn them, and sing them!")
+                            Text("A new verse appears every 15 minutes, or tap Another whenever you like.")
+                        }
+                        .font(.system(size: 15))
+                        .foregroundStyle(theme.ink.opacity(0.85))
                     }
                     .padding(.horizontal, 32)
                     .padding(.vertical, 24)
@@ -74,18 +70,19 @@ struct AboutView: View {
                     VStack(alignment: .leading, spacing: 0) {
 
                         Text("The verses come from a number of fieldwork collections, most gathered in the late nineteenth and early twentieth centuries:")
-                            .font(.custom("IM_FELL_English_Roman", size: 14))
-                            .foregroundStyle(theme.ink.opacity(0.7))
+                            .font(.system(size: 15))
+                            .foregroundStyle(theme.ink.opacity(0.85))
                             .padding(.bottom, 20)
 
                         ForEach(collections, id: \.title) { collection in
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(collection.title)
-                                    .font(.custom("IM_FELL_English_Italic", size: 14))
+                                    .font(.custom("IM_FELL_English_Roman", size: 16))
+                                    .textCase(.uppercase)
                                     .foregroundStyle(theme.accent)
                                 Text(collection.description)
-                                    .font(.system(size: 13))
-                                    .foregroundStyle(theme.ink.opacity(0.65))
+                                    .font(.system(size: 15))
+                                    .foregroundStyle(theme.ink.opacity(0.85))
                                     .lineSpacing(3)
                             }
                             .padding(.bottom, 16)

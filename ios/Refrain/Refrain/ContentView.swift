@@ -35,7 +35,8 @@ struct ContentView: View {
                         "\(clock.timeOfDay.label) · \(clock.season.label)",
                         systemImage: clock.timeOfDay.systemImage
                     )
-                    .font(.system(size: 13, weight: .regular))
+                    .font(.custom("IM_FELL_English_Roman", size: 11))
+                    .textCase(.uppercase)
                     .foregroundStyle(theme.ink.opacity(0.6))
 
                     Spacer()
@@ -43,8 +44,9 @@ struct ContentView: View {
                     Button("About") {
                         showAbout = true
                     }
-                    .font(.system(size: 13, weight: .regular))
-                    .foregroundStyle(theme.ink.opacity(0.6))
+                    .font(.custom("IM_FELL_English_Roman", size: 11))
+                    .textCase(.uppercase)
+                    .foregroundStyle(theme.accent)
                 }
                 .padding(.horizontal, 28)
                 .padding(.top, 16)
@@ -72,12 +74,15 @@ struct ContentView: View {
                             if hasLyrics { showLyrics = true }
                         } label: {
                             Text("— \(quote.source)")
-                                .font(.custom("IM_FELL_English_Italic", size: 14))
+                                .font(.custom("IM_FELL_English_Roman", size: 12))
+                                .textCase(.uppercase)
                                 .foregroundStyle(
                                     hasLyrics
                                         ? theme.accent
-                                        : theme.ink.opacity(0.5)
+                                        : theme.accent.opacity(0.5)
                                 )
+                                .underline(hasLyrics, color: theme.accent.opacity(0.5))
+                                .padding(.top, 8)
                         }
                         .disabled(!hasLyrics)
                     }
@@ -106,8 +111,9 @@ struct ContentView: View {
                         clock.next()
                     }
                     .font(.custom("IM_FELL_English_Roman", size: 16))
-                    .foregroundStyle(theme.ink)
-                    .padding(.horizontal, 20)
+                    .textCase(.uppercase)
+                    .foregroundStyle(theme.accent)
+                    .padding(.horizontal, 32)
                     .padding(.vertical, 8)
                     .overlay(
                         RoundedRectangle(cornerRadius: 4)
@@ -115,7 +121,8 @@ struct ContentView: View {
                     )
 
                     Text("\(clock.pool.count) verse\(clock.pool.count == 1 ? "" : "s") for this \(clock.timeOfDay.rawValue)")
-                        .font(.system(size: 11))
+                        .font(.custom("IM_FELL_English_Roman", size: 11))
+                        .textCase(.uppercase)
                         .foregroundStyle(theme.ink.opacity(0.4))
                 }
                 .padding(.bottom, 24)
