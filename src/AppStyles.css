@@ -368,8 +368,8 @@ blockquote {
 }
 
 .about-logo {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   object-fit: contain;
 }
 
@@ -378,7 +378,7 @@ blockquote {
   font-size: clamp(1.3rem, 5vw, 1.9rem);
   letter-spacing: 0.02em;
   color: var(--rf-ink);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
 }
 
 .info-body {
