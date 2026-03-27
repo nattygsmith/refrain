@@ -328,8 +328,8 @@ blockquote {
   padding: 0 clamp(1.5rem, 8vw, 90px) 2rem clamp(1.5rem, 8vw, 90px);
   max-width: 720px;
   width: 100%;
-  Flex: 1
-  Overflow-y:auto
+  flex: 1;
+  overflow-y: auto;
 }
 
 .overlay-body .lyrics-rule {
