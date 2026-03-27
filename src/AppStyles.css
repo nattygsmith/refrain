@@ -322,7 +322,7 @@ blockquote {
   align-items: center;
   animation: fadeIn 0.2s ease;
   overflow: hidden;
-  background: var(--rf-mist);
+  background: color-mix(in srgb, var(--rf-mist) 30%, var(--rf-bg));
   -webkit-overflow-scrolling: touch;
 }
 
