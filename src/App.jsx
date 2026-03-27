@@ -4,14 +4,15 @@ import { DEV_MODE } from "./config.js";
 import { TIME_GLYPHS, TIME_LABELS, SEASON_LABELS } from "./constants.js";
 import { LYRICS } from "./lyrics.js";
 import { QUOTES } from "./quotes.js";
+import { useNavigate } from "react-router-dom";
 import { useQuoteClock } from "./useQuoteClock.js";
 import LyricsScreen from "./LyricsScreen.jsx";
-import AboutOverlay from "./AboutOverlay.jsx";
 
 // ============================================================
 //  Refrain — root component
 // ============================================================
 export default function Refrain() {
+  const navigate = useNavigate();
   const {
     timeOfDay,
     season,
@@ -26,7 +27,6 @@ export default function Refrain() {
     setDevSeason,
   } = useQuoteClock();
 
-  const [showInfo, setShowInfo] = useState(false);
   const [showLyrics, setShowLyrics] = useState(false);
   const [fadeKey, setFadeKey] = useState(0);
   const [devSearch, setDevSearch] = useState("");
@@ -53,7 +53,6 @@ export default function Refrain() {
   useEffect(() => {
     const handleKey = (e) => {
       if (e.key === "Escape") {
-        setShowInfo(false);
         setShowLyrics(false);
         setPinnedQuote(null);
       }
@@ -105,7 +104,7 @@ export default function Refrain() {
           <span className="glyph">{TIME_GLYPHS[timeOfDay]}</span>
           {TIME_LABELS[timeOfDay]} · {SEASON_LABELS[season]}
         </div>
-        <button className="info-btn" onClick={() => setShowInfo(true)}>
+        <button className="info-btn" onClick={() => navigate("/about")}>
           About
         </button>
       </div>
@@ -159,9 +158,6 @@ export default function Refrain() {
           {pool.length} verse{pool.length !== 1 ? "s" : ""} for this {timeOfDay}
         </p>
       </div>
-
-      {/* About overlay */}
-      {showInfo && <AboutOverlay onClose={() => setShowInfo(false)} />}
 
       {/* Lyrics overlay */}
       {showLyrics && displayQuote.lyricsKey && LYRICS[displayQuote.lyricsKey] && (
