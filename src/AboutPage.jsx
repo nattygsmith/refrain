@@ -56,7 +56,7 @@ export default function AboutPage() {
 
         <div className="info-body">
           <p>
-            Refrain draws verses from several collections of folk songs, predominantly
+            These verses are drawn from several collections of folk songs, predominantly
             from the British Isles, the United States, and Canada. Each verse is chosen
             to match the time of day and season of your location. The words have been
             lightly modernized where needed.
@@ -145,6 +145,15 @@ export default function AboutPage() {
               under conditions of forced labor—a tradition distinct from the British-derived
               folk song that shapes most of this collection. Songs are traditional and anonymous
               unless otherwise noted.
+            </li>
+            <li>
+              <strong>Songs of the West</strong>—121 traditional folk songs of Devon and
+              Cornwall, collected from singers in the field by Sabine Baring-Gould with Henry
+              Fleetwood Sheppard and F.W. Bussell, and published in 1905 with Cecil Sharp as
+              musical editor. Baring-Gould began collecting in 1888, visiting old men in their
+              cottages, farmhouses, and moorland taverns across the West Country. The songs
+              have a strongly pastoral character, featuring mornings on the moor, rural labour,
+              and the Devon and Cornish landscape.
             </li>
           </ul>
         </div>

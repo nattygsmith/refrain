@@ -1737,4 +1737,293 @@ export const QUOTES = [
     stanzaIndex: 0,
     // notes: "Opening two lines. Morning and spring both explicit. Collected in Kentucky. Cross-checked against refrain-quotes-sharp.json — not a duplicate (Sharp 1916 has Down by the Green Bushes, a different song with a similar opening formula)."
   },
+  // ── baring-gould (──────────────────────────────────────)
+  // --- Upon a Sunday Morning (Baring-Gould/Sharp, Songs of the West, No. 3) ---
+  {
+    text: "Upon a Sunday morning, when Spring was in its prime,\nAlong the Church-lane tripping, I heard the Church-bells chime.",
+    source: "Upon a Sunday Morning (Baring-Gould/Sharp, Songs of the West, No. 3)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "baringgould3",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 1–2. Collected from Robert Hard, South Brent. Baring-Gould notes the melody is not a genuine folk tune, but the text was collected from a singer."
+  },
+  // --- The Hal-an-Tow (Baring-Gould/Sharp, Songs of the West, No. 24) ---
+  {
+    text: "And we were up as soon as the day,\nFor to fetch the Summer home, O!\nThe Summer, and the May,\nNow the Winter is a gone, O!",
+    source: "The Hal-an-Tow (Baring-Gould/Sharp, Songs of the West, No. 24)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "baringgould24",
+    stanzaIndex: 0,
+    // notes: "Chorus. Helston Furry Dance, sung on May 8th annually. 'Summer home' is the ritual bringing-in of the season — the song is a spring ceremony, not a summer one."
+  },
+  // --- The Mole-Catcher (Baring-Gould/Sharp, Songs of the West, No. 45) ---
+  {
+    text: "On a moon-shiny night, O! 'tis my delight,\nA-catching o' moles.",
+    source: "The Mole-Catcher (Baring-Gould/Sharp, Songs of the West, No. 45)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "baringgould45",
+    stanzaIndex: 0,
+    // notes: "Refrain, repeated throughout. Collected from Robert Hard, South Brent."
+  },
+  // --- The Fox (Baring-Gould/Sharp, Songs of the West, No. 55) ---
+  {
+    text: "The fox went out one winter night,\nAnd prayed the moon to give him light,\nFor he'd many a mile to go that night,\nBefore he reached his den, O!",
+    source: "The Fox (Baring-Gould/Sharp, Songs of the West, No. 55)",
+    time: ["night"],
+    season: ["winter"],
+    lyricsKey: "baringgould55",
+    stanzaIndex: 0,
+    // notes: "Stanza 1. Collected from James Parsons. Night and winter both explicit."
+  },
+  // --- At the Setting of the Sun (Baring-Gould/Sharp, Songs of the West, No. 62) ---
+  {
+    text: "Come all you young fellows that carry a gun,\nBeware of late shooting when daylight is done;\nFor 'tis little you reckon what hazards you run,\nI shot my true love at the setting of the sun.",
+    source: "At the Setting of the Sun (Baring-Gould/Sharp, Songs of the West, No. 62)",
+    time: ["evening"],
+    season: [],
+    lyricsKey: "baringgould62",
+    stanzaIndex: 0,
+    // notes: "Stanza 1. Collected from Samuel Fone by Mr. Sheppard, and again by Cecil Sharp from Louie Hooper and Lucy White at Hambridge, Somerset."
+  },
+  // --- On a May Morning So Early (Baring-Gould/Sharp, Songs of the West, No. 73) ---
+  {
+    text: "As I walked out one May morning,\nOne May morning so early;\nI there espied a fair pretty maid,\nAll on the dew so pearly.\nO! 'twas sweet, sweet spring,\nMerry birds did sing,\nAll in the morning early.",
+    source: "On a May Morning So Early (Baring-Gould/Sharp, Songs of the West, No. 73)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "baringgould73",
+    stanzaIndex: 0,
+    // notes: "Stanza 1. Morning and spring both explicit throughout."
+  },
+  // --- Midsummer Carol (Baring-Gould/Sharp, Songs of the West, No. 89) ---
+  {
+    text: "'Twas early I walked on a midsummer morning,\nThe fields and the meadows were deckèd and gay,\nThe small birds were singing, the woodlands a-ringing,\n'Twas early in the morning, at breaking of day.",
+    source: "Midsummer Carol (Baring-Gould/Sharp, Songs of the West, No. 89)",
+    time: ["morning"],
+    season: ["summer"],
+    lyricsKey: "baringgould89",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 1–4. Collected from William Aggett of Chagford, Devon, October 1890. Morning and midsummer both explicit."
+  },
+  // --- Tobacco is an Indian Weed (Baring-Gould/Sharp, Songs of the West, No. 95) ---
+  {
+    text: "Tobacco is an Indian weed,\nGrows green at morn, is cut down at eve.",
+    source: "Tobacco is an Indian Weed (Baring-Gould/Sharp, Songs of the West, No. 95)",
+    time: ["morning", "evening"],
+    season: [],
+    lyricsKey: "baringgould95",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 1–2. Morn and eve both explicit. Memento mori quality — the full verse turns on decay and mortality."
+  },
+  // --- The Merry Haymakers (Baring-Gould/Sharp, Songs of the West, No. 109) ---
+  {
+    text: "The golden sun is shining bright,\nThe dew is off the field;\nTo us it is our main delight,\nThe fork and rake to wield.\nThe pipe and tabor both shall play,\nThe viols loudly ring,\nFrom morn till eve each summer day,\nAs we go hay-making.",
+    source: "The Merry Haymakers (Baring-Gould/Sharp, Songs of the West, No. 109)",
+    time: ["afternoon"],
+    season: ["summer"],
+    lyricsKey: "baringgould109",
+    stanzaIndex: 0,
+    // notes: "Stanza 1. 'From morn till eve each summer day' implies sustained midday/afternoon activity. Summer explicit."
+  },
+  // --- The Trees They Are So High (Baring-Gould/Sharp, Songs of the West, No. 4) ---
+  {
+    text: "It is cold winter's night,\nYou and I must bide alone:\nWhilst my pretty lad is young\nAnd is growing.",
+    source: "The Trees They Are So High (Baring-Gould/Sharp, Songs of the West, No. 4)",
+    time: ["night"],
+    season: ["winter"],
+    lyricsKey: "baringgould4",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 5–8. Night and winter explicit."
+  },
+  // --- The Bonny Bunch of Roses (Baring-Gould/Sharp, Songs of the West, No. 27) ---
+  {
+    text: "Beside the rolling ocean\nOne morning in the month of June,\nThe feathered warbling songsters\nWere sweetly changing note and tune.",
+    source: "The Bonny Bunch of Roses (Baring-Gould/Sharp, Songs of the West, No. 27)",
+    time: ["morning"],
+    season: ["summer"],
+    lyricsKey: "baringgould27",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 1–4. Morning and June explicit."
+  },
+  // --- The Green Bushes (Baring-Gould/Sharp, Songs of the West, No. 43) ---
+  {
+    text: "As I was a walking one morning in May,\nTo hear the birds whistle, see lambkins at play,\nI spied a fair damsel, O sweetly sang she—\n'Down by the green bushes he thinks to meet me.'",
+    source: "The Green Bushes (Baring-Gould/Sharp, Songs of the West, No. 43)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "baringgould43",
+    stanzaIndex: 0,
+    // notes: "Stanza 1. Morning and May explicit."
+  },
+  // --- May-Day Carol (Baring-Gould/Sharp, Songs of the West, No. 47) ---
+  {
+    text: "Awake, awake ye pretty maids,\nAnd take the May-bush in,\nOr 'twill be gone ere tomorrow morn,\nAnd you'll have none within.",
+    source: "May-Day Carol (Baring-Gould/Sharp, Songs of the West, No. 47)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "baringgould47",
+    stanzaIndex: 3,
+    // notes: "Stanza 4. Dawn-calling carol — sung at first light on May Day. Morning implicit ('ere tomorrow morn'); spring explicit."
+  },
+  // --- The Oxen Ploughing (Baring-Gould/Sharp, Songs of the West, No. 57) ---
+  {
+    text: "Come awaken in the morn,\nWhen the cock upon the dunghill\nIs a-blowing of his horn.",
+    source: "The Oxen Ploughing (Baring-Gould/Sharp, Songs of the West, No. 57)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "baringgould57",
+    stanzaIndex: 1,
+    // notes: "Stanza 2, lines 2–4. Morning explicit; spring from stanza 1 ('the ploughboy does in Spring')."
+  },
+  // --- Jolly Fellows That Follow the Plough (Baring-Gould/Sharp, Songs of the West, No. 63) ---
+  {
+    text: "'Twas early one morning at breaking of day,\nThe cocks were a crowing, the farmer did say,\nCome, arise, my good fellows, arise with good will,\nFor your horses want something their bellies to fill.",
+    source: "Jolly Fellows That Follow the Plough (Baring-Gould/Sharp, Songs of the West, No. 63)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "baringgould63",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 1–4. Morning explicit."
+  },
+  // --- The Spotted Cow (Baring-Gould/Sharp, Songs of the West, No. 74) ---
+  {
+    text: "One morning so gay, in the glad month of May,\nWhen I from my cottage strayed;\nAs broke the ray of awakening day,\nI met a pretty maid.",
+    source: "The Spotted Cow (Baring-Gould/Sharp, Songs of the West, No. 74)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "baringgould74",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 1–4. Morning, May, and 'awakening day' all explicit."
+  },
+  // --- The Duke's Hunt (Baring-Gould/Sharp, Songs of the West, No. 81) ---
+  {
+    text: "All in a morning very fair\nAs I rode out to take the air\nI heard some to halloo clearly.",
+    source: "The Duke's Hunt (Baring-Gould/Sharp, Songs of the West, No. 81)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "baringgould81",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 1–3. Morning explicit."
+  },
+  // --- Among the New-Mown Hay (Baring-Gould/Sharp, Songs of the West, No. 102) ---
+  {
+    text: "As I walked out one morn betime,\nTo view the fields in May, Sir,\nThere I espied a fair sweet maid,\nAmong the new-mown hay, Sir.",
+    source: "Among the New-Mown Hay (Baring-Gould/Sharp, Songs of the West, No. 102)",
+    time: ["morning"],
+    season: ["spring"],
+    lyricsKey: "baringgould102",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 1–4. Morning and May explicit."
+  },
+  // --- Within a Garden (Baring-Gould/Sharp, Songs of the West, No. 105) ---
+  {
+    text: "Within a garden a maiden lingered,\nWhen soft the shades of evening fell,\nExpecting, fearing,\nA footstep hearing,\nHer love appearing,\nTo say farewell.",
+    source: "Within a Garden (Baring-Gould/Sharp, Songs of the West, No. 105)",
+    time: ["evening"],
+    season: [],
+    lyricsKey: "baringgould105",
+    stanzaIndex: 0,
+    // notes: "Stanza 1. Evening explicit."
+  },
+  // --- The Owl (Baring-Gould/Sharp, Songs of the West, No. 115) ---
+  {
+    text: "For all the day long she sits in a tree,\nAnd when the night cometh, away flies she.",
+    source: "The Owl (Baring-Gould/Sharp, Songs of the West, No. 115)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "baringgould115",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 3–4. Night explicit. Stanza 2 adds morning ('The lark in the morn ascendeth on high') — considered adding both stanzas but stanza 1 alone is crisper."
+  },
+  {
+    text: "The lark in the morn ascendeth on high\nAnd leaves the poor owl to sob and to sigh;\nAnd all the day long, the owl is asleep,\nWhile little birds blithely are singing, cheep! cheep!",
+    source: "The Owl (Baring-Gould/Sharp, Songs of the West, No. 115)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "baringgould115",
+    stanzaIndex: 1,
+    // notes: "Stanza 2. Morning explicit. Companion to ID 131 from the same song — different time slot."
+  },
+  // --- By Chance It Was (Baring-Gould/Sharp, Songs of the West, No. 1) ---
+  {
+    text: "By chance it was I met my love,\nIt did me much surprise,\nDown by a shady myrtle grove,\nJust as the sun did rise.",
+    source: "By Chance It Was (Baring-Gould/Sharp, Songs of the West, No. 1)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "baringgould1",
+    stanzaIndex: 0,
+    // notes: "Stanza 1. 'Just as the sun did rise' — morning explicit."
+  },
+  // --- Widdecombe Fair (Baring-Gould/Sharp, Songs of the West, No. 16) ---
+  {
+    text: "When the wind whistles cold on the moor of a night,\nTom Pearce's old mare doth appear, gashly white.",
+    source: "Widdecombe Fair (Baring-Gould/Sharp, Songs of the West, No. 16)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "baringgould16",
+    stanzaIndex: 6,
+    // notes: "Stanza 7, lines 1–2. Night explicit. Ghost of the old mare appearing on the moor."
+  },
+  // --- Come to My Window (Baring-Gould/Sharp, Songs of the West, No. 41) ---
+  {
+    text: "Come to my window, my Love, O my Love,\nCome to my window, my Dear.\nFor my mammy is asleep,\nAnd my daddy snoreth deep,\nThen come, e'er the day-light appear.",
+    source: "Come to My Window (Baring-Gould/Sharp, Songs of the West, No. 41)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "baringgould41",
+    stanzaIndex: 0,
+    // notes: "Stanza 1. Night implicit — before daylight, household asleep."
+  },
+  // --- Lullabye (Baring-Gould/Sharp, Songs of the West, No. 49) ---
+  {
+    text: "Moon shining bright,\nDropping of dew.\nOwls hoot all night\nTo-whit! to-whoo!",
+    source: "Lullabye (Baring-Gould/Sharp, Songs of the West, No. 49)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "baringgould49",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 5–8. Night explicit."
+  },
+  // --- Fair Lady, Pity Me (Baring-Gould/Sharp, Songs of the West, No. 60) ---
+  {
+    text: "How comes it that thou stroll'st this way?\nSweet maiden, tell me true,\nBefore bright Phœbus' glittering ray\nHas supped the morning dew?",
+    source: "Fair Lady, Pity Me (Baring-Gould/Sharp, Songs of the West, No. 60)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "baringgould60",
+    stanzaIndex: 1,
+    // notes: "Stanza 2, lines 5–8. Morning implicit — before Phoebus (the sun) has drunk the dew."
+  },
+  // --- The Blue Flame (Baring-Gould/Sharp, Songs of the West, No. 67) ---
+  {
+    text: "I sit by the cradle, my baby's asleep,\nAnd rocking the cradle, I wonder and weep.\nO little blue light,\nIn the dead of the night,\nO prithee, O prithee no nearer to creep.",
+    source: "The Blue Flame (Baring-Gould/Sharp, Songs of the West, No. 67)",
+    time: ["night"],
+    season: [],
+    lyricsKey: "baringgould67",
+    stanzaIndex: 1,
+    // notes: "Stanza 2. Night explicit. The blue flame is a will-o'-the-wisp / soul of the dead."
+  },
+  {
+    text: "Why follow the church path, why steal you this way?\nWhy halt in your journey, on threshold why stay?\nWith flicker and flare,\nWhy dance up my stair!\nO I would, O I would, it were dawning of day.",
+    source: "The Blue Flame (Baring-Gould/Sharp, Songs of the West, No. 67)",
+    time: ["morning"],
+    season: [],
+    lyricsKey: "baringgould67",
+    stanzaIndex: 2,
+    // notes: "Stanza 3. Morning implicit — longing for dawn to end the haunting. Companion to ID 138."
+  },
+  // --- The Hostess' Daughter (Baring-Gould/Sharp, Songs of the West, No. 70) ---
+  {
+    text: "One summer evening, a maiden fair\nWas walking forth in the balmy air,\nShe met a sailor upon the way.",
+    source: "The Hostess' Daughter (Baring-Gould/Sharp, Songs of the West, No. 70)",
+    time: ["evening"],
+    season: ["summer"],
+    lyricsKey: "baringgould70",
+    stanzaIndex: 0,
+    // notes: "Stanza 1, lines 1–3. Evening and summer both explicit."
+  },
 ];

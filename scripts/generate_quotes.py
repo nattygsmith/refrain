@@ -29,9 +29,7 @@ QUOTE_FILES = [
     "scripts/refrain-quotes-lomax.json",
     "scripts/refrain-quotes-lomax1934.json",
     "scripts/refrain-quotes-karpeles-appalachian.json",
-    # Add future collection files here:
-    # "scripts/refrain-quotes-lloyd.json",
-    # "scripts/refrain-quotes-karpeles.json",
+    "scripts/refrain-quotes-baring-gould.json",
 ]
 
 TARGET_FILE = "src/quotes.js"

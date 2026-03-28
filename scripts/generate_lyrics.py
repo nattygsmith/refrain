@@ -27,9 +27,7 @@ LYRICS_FILES = [
     os.path.join(SCRIPTS_DIR, "refrain-lyrics-lomax.json"),
     os.path.join(SCRIPTS_DIR, "refrain-lyrics-lomax1934.json"),
     os.path.join(SCRIPTS_DIR, "refrain-lyrics-karpeles-appalachian.json"),
-    # Add future collections here:
-    # os.path.join(SCRIPTS_DIR, "refrain-lyrics-karpeles.json"),
-    # os.path.join(SCRIPTS_DIR, "refrain-lyrics-lloyd.json"),
+    os.path.join(SCRIPTS_DIR, "refrain-lyrics-baring-gould.json"),
 ]
 
 TARGET_FILE = os.path.join(SCRIPTS_DIR, "..", "src", "lyrics.js")
