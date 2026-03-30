@@ -14,7 +14,7 @@ export const QUOTES = [
     stanzaIndex: 3,
   },
   {
-    text: "The youngest sister, fair and bright,\nShe lay beside him all through the night.",
+    text: "The youngest daughter that same night,\nShe went to bed to this young knight.",
     source: "Riddles Wisely Expounded (Child 1)",
     time: ["night"],
     season: [],
@@ -22,7 +22,7 @@ export const QUOTES = [
     stanzaIndex: 6,
   },
   {
-    text: "And in the morning, come the day,\nShe said, 'Young man, will you marry me?'",
+    text: "And in the morning, when it was day,\nThese words unto him she did say:\n'Now you have had your will,' quoth she,\n'I pray, sir knight, will you marry me?'",
     source: "Riddles Wisely Expounded (Child 1)",
     time: ["morning"],
     season: [],
@@ -39,7 +39,7 @@ export const QUOTES = [
     stanzaIndex: 0,
   },
   {
-    text: "They rode till they came to the sweet water side,\nThree hours before it was day.",
+    text: "She rode till she came to the sweet river side,\nThree hours before it was day.",
     source: "Lady Isabel and the Elf-Knight (Child 4)",
     time: ["night"],
     season: [],
@@ -53,7 +53,7 @@ export const QUOTES = [
     time: ["morning"],
     season: [],
     lyricsKey: "child26",
-    stanzaIndex: 0,
+    stanzaIndex: 1,
   },
   {
     text: "She buried him before the prime,\nShe died herself ere evening time.",
@@ -82,7 +82,7 @@ export const QUOTES = [
     stanzaIndex: 36,
   },
   {
-    text: "Just at the mirk and midnight hour,\nThe fairy folk will ride,\nAnd they that would their true-love win,\nAt Miles Cross they must bide.",
+    text: "'Just at the mirk and midnight hour\nThe fairy folk will ride,\nAnd they that wad their true-love win,\nAt Miles Cross they maun bide.'",
     source: "Tam Lin (Child 39)",
     time: ["night"],
     season: ["autumn"],
@@ -90,7 +90,7 @@ export const QUOTES = [
     stanzaIndex: 25,
   },
   {
-    text: "Tomorrow is Halloween,\nThe elfin court will ride,\nThrough England, and through all Scotland,\nAnd through the world wide.",
+    text: "'But the night is Halloween, lady,\nThe morn is Hallowday;\nThen win me, win me, an ye will,\nFor weel I wat ye may.",
     source: "Tam Lin (Child 39)",
     time: ["morning", "afternoon"],
     season: ["autumn"],
@@ -107,7 +107,7 @@ export const QUOTES = [
   },
   // --- The Broomfield Hill (Child 43) ---
   {
-    text: "There was a knight and a lady bright,\nHad a true tryste at the broom;\nThe one went early in the morning,\nThe other in the afternoon.",
+    text: "There was a knight and a lady bright,\nHad a true tryst at the broom;\nThe one rode early in the morning,\nThe other in the afternoon.",
     source: "The Broomfield Hill (Child 43)",
     time: ["morning", "afternoon"],
     season: ["spring"],
@@ -117,7 +117,7 @@ export const QUOTES = [
   },
   // --- Sir Patrick Spens (Child 58) ---
   {
-    text: "Late late last night I saw the new moon,\nWith the old moon in her arm;\nAnd I fear, I fear, my dear master,\nThat we will come to harm.",
+    text: "Late late yestreen I saw the new moon,\nWi the auld moon in her arm,\nAnd I fear, I fear, my dear master,\nThat we will come to harm.",
     source: "Sir Patrick Spens (Child 58)",
     time: ["night"],
     season: ["winter"],
@@ -126,7 +126,7 @@ export const QUOTES = [
   },
   // --- Lord Thomas and Annet (Child 73) ---
   {
-    text: "Sweet Willie and Fair Annie,\nAs they sat on yonder hill,\nIf they had sat from morn 'til evening,\nThey had not talked their fill.",
+    text: "Sweet Willie and Fair Annie,\nAs they sat on yonder hill,\nIf they had sat from morn till evening,\nThey had not talked their fill.",
     source: "Lord Thomas and Annet (Child 73)",
     time: ["evening"],
     season: [],
@@ -161,7 +161,7 @@ export const QUOTES = [
   },
   // --- The Unquiet Grave (Child 78) ---
   {
-    text: "The wind does blow today, my love,\nAnd a few small drops of rain;\nI never had but one true-love,\nIn a cold grave she was lain.",
+    text: "The wind doth blow today, my love,\nAnd a few small drops of rain;\nI never had but one true-love,\nIn cold grave she was lain.",
     source: "The Unquiet Grave (Child 78)",
     time: ["morning", "afternoon"],
     season: ["autumn", "winter"],
@@ -212,7 +212,7 @@ export const QUOTES = [
     stanzaIndex: 0,
   },
   {
-    text: "All in the merry month of May,\nWhen green leaves they were springing,\nThis young man on his death-bed lay,\nFor the love of Barbara Allen.",
+    text: "All in the merry month of May,\nWhen green leaves they were springing,\nThis young man on his death-bed lay,\nFor the love of Barbara Allan.",
     source: "Bonny Barbara Allan (Child 84)",
     time: ["morning", "afternoon"],
     season: ["spring"],
@@ -238,7 +238,7 @@ export const QUOTES = [
   },
   // --- The Great Silkie of Sule Skerry (Child 113) ---
   {
-    text: "Then one arose at her bed-foot,\nA grumbly guest I'm sure was he.",
+    text: "Then ane arose at her bed-foot,\nA grumbly guest I'm sure was he.",
     source: "The Great Silkie of Sule Skerry (Child 113)",
     time: ["night"],
     season: [],
@@ -252,14 +252,6 @@ export const QUOTES = [
     season: ["summer"],
     lyricsKey: "child113",
     stanzaIndex: 5,
-  },
-  {
-    text: "And he'll go out on a May morning,\nAnd he'll kill both my wee son and me.",
-    source: "The Great Silkie of Sule Skerry (Child 113)",
-    time: ["morning"],
-    season: ["spring"],
-    lyricsKey: "child113",
-    stanzaIndex: 6,
   },
   // --- Johnie Cock (Child 114) ---
   {
@@ -341,7 +333,7 @@ export const QUOTES = [
   },
   // --- The Fair Flower of Northumberland (Child 9) ---
   {
-    text: "Thus rode she all one winter's night,\nTill Edenborow they saw in sight.",
+    text: "Thus rode she all one winter's night,\nTill Edenborough they saw in sight.",
     source: "The Fair Flower of Northumberland (Child 9)",
     time: ["night"],
     season: ["winter"],
@@ -380,7 +372,7 @@ export const QUOTES = [
   },
   // --- The Bonny Hind (Child 50) ---
   {
-    text: "It's May she comes and May she goes,\nDown by the garden green,\nIt's there she spied a good young squire,\nAs good as e'er she seen.",
+    text: "O May she comes, and May she goes,\nDown by yon garden green,\nAnd there she spied a gallant squire\nAs squire had ever been.",
     source: "The Bonny Hind (Child 50)",
     time: ["morning", "afternoon"],
     season: ["spring"],
@@ -545,7 +537,7 @@ export const QUOTES = [
   },
   // --- The Gay Goshawk (Child 96) ---
   {
-    text: "And well he knew that lady fair\nAmong her maidens free,\nFor the flower that springs in May morning\nWas not so sweet as she.",
+    text: "And weel he kent that ladye feir\nAmang her maidens free,\nFor the flower that springs in May morning\nWas not sae sweet as she.",
     source: "The Gay Goshawk (Child 96)",
     time: ["morning"],
     season: ["spring"],
@@ -815,7 +807,7 @@ export const QUOTES = [
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "child305",
-    stanzaIndex: 1,
+    stanzaIndex: 0,
     // notes: "Stanza 2. No modernisation needed."
   },
   // --- Willie o Couglas Dale (Child 101) ---
@@ -825,7 +817,7 @@ export const QUOTES = [
     time: ["night"],
     season: [],
     lyricsKey: "child101",
-    stanzaIndex: 3,
+    stanzaIndex: 2,
     // notes: "Version B, stanza 4. No modernisation needed."
   },
   {
@@ -834,7 +826,7 @@ export const QUOTES = [
     time: ["morning"],
     season: [],
     lyricsKey: "child101",
-    stanzaIndex: 11,
+    stanzaIndex: 6,
     // notes: "Version B, stanza 12. First four lines only; truncated with ellipsis. No modernisation needed."
   },
   {
@@ -843,7 +835,7 @@ export const QUOTES = [
     time: ["morning"],
     season: [],
     lyricsKey: "child101",
-    stanzaIndex: 6,
+    stanzaIndex: 8,
     // notes: "Version C, stanza 7. No modernisation needed."
   },
   // --- Christopher White (Child 108) ---
@@ -858,7 +850,7 @@ export const QUOTES = [
   },
   // --- The Great Silkie of Sule Skerry (Child 113) ---
   {
-    text: "An it shall come to pass on a summer's day,\nWhen the sun shines hot on every stone,\nThat I will take my little young son,\nAn teach him for to swim the foam.",
+    text: "And it shall come to pass on a summer's day,\nWhen the sun shines hot on every stone,\nThat I will take my little young son,\nAnd teach him for to swim the foam.",
     source: "The Great Silkie of Sule Skerry (Child 113)",
     time: ["afternoon"],
     season: ["summer"],
@@ -883,7 +875,7 @@ export const QUOTES = [
     time: ["morning"],
     season: [],
     lyricsKey: "child118",
-    stanzaIndex: 22,
+    stanzaIndex: 1,
     // notes: "Stanza 23. No modernisation needed."
   },
   {
@@ -892,7 +884,7 @@ export const QUOTES = [
     time: ["afternoon"],
     season: ["summer"],
     lyricsKey: "child118",
-    stanzaIndex: 36,
+    stanzaIndex: 3,
     // notes: "Stanza 37. 'Them fettled them to fly away' reworded to 'The other forced to fly away' for clarity."
   },
   // --- The Jolly Pinder of Wakefield (Child 124) ---
@@ -902,7 +894,7 @@ export const QUOTES = [
     time: ["afternoon"],
     season: ["summer"],
     lyricsKey: "child124",
-    stanzaIndex: 5,
+    stanzaIndex: 4,
     // notes: "Stanza 6. 'along summer's day' modernised to 'all a summer's day'. No other changes."
   },
   // --- Robin Hood and Allen a Dale (Child 138) ---
@@ -942,7 +934,7 @@ export const QUOTES = [
     time: ["morning"],
     season: [],
     lyricsKey: "child251",
-    stanzaIndex: 21,
+    stanzaIndex: 2,
     // notes: "Stanza 22. 'o'→'o''. No other changes."
   },
   // --- Thomas o Yonderdale (Child 253) ---
@@ -952,7 +944,7 @@ export const QUOTES = [
     time: ["night"],
     season: [],
     lyricsKey: "child253",
-    stanzaIndex: 11,
+    stanzaIndex: 3,
     // notes: "Stanza 12. 'Ae'→'One', 'for's inconstancie'→'for his inconstancy'. Inverted syntax of line 2 retained."
   },
   // --- Lady Isabel (Child 261) ---
@@ -981,7 +973,7 @@ export const QUOTES = [
     time: ["evening"],
     season: [],
     lyricsKey: "child270",
-    stanzaIndex: 6,
+    stanzaIndex: 2,
     // notes: "Stanza 7. 'gane'→'gone'. No other changes."
   },
   // --- Get Up and Bar the Door (Child 275) ---
@@ -991,7 +983,7 @@ export const QUOTES = [
     time: ["night"],
     season: [],
     lyricsKey: "child275",
-    stanzaIndex: 4,
+    stanzaIndex: 3,
     // notes: "Version A, stanza 5. No modernisation needed."
   },
   // --- The Mermaid (Child 289) ---
@@ -1011,7 +1003,7 @@ export const QUOTES = [
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "child304",
-    stanzaIndex: 17,
+    stanzaIndex: 1,
     // notes: "Stanza 18. 'craw' and 'daw' retained for rhyme. 'alang'→'along'. No other changes."
   },
   // ── sharp (─────────────────────────────────────────────)
@@ -1082,7 +1074,7 @@ export const QUOTES = [
     time: ["morning"],
     season: ["summer"],
     lyricsKey: "sharp25",
-    stanzaIndex: 4,
+    stanzaIndex: 3,
     // notes: "Mid-narrative stanza. Hayfield = summer context. Works as standalone morning image."
   },
   // --- Green Bushes (Sharp 40) ---
@@ -1177,120 +1169,120 @@ export const QUOTES = [
     // notes: "Opening stanza. Collected by Cecil Sharp from Harry Richards of Curry Rivel, Somerset, 1904/1909. Published in Journal of the English Folk Song Society. 'Heat of the day' is an explicit afternoon time marker."
   },
   // ── campbell-sharp (────────────────────────────────────)
-  // --- Pretty Saro (Campbell/Sharp 1917, No. 76) ---
+  // --- Pretty Saro (Campbell/Sharp, No. 76) ---
   {
     text: "Well, if I were a turtle dove, had wings and could fly,\nI would fly to my love's lodging and there I'd draw nigh.\nAnd in her lily white arms all night I would lay\nAnd watch those little winders till the dawning of day.",
-    source: "Pretty Saro (Campbell/Sharp 1917, No. 76)",
+    source: "Pretty Saro (Campbell/Sharp, No. 76)",
     time: ["night", "morning"],
     season: [],
     lyricsKey: "campbellsharp76",
     stanzaIndex: 3,
     // notes: "Fourth stanza. Night tagged via 'all night'; morning via 'dawning of day'."
   },
-  // --- Come All You Fair and Tender Ladies (Campbell/Sharp 1917, No. 65) ---
+  // --- Come All You Fair and Tender Ladies (Campbell/Sharp, No. 65) ---
   {
     text: "Come all you fair and tender ladies,\nTake warning how you court young men.\nThey're like a bright star on a summer's morning,\nFirst they appear and then they're gone.",
-    source: "Come All You Fair and Tender Ladies (Campbell/Sharp 1917, No. 65)",
+    source: "Come All You Fair and Tender Ladies (Campbell/Sharp, No. 65)",
     time: ["morning"],
     season: ["summer"],
     lyricsKey: "campbellsharp65",
     stanzaIndex: 0,
     // notes: "Opening stanza. Morning and summer both explicit."
   },
-  // --- Early, Early in the Spring (Campbell/Sharp 1917, No. 72) ---
+  // --- Early, Early in the Spring (Campbell/Sharp, No. 72) ---
   {
     text: "It was early, early all in a spring,\nI went on board for to serve the king,\nI left my dearest dearie behind,\nThat often told me her heart was mine.",
-    source: "Early, Early in the Spring (Campbell/Sharp 1917, No. 72)",
+    source: "Early, Early in the Spring (Campbell/Sharp, No. 72)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "campbellsharp72",
     stanzaIndex: 0,
     // notes: "Opening stanza. Spring explicit; 'early, early' implies pre-dawn departure."
   },
-  // --- Awake! Awake! (Campbell/Sharp 1917, No. 47) ---
+  // --- Awake! Awake! (Campbell/Sharp, No. 47) ---
   {
     text: "Awake! Awake! You drowsy sleeper,\nAwake! Awake! For it's almost day,\nWhy do you lie there in your slumber,\nWhen your true-love is going away?",
-    source: "Awake! Awake! (Campbell/Sharp 1917, No. 47)",
+    source: "Awake! Awake! (Campbell/Sharp, No. 47)",
     time: ["morning"],
     season: [],
     lyricsKey: "campbellsharp47",
     stanzaIndex: 0,
     // notes: "Opening stanza. 'Almost day' explicit morning marker. Sung by Mary Sands, Allanstand, NC, Aug. 1916."
   },
-  // --- Good Morning, My Pretty Little Miss (Campbell/Sharp 1917, No. 107) ---
+  // --- Good Morning, My Pretty Little Miss (Campbell/Sharp, No. 107) ---
   {
     text: "The night has passed and the day has come,\nThe morning sun do shine.\nI will arise, said he, put on my clothes,\nAnd then, sweet love, I'm gone.",
-    source: "Good Morning, My Pretty Little Miss (Campbell/Sharp 1917, No. 107)",
+    source: "Good Morning, My Pretty Little Miss (Campbell/Sharp, No. 107)",
     time: ["morning"],
     season: [],
     lyricsKey: "campbellsharp107",
     stanzaIndex: 3,
     // notes: "Fourth stanza. Dawn departure. Version A, sung by Mrs. Hester House at Hot Springs, NC, Sept. 14, 1916."
   },
-  // --- The Sheffield Apprentice (Campbell/Sharp 1917, No. 97) ---
+  // --- The Sheffield Apprentice (Campbell/Sharp, No. 97) ---
   {
     text: "I stepped out one evening to take the pleasant air,\nI find Miss in the garden, a-viewing the lilies fair.\nThe gold rings on her fingers, as she come past by me,\nShe dropped them in my pocket, and for it I must die.",
-    source: "The Sheffield Apprentice (Campbell/Sharp 1917, No. 97)",
+    source: "The Sheffield Apprentice (Campbell/Sharp, No. 97)",
     time: ["evening"],
     season: [],
     lyricsKey: "campbellsharp97",
     stanzaIndex: 3,
     // notes: "Fourth stanza. Evening walk; garden and lilies. Version A, sung by Mrs. Mary Sands at Allanstand, NC, Aug. 3, 1916."
   },
-  // --- The False Young Man (Campbell/Sharp 1917, No. 94) ---
+  // --- The False Young Man (Campbell/Sharp, No. 94) ---
   {
     text: "I walked out one May morning\nTo hear the small birds sing,\nAnd I leaned my back 'gainst a cottage door\nFor to hear what they had to say.",
-    source: "The False Young Man (Campbell/Sharp 1917, No. 94)",
+    source: "The False Young Man (Campbell/Sharp, No. 94)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "campbellsharp94",
     stanzaIndex: 0,
     // notes: "Opening stanza, version C. Sung by Mrs. Anelize Chandler at Alleghany, NC, Aug. 28, 1916."
   },
-  // --- My Parents Treated Me Tenderly (Campbell/Sharp 1917, No. 96) ---
+  // --- My Parents Treated Me Tenderly (Campbell/Sharp, No. 96) ---
   {
     text: "I walked out one evening\nAll down the George's Square;\nThe mail coach ship had just arose,\nWhen the post-boy met me there.",
-    source: "My Parents Treated Me Tenderly (Campbell/Sharp 1917, No. 96)",
+    source: "My Parents Treated Me Tenderly (Campbell/Sharp, No. 96)",
     time: ["evening"],
     season: [],
     lyricsKey: "campbellsharp96",
     stanzaIndex: 8,
     // notes: "Ninth stanza. Evening marker explicit. Version A, sung by Mr. Frankland B. Shelton at Allanstand, NC, July 31, 1916."
   },
-  // --- Loving Reilly (Campbell/Sharp 1917, No. 104) ---
+  // --- Loving Reilly (Campbell/Sharp, No. 104) ---
   {
     text: "One night as I lay sleeping, so sound as I did sleep,\nI heard the voice of my true love a-calling at my feet,\nSaying: Rise up, William Riley, come go along with me\nInto some foreign country land, and married we will be.",
-    source: "Loving Reilly (Campbell/Sharp 1917, No. 104)",
+    source: "Loving Reilly (Campbell/Sharp, No. 104)",
     time: ["night"],
     season: [],
     lyricsKey: "campbellsharp104",
     stanzaIndex: 0,
     // notes: "Opening stanza. Night call from sleep. Version A, sung by Mrs. Moore at Rabun Co., GA, May 1, 1909. Stanza reconstructed from score notation."
   },
-  // --- Locks and Bolts (Campbell/Sharp 1917, No. 80) ---
+  // --- Locks and Bolts (Campbell/Sharp, No. 80) ---
   {
     text: "I dreamed of my true love last night,\nAll in my arms I had her,\nBut when I woke it was a dream;\nI was forced to lay without her.",
-    source: "Locks and Bolts (Campbell/Sharp 1917, No. 80)",
+    source: "Locks and Bolts (Campbell/Sharp, No. 80)",
     time: ["night"],
     season: [],
     lyricsKey: "campbellsharp80",
     stanzaIndex: 0,
     // notes: "Opening stanza, version B. Night dream and waking. Sung by Mrs. Hester House at Hot Springs, NC, Sept. 14, 1916."
   },
-  // --- William Taylor (Campbell/Sharp 1917, No. 51) ---
+  // --- William Taylor (Campbell/Sharp, No. 51) ---
   {
     text: "As she rose early the very next morning,\nJust about the break of day,\nAnd she saw her own dear William Taylor\nA-walking with his lady gay.",
-    source: "William Taylor (Campbell/Sharp 1917, No. 51)",
+    source: "William Taylor (Campbell/Sharp, No. 51)",
     time: ["morning"],
     season: [],
     lyricsKey: "campbellsharp51",
     stanzaIndex: 2,
     // notes: "Third stanza. 'Break of day' explicit. Sung by Mrs. Rosie Hensley at Carmen, NC, Aug. 28, 1916."
   },
-  // --- The Wagoner's Lad (Campbell/Sharp 1917, No. 64) ---
+  // --- The Wagoner's Lad (Campbell/Sharp, No. 64) ---
   {
     text: "As soon as the dewdrops\nGrow on the green grass.\nLast night she was with me,\nBut to-night she is gone.",
-    source: "The Wagoner's Lad (Campbell/Sharp 1917, No. 64)",
+    source: "The Wagoner's Lad (Campbell/Sharp, No. 64)",
     time: ["night"],
     season: [],
     lyricsKey: "campbellsharp64",
@@ -1299,87 +1291,87 @@ export const QUOTES = [
   },
   {
     text: "It's a-raining, it's a-hailing,\nThe moon it gives no light,\nYour horses can't travel\nThis dark, lonesome night.",
-    source: "The Wagoner's Lad (Campbell/Sharp 1917, No. 64)",
+    source: "The Wagoner's Lad (Campbell/Sharp, No. 64)",
     time: ["night"],
     season: [],
     lyricsKey: "campbellsharp64",
     stanzaIndex: 5,
     // notes: "Sixth stanza, version A. Moon, rain, darkness. Sung by Miss Memory Shelton at Alleghany, NC, July 29, 1916."
   },
-  // --- The Gypsy Laddie (Campbell/Sharp 1917, No. 27) ---
+  // --- The Gypsy Laddie (Campbell/Sharp, No. 27) ---
   {
     text: "The night before last I lay on a feather bed,\nLord Thomas he lay with me.\nLast night I lay on a cold straw bed\nAnd with the calves a-bawling all around me.",
-    source: "The Gypsy Laddie (Campbell/Sharp 1917, No. 27)",
+    source: "The Gypsy Laddie (Campbell/Sharp, No. 27)",
     time: ["night"],
     season: [],
     lyricsKey: "campbellsharp27",
     stanzaIndex: 3,
     // notes: "Fourth stanza, version D. Night contrast: luxury then ruin. Sung by Mrs. Jane Gentry at Hot Springs, NC, Sept. 14, 1916."
   },
-  // --- The Grey Cock (Campbell/Sharp 1917, No. 30) ---
+  // --- The Grey Cock (Campbell/Sharp, No. 30) ---
   {
     text: "All on one summer's evening when the fever were a-dawning\nI heard a fair maid make a mourn.\nShe was a-weeping for her father and a-grieving for her mother,\nAnd a-thinking all on her true love John.",
-    source: "The Grey Cock (Campbell/Sharp 1917, No. 30)",
+    source: "The Grey Cock (Campbell/Sharp, No. 30)",
     time: ["evening"],
     season: ["summer"],
     lyricsKey: "campbellsharp30",
     stanzaIndex: 0,
     // notes: "Opening stanza. Evening and summer both explicit. 'Fever were a-dawning' = fever at dusk/eventide. Sung by Mrs. Jane Gentry at Hot Springs, NC, Aug. 24, 1916."
   },
-  // --- The Rejected Lover (Campbell/Sharp 1917, No. 56) ---
+  // --- The Rejected Lover (Campbell/Sharp, No. 56) ---
   {
     text: "One cold winter night when I was a-riding\nAnd a-drinking of good wine,\nAnd a-thinking of the pretty little girl\nThat stole that heart of mine.",
-    source: "The Rejected Lover (Campbell/Sharp 1917, No. 56)",
+    source: "The Rejected Lover (Campbell/Sharp, No. 56)",
     time: ["night"],
     season: ["winter"],
     lyricsKey: "campbellsharp56",
     stanzaIndex: 5,
     // notes: "Sixth stanza, version A. Night and winter both explicit. Sung by Mrs. Jane Gentry at Hot Springs, NC, Aug. 25, 1916."
   },
-  // --- The Dear Companion (Campbell/Sharp 1917, No. 58) ---
+  // --- The Dear Companion (Campbell/Sharp, No. 58) ---
   {
     text: "Last night while you were sweetly sleeping\nDreaming of some sweet repose,\nWhile me a poor girl broken, broken hearted,\nListen to the wind that blows.",
-    source: "The Dear Companion (Campbell/Sharp 1917, No. 58)",
+    source: "The Dear Companion (Campbell/Sharp, No. 58)",
     time: ["night"],
     season: [],
     lyricsKey: "campbellsharp58",
     stanzaIndex: 2,
     // notes: "Third stanza. His sleep vs. her wakeful grief. Sung by Mrs. Rosie Hensley at Carmen, NC, Aug. 8, 1916."
   },
-  // --- Young Hunting (Campbell/Sharp 1917, No. 15) ---
+  // --- Young Hunting (Campbell/Sharp, No. 15) ---
   {
     text: "Come in, come in, my own true love,\nAnd stay all night with me,\nFor I have a bed and a very fine bed,\nAnd I'll give it up to thee.",
-    source: "Young Hunting (Campbell/Sharp 1917, No. 15)",
+    source: "Young Hunting (Campbell/Sharp, No. 15)",
     time: ["night"],
     season: [],
     lyricsKey: "campbellsharp15",
     stanzaIndex: 0,
     // notes: "Opening stanza, version B. Night invitation; stands alone without plot context. Sung by Mr. Floyd Chandler at Alleghany, NC, Aug. 29, 1916. Stanza reconstructed from score notation."
   },
-  // --- The Wife of Usher's Well (Campbell/Sharp 1917, No. 19) ---
+  // --- The Wife of Usher's Well (Campbell/Sharp, No. 19) ---
   {
     text: "Rise up, rise up, said the oldest one,\nI think it's almost day.\nSee my Saviour standing by\nTo welcome us three home.",
-    source: "The Wife of Usher's Well (Campbell/Sharp 1917, No. 19)",
+    source: "The Wife of Usher's Well (Campbell/Sharp, No. 19)",
     time: ["morning"],
     season: [],
     lyricsKey: "campbellsharp19",
     stanzaIndex: 6,
     // notes: "Seventh stanza, version C. Ghost children departing at almost-day. 'Almost day' explicit. Sung by Mr. T. Jeff Stockton at Flag Pond, TN, Sept. 4, 1916."
   },
-  // --- The Cherry-Tree Carol (Campbell/Sharp 1917, No. 13) ---
+  // --- The Cherry-Tree Carol (Campbell/Sharp, No. 13) ---
   {
     text: "On old Christmas morning my birthday shall be,\nWhen the hills and high mountains shall bow unto me.",
-    source: "The Cherry-Tree Carol (Campbell/Sharp 1917, No. 13)",
+    source: "The Cherry-Tree Carol (Campbell/Sharp, No. 13)",
     time: ["morning"],
     season: ["winter"],
     lyricsKey: "campbellsharp13",
     stanzaIndex: 7,
     // notes: "Eighth stanza, version A. Two lines only — the baby speaks from the womb. Christmas morning explicit; winter implied. Variant reading in edition: 'or, it'll be just before day'. Sung by Mrs. Tom Rice at Big Laurel, NC, Aug. 17, 1916."
   },
-  // --- Lady Isabel and the Elf Knight (Campbell/Sharp 1917, No. 2) ---
+  // --- Lady Isabel and the Elf Knight (Campbell/Sharp, No. 2) ---
   {
     text: "She rode on the milk-white steed,\nAnd by her went the bay,\nAnd together they came to her father's castle\nThree hours before it was day.",
-    source: "Lady Isabel and the Elf Knight (Campbell/Sharp 1917, No. 2)",
+    source: "Lady Isabel and the Elf Knight (Campbell/Sharp, No. 2)",
     time: ["morning"],
     season: [],
     lyricsKey: "campbellsharp2",
@@ -1387,90 +1379,90 @@ export const QUOTES = [
     // notes: "Tenth stanza, version A. Pre-dawn return; 'three hours before it was day' is the time marker. Sung by Miss Elizabeth Coit at Amherst, MA, July 1916."
   },
   // ── karpeles-newfoundland (─────────────────────────────)
-  // --- The Lover's Ghost (Karpeles 1934, Vol. II, No. 7) ---
+  // --- The Lover's Ghost (Karpeles Newfoundland, No. 7) ---
   {
     text: "Crow up, crow up, my little bird,\nAnd don't you crow before day,\nAnd your cage shall be made of the glittering gold,\nAnd your doors of the silver so gay.",
-    source: "The Lover's Ghost (Karpeles 1934, Vol. II, No. 7)",
+    source: "The Lover's Ghost (Karpeles Newfoundland, No. 7)",
     time: ["night", "morning"],
     season: [],
     lyricsKey: "karpelesLoversGhost",
     stanzaIndex: 3,
     // notes: "Stanza 4 of the Karpeles Newfoundland text. The plea to hold back the dawn, with gilded cage imagery. Sung by Mr Matthew Aylward at Stock Cove, Bonavista Bay. Text confirmed from 1934 OUP edition Vol. II p. 107. Related to Child 248 / The Grey Cock."
   },
-  // --- Sweet William's Ghost (Karpeles 1934, Vol. I, No. 1) ---
+  // --- Sweet William's Ghost (Karpeles Newfoundland, No. 1) ---
   {
     text: "O she took hold of his white holland sheet,\nAnd tied it around her tight,\nAnd it's over the hills of a cold winter's night\nIn a dead man's company.",
-    source: "Sweet William's Ghost (Karpeles 1934, Vol. I, No. 1)",
+    source: "Sweet William's Ghost (Karpeles Newfoundland, No. 1)",
     time: ["night"],
     season: ["winter"],
     lyricsKey: "karpelesSweetWilliamsGhost",
     stanzaIndex: 8,
     // notes: "Stanza 9 of the Karpeles Newfoundland text (stanzas printed in two columns in the score). Night and winter both explicit. Lady Margaret follows the ghost over the winter hills. Text confirmed from 1934 OUP edition Vol. I p. 2. Child 77."
   },
-  // --- Henry Martin (Karpeles 1934, Vol. II, No. 6) ---
+  // --- Henry Martin (Karpeles Newfoundland, No. 6) ---
   {
     text: "He had not been sailing but a long winter's night\nAnd part of a short winter's day\nWhen a long, lofty ship he chanced to spy,\nCame bearing down under their lee.",
-    source: "Henry Martin (Karpeles 1934, Vol. II, No. 6)",
+    source: "Henry Martin (Karpeles Newfoundland, No. 6)",
     time: ["night"],
     season: ["winter"],
     lyricsKey: "karpelesHenryMartin",
     stanzaIndex: 2,
     // notes: "Stanza 3. Night and winter both explicit. Pre-dawn sea watch. Text as sung by Mr John Neville at Clarke's Beach, Conception Bay; tune from Mr Joseph Jackman at Grole, Hermitage Bay. Confirmed from 1934 OUP edition Vol. II p. 104. Child 250."
   },
-  // --- The Winter's Gone and Past (Karpeles 1934, Vol. II, No. 10) ---
+  // --- The Winter's Gone and Past (Karpeles Newfoundland, No. 10) ---
   {
     text: "The winter's gone and past and the summer's come at last,\nAnd the small birds are singing on each tree,\nAnd the hearts of those are glad, but mine is low and sad\nSince my true love is sent far from me.",
-    source: "The Winter's Gone and Past (Karpeles 1934, Vol. II, No. 10)",
+    source: "The Winter's Gone and Past (Karpeles Newfoundland, No. 10)",
     time: [],
     season: ["summer"],
     lyricsKey: "karpelesWintersGone",
     stanzaIndex: 0,
     // notes: "Opening stanza. Summer explicit; seasonal arrival image is the entire emotional engine of the stanza. No time-of-day marker. Sung by Mrs Elizabeth Farrell at Beau Bois, Placentia Bay. Confirmed from 1934 OUP edition Vol. II p. 119."
   },
-  // --- Proud Nancy (Karpeles 1934, Vol. I, No. 9) ---
+  // --- Proud Nancy (Karpeles Newfoundland, No. 9) ---
   {
     text: "As I roved out one evening, all in the month of May,\nThe trees were in full blossom and the meadows in full gay,\nI fell in love with Nancy, she's the girl whom I adore,\nShe is my joy and fancy. How can I love her more?",
-    source: "Proud Nancy (Karpeles 1934, Vol. I, No. 9)",
+    source: "Proud Nancy (Karpeles Newfoundland, No. 9)",
     time: ["evening"],
     season: ["spring"],
     lyricsKey: "karpelesProudNancy",
     stanzaIndex: 0,
     // notes: "Opening stanza. Evening and May both explicit. Sung by Mr Robert Morgan at Blow-me-down, Conception Bay. Confirmed from 1934 OUP edition Vol. I p. 47."
   },
-  // --- Earl Brand (Karpeles 1934, Vol. II, No. 2) ---
+  // --- Earl Brand (Karpeles Newfoundland, No. 2) ---
   {
     text: "Lord Robert he died about midnight,\nLady Margaret she died before day.\nI hope every couple that may now be together\nMay find more enjoyment than they.",
-    source: "Earl Brand (Karpeles 1934, Vol. II, No. 2)",
+    source: "Earl Brand (Karpeles Newfoundland, No. 2)",
     time: ["night", "morning"],
     season: [],
     lyricsKey: "karpelesEarlBrand",
     stanzaIndex: 9,
     // notes: "Final stanza (stanza 10). Midnight and before-day both explicit. The closing couplet is a death announcement and an elegy compressed into two lines. Sung by Mr Thomas Chaney at Colliers, Conception Bay. Confirmed from 1934 OUP edition Vol. II p. 83. Child 7."
   },
-  // --- Lamkin (Karpeles 1934, Vol. I, No. 4) ---
+  // --- Lamkin (Karpeles Newfoundland, No. 4) ---
   {
     text: "How can I come downstairs\nOn a cold winter's night,\nNo spark of fire burning,\nNo candle alight.\nYou've got two white holland sheets\nAs white as the snow,\nI pray you come down\nBy the light of them so.",
-    source: "Lamkin (Karpeles 1934, Vol. I, No. 4)",
+    source: "Lamkin (Karpeles Newfoundland, No. 4)",
     time: ["night"],
     season: ["winter"],
     lyricsKey: "karpelesLamkin",
     stanzaIndex: 4,
     // notes: "Stanza 5. Night and winter both explicit. The nurse lures the lady downstairs — darkness, cold, the uncanny invitation of the white sheets. Sung by Mrs Theresa Corbett at Conception Harbour (text with verbal alterations from Mrs Violet McCabe at North River). Confirmed from 1934 OUP edition Vol. I p. 17. Child 93."
   },
-  // --- Young Floro (Karpeles 1934, Vol. II, No. 9) ---
+  // --- Young Floro (Karpeles Newfoundland, No. 9) ---
   {
     text: "As I roved out one morning in Spring,\nTo hear the larks whistle and the nightingales sing,\nO green grow the rushes all covered with young,\nAnd small birds all around me how joyful they sound.",
-    source: "Young Floro (Karpeles 1934, Vol. II, No. 9)",
+    source: "Young Floro (Karpeles Newfoundland, No. 9)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "karpelesYoungFloro",
     stanzaIndex: 0,
     // notes: "Opening stanza. Morning and spring both explicit. Larks, nightingales, rushes — a rich spring morning pastoral. Sung by Mrs Bridget Hall at North River, Conception Bay. Confirmed from 1934 OUP edition Vol. II p. 114."
   },
-  // --- Sweet William (Karpeles 1934, Vol. I, No. 12) ---
+  // --- Sweet William (Karpeles Newfoundland, No. 12) ---
   {
     text: "It's early, early all in the Spring,\nMy love roved out for to serve the king,\nWith the raging seas and the winds blowing high,\nWhich parted me from my sailor boy.",
-    source: "Sweet William (Karpeles 1934, Vol. I, No. 12)",
+    source: "Sweet William (Karpeles Newfoundland, No. 12)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "karpelesSweetWilliamSong",
@@ -1478,30 +1470,30 @@ export const QUOTES = [
     // notes: "Opening stanza. 'Early, early' implies pre-dawn departure; spring explicit. Note: this is the broadside song 'Sweet William' (not the ballad Sweet William's Ghost). Sung by Mrs Bride Curran at Conception Harbour. Confirmed from 1934 OUP edition Vol. I p. 59. See also Appalachians No. 106."
   },
   // ── gardiner-hampshire (────────────────────────────────)
-  // --- The New-Mown Hay (Gardiner, Folk-Songs from Hampshire, 1909) ---
+  // --- The New-Mown Hay (Gardiner, Folk-Songs from Hampshire) ---
   {
     text: "As I walked forth one summer's morn\nHard by a river side,\nWhere yellow cowslips did adorn\nThe blushing field with pride,\nI spied a damsel on the grass,\nMore blooming than the may;\nHer looks the Queen of Love surpassed,\nAmong the new-mown hay.",
-    source: "The New-Mown Hay (Gardiner, Folk-Songs from Hampshire, 1909)",
+    source: "The New-Mown Hay (Gardiner, Folk-Songs from Hampshire)",
     time: ["morning"],
     season: ["summer"],
     lyricsKey: "gardinerNewMownHay",
     stanzaIndex: 0,
     // notes: "Opening stanza. Collected by George B. Gardiner; pianoforte accompaniment by Gustav von Holst."
   },
-  // --- The Happy Stranger (Gardiner, Folk-Songs from Hampshire, 1909) ---
+  // --- The Happy Stranger (Gardiner, Folk-Songs from Hampshire) ---
   {
     text: "As I was a-walking one morning in spring\nTo hear the small birds whistle and the nightingales sing,\nI heard a fair maid making sorrowful moan,\nSaying, \"I am a stranger and far from my home.\"",
-    source: "The Happy Stranger (Gardiner, Folk-Songs from Hampshire, 1909)",
+    source: "The Happy Stranger (Gardiner, Folk-Songs from Hampshire)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "gardinerHappyStranger",
     stanzaIndex: 0,
     // notes: "Opening stanza. Collected by George B. Gardiner; pianoforte accompaniment by Gustav von Holst."
   },
-  // --- The Squire and the Thresher (Gardiner, Folk-Songs from Hampshire, 1909) ---
+  // --- The Squire and the Thresher (Gardiner, Folk-Songs from Hampshire) ---
   {
     text: "One morning this squire all on the highway\nHe met the poor thresherman and unto him did say,\n\"You have many children and that I well do know,\nHow can you maintain them as well as you do?\"",
-    source: "The Squire and the Thresher (Gardiner, Folk-Songs from Hampshire, 1909)",
+    source: "The Squire and the Thresher (Gardiner, Folk-Songs from Hampshire)",
     time: ["morning"],
     season: [],
     lyricsKey: "gardinerSquireThresher",
@@ -1510,7 +1502,7 @@ export const QUOTES = [
   },
   {
     text: "And when I come home from my labour at night\nTo my wife and my family in whom I take delight,\nWhen my children come around me with their prittle-prattling noise,\nNow these are the riches a poor man enjoys.",
-    source: "The Squire and the Thresher (Gardiner, Folk-Songs from Hampshire, 1909)",
+    source: "The Squire and the Thresher (Gardiner, Folk-Songs from Hampshire)",
     time: ["night"],
     season: [],
     lyricsKey: "gardinerSquireThresher",
@@ -1518,70 +1510,70 @@ export const QUOTES = [
     // notes: "Verse 5. Collected by George B. Gardiner; pianoforte accompaniment by Gustav von Holst."
   },
   // ── lomax (─────────────────────────────────────────────)
-  // --- The Cowboy's Dream (Lomax 1910) ---
+  // --- The Cowboy's Dream (Lomax, Cowboy Songs) ---
   {
     text: "Last night as I lay on the prairie,\nAnd looked at the stars in the sky,\nI wondered if ever a cowboy\nWould drift to that sweet by and by.",
-    source: "The Cowboy's Dream (Lomax 1910)",
+    source: "The Cowboy's Dream (Lomax, Cowboy Songs)",
     time: ["night"],
     season: [],
     lyricsKey: "lomaxCowboysDream",
     stanzaIndex: 0,
     // notes: "Opening stanza. Traditional/anonymous. Night explicit. Collected by Lomax; published in Cowboy Songs and Other Frontier Ballads (Sturgis & Walton, 1910), p. 18."
   },
-  // --- Whoopee-Ti-Yi-Yo, Git Along Little Dogies (Lomax 1910) ---
+  // --- Whoopee-Ti-Yi-Yo, Git Along Little Dogies (Lomax, Cowboy Songs) ---
   {
     text: "As I was a-walking one morning for pleasure,\nI spied a cow-puncher a-riding alone;\nHis hat was throwed back and his spurs was a-jingling,\nAs he approached me a-singing this song.",
-    source: "Whoopee-Ti-Yi-Yo, Git Along Little Dogies (Lomax 1910)",
+    source: "Whoopee-Ti-Yi-Yo, Git Along Little Dogies (Lomax, Cowboy Songs)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "lomaxWhoopee",
     stanzaIndex: 0,
     // notes: "Opening stanza. Traditional/anonymous. Morning explicit; spring tagged via following verse ('It's early in the spring that we round up the dogies'). Collected by Lomax; published in Cowboy Songs and Other Frontier Ballads (Sturgis & Walton, 1910), p. 87."
   },
-  // --- Home on the Range (words: Brewster Higley, 1873; collected Lomax 1910) ---
+  // --- Home on the Range (Brewster Higley; Lomax, Cowboy Songs) ---
   {
     text: "How often at night when the heavens are bright\nWith the light from the glittering stars,\nHave I stood here amazed and asked as I gazed\nIf their glory exceeds that of ours.",
-    source: "Home on the Range (words: Brewster Higley, 1873; collected Lomax 1910)",
+    source: "Home on the Range (Brewster Higley; Lomax, Cowboy Songs)",
     time: ["night"],
     season: [],
     lyricsKey: "lomaxHomeOnTheRange",
     stanzaIndex: 3,
     // notes: "Fourth stanza in the Lomax 1910 version. Words originally by Dr. Brewster M. Higley VI as the poem 'My Western Home' (1873); music by Daniel E. Kelley. Lomax is collector only. Night explicit. Published in Cowboy Songs and Other Frontier Ballads (Sturgis & Walton, 1910), p. 39."
   },
-  // --- Night-Herding Song (Harry Stephens; collected Lomax 1910) ---
+  // --- Night-Herding Song (Harry Stephens; Lomax, Cowboy Songs) ---
   {
     text: "Oh, lay still, dogies, since you have laid down,\nStretch away out on the big open ground;\nSnore loud, little dogies, and drown the wild sound\nThat will all go away when the day rolls round.",
-    source: "Night-Herding Song (Harry Stephens; collected Lomax 1910)",
+    source: "Night-Herding Song (Harry Stephens; Lomax, Cowboy Songs)",
     time: ["night"],
     season: [],
     lyricsKey: "lomaxNightHerding",
     stanzaIndex: 3,
     // notes: "Fourth/final stanza. Written by Harry Stephens (Texas cowboy, c. 1890); first published by Lomax in Cowboy Songs and Other Frontier Ballads (Sturgis & Walton, 1910), p. 324. Night explicit throughout. Stephens recorded the song for the Library of Congress in the 1940s."
   },
-  // --- The Dying Cowboy (Lomax 1910) ---
+  // --- The Dying Cowboy (Lomax, Cowboy Songs) ---
   {
     text: "Yes, we buried him there on the lone prairie\nWhere the owl all night hoots mournfully,\nAnd the blizzard beats and the winds blow free\nO'er his lowly grave on the lone prairie.",
-    source: "The Dying Cowboy (Lomax 1910)",
+    source: "The Dying Cowboy (Lomax, Cowboy Songs)",
     time: ["night"],
     season: ["winter"],
     lyricsKey: "lomaxDyingCowboy",
     stanzaIndex: 10,
     // notes: "Near-final stanza of a long ballad. Traditional/anonymous. Night explicit ('all night'); winter tagged via 'blizzard'. Collected by Lomax; published in Cowboy Songs and Other Frontier Ballads (Sturgis & Walton, 1910), p. 3."
   },
-  // --- The Kansas Line (Lomax 1910) ---
+  // --- The Kansas Line (Lomax, Cowboy Songs) ---
   {
     text: "Think I heard the noisy cook say,\n\"Wake up, boys, it's near the break of day\" —\nWay up on the Kansas line,\nAnd slowly we will rise with the sleepy feeling eyes,\nWay up on the Kansas line.",
-    source: "The Kansas Line (Lomax 1910)",
+    source: "The Kansas Line (Lomax, Cowboy Songs)",
     time: ["morning"],
     season: [],
     lyricsKey: "lomaxKansasLine",
     stanzaIndex: 4,
     // notes: "Fifth stanza. Traditional/anonymous. Morning explicit ('break of day'). Collected by Lomax; published in Cowboy Songs and Other Frontier Ballads (Sturgis & Walton, 1910), p. 22."
   },
-  // --- The Railroad Corral (Joseph Mills Hanson, 1904; collected Lomax 1910) ---
+  // --- The Railroad Corral (Joseph Mills Hanson, 1904; Lomax, Cowboy Songs) ---
   {
     text: "Oh, we're up in the morning ere breaking of day,\nThe chuck-wagon's busy, the flapjacks in play;\nThe herd is astir o'er hillside and vale,\nWith the night riders rounding them into the trail.",
-    source: "The Railroad Corral (Joseph Mills Hanson, 1904; collected Lomax 1910)",
+    source: "The Railroad Corral (Joseph Mills Hanson, 1904; Lomax, Cowboy Songs)",
     time: ["morning"],
     season: [],
     lyricsKey: "lomaxRailroadCorral",
@@ -1590,37 +1582,37 @@ export const QUOTES = [
   },
   {
     text: "But the longest of days must reach evening at last,\nThe hills all climbed, the creeks all past;\nThe tired herd droops in the yellowing light;\nLet them loaf if they will, for the railroad's in sight.",
-    source: "The Railroad Corral (Joseph Mills Hanson, 1904; collected Lomax 1910)",
+    source: "The Railroad Corral (Joseph Mills Hanson, 1904; Lomax, Cowboy Songs)",
     time: ["evening"],
     season: [],
     lyricsKey: "lomaxRailroadCorral",
     stanzaIndex: 4,
     // notes: "Fifth stanza. Written by Joseph Mills Hanson (1876–1960). Evening explicit ('yellowing light', end of day arc). Same source as id 7."
   },
-  // --- Little Joe the Wrangler (N. Howard Thorp, 1898; collected Lomax 1910) ---
+  // --- Little Joe the Wrangler (N. Howard Thorp, 1898; Lomax, Cowboy Songs) ---
   {
     text: "Next morning, just at daybreak, we found where Rocket fell\nDown in the washout twenty feet below;\nBeneath the horse's body, a-lying where he fell,\nWas our little Texas stray, poor wrangler Joe.",
-    source: "Little Joe the Wrangler (N. Howard Thorp, 1898; collected Lomax 1910)",
+    source: "Little Joe the Wrangler (N. Howard Thorp, 1898; Lomax, Cowboy Songs)",
     time: ["morning"],
     season: [],
     lyricsKey: "lomaxLittleJoe",
-    stanzaIndex: 7,
+    stanzaIndex: 8,
     // notes: "Near-final stanza. Written by N. Howard 'Jack' Thorp (1867–1940); first published in Songs of the Cowboys (1908). Collected by Lomax; published in Cowboy Songs and Other Frontier Ballads (Sturgis & Walton, 1910), p. 167. Morning explicit ('just at daybreak')."
   },
-  // --- The Old Chisholm Trail (Lomax 1910) ---
+  // --- The Old Chisholm Trail (Lomax, Cowboy Songs) ---
   {
     text: "I'm up in the mornin' afore daylight,\nAnd afore I sleep the moon shines bright.",
-    source: "The Old Chisholm Trail (Lomax 1910)",
+    source: "The Old Chisholm Trail (Lomax, Cowboy Songs)",
     time: ["morning", "night"],
     season: [],
     lyricsKey: "lomaxChisholmTrail",
     stanzaIndex: 3,
     // notes: "Third stanza (approximate; the song is a long cumulative sequence of couplets). Traditional/anonymous. Morning and night both explicit in two lines. Collected by Lomax; published in Cowboy Songs and Other Frontier Ballads (Sturgis & Walton, 1910), p. 58."
   },
-  // --- When the Work is Done This Fall (D.J. O'Malley, 1893; collected Lomax 1910) ---
+  // --- When the Work is Done This Fall (D.J. O'Malley, 1893; Lomax, Cowboy Songs) ---
   {
     text: "That very night this cowboy went out to stand his guard;\nThe night was dark and cloudy and storming very hard;\nThe cattle they got frightened and rushed in wild stampede,\nThe cowboy tried to head them while riding at full speed.",
-    source: "When the Work is Done This Fall (D.J. O'Malley, 1893; collected Lomax 1910)",
+    source: "When the Work is Done This Fall (D.J. O'Malley, 1893; Lomax, Cowboy Songs)",
     time: ["night"],
     season: ["autumn"],
     lyricsKey: "lomaxWorkDoneThisFall",
@@ -1629,7 +1621,7 @@ export const QUOTES = [
   },
   {
     text: "Poor Charlie was buried at sunrise, no tombstone at his head,\nNothing but a little board; and this is what it said:\n\"Charlie died at daybreak, he died from a fall,\nAnd he'll not see his mother when the work's all done this fall.\"",
-    source: "When the Work is Done This Fall (D.J. O'Malley, 1893; collected Lomax 1910)",
+    source: "When the Work is Done This Fall (D.J. O'Malley, 1893; Lomax, Cowboy Songs)",
     time: ["morning"],
     season: ["autumn"],
     lyricsKey: "lomaxWorkDoneThisFall",
@@ -1637,10 +1629,10 @@ export const QUOTES = [
     // notes: "Final stanza. Written by D.J. O'Malley. Morning explicit ('sunrise', 'daybreak'); autumn tagged via 'this fall'. Same source as id 11."
   },
   // ── lomax-1934 (────────────────────────────────────────)
-  // --- Gerry's Rocks (Lomax 1934) ---
+  // --- Gerry's Rocks (Lomax, American Ballads) ---
   {
     text: "'Twas on one Sunday morning, as you shall quickly hear,\nOur logs were piled up mountain-high, we could not keep them clear;\n\"Turn out, brave boys,\" the foreman cried, with a voice devoid of fear,\n\"And we'll break up the jam on Gerry's rock and for Eagletown we'll steer.\"",
-    source: "Gerry's Rocks (Lomax 1934)",
+    source: "Gerry's Rocks (Lomax, American Ballads)",
     time: ["morning"],
     season: [],
     lyricsKey: "lomax1934GerrysRocks",
@@ -1648,40 +1640,40 @@ export const QUOTES = [
     // notes: "Second stanza. Text verified against 1934 edition p. 448-449. Classic lumberjack ballad, traditional/anonymous, North American origin. Lomax sourced from Franz L. Rickaby's Ballads and Songs of the Shanty-Boy. Sunday morning explicit. Lomax's version uses 'Eagletown' rather than 'Agonstown' found in other variants."
   },
   // ── karpeles-appalachian (──────────────────────────────)
-  // --- Geordie (Sharp/Karpeles 1932, Vol. I, No. 28) ---
+  // --- Geordie (Sharp/Karpeles, No. 28) ---
   {
     text: "As I walked out over London Bridge,\nOne misty morning early,\nI overheard a fair, pretty maid\nWas lamenting for her Geordie.",
-    source: "Geordie (Sharp/Karpeles 1932, Vol. I, No. 28)",
+    source: "Geordie (Sharp/Karpeles, No. 28)",
     time: ["morning"],
     season: [],
     lyricsKey: "karpelesappalachianGeordie",
     stanzaIndex: 0,
     // notes: "Opening stanza. Morning tag explicit: 'one misty morning early'. The mist and bridge are atmospheric. Standard English broadside opening; confirmed in Sharp's Appalachian manuscripts (VWML CJS2/9/423 and CJS2/9/2542). Child 209."
   },
-  // --- The Cruel Ship's Carpenter (Sharp/Karpeles 1932, Vol. I, No. 39) ---
+  // --- The Cruel Ship's Carpenter (Sharp/Karpeles, No. 39) ---
   {
     text: "Early one morning before the break of day,\nHe went to his Polly, these words he did say:\n\"O Polly, O Polly, you must go with me,\nBefore we are married my friends for to see.\"",
-    source: "The Cruel Ship's Carpenter (Sharp/Karpeles 1932, Vol. I, No. 39)",
+    source: "The Cruel Ship's Carpenter (Sharp/Karpeles, No. 39)",
     time: ["morning"],
     season: [],
     lyricsKey: "karpelesappalachianCruelShipsCarpenter",
     stanzaIndex: 0,
     // notes: "Opening stanza, standard Appalachian text. Morning marker explicit: 'before the break of day'. Pre-dawn approach; stands alone as image without murder context. Confirmed in multiple Sharp-collected versions including Sharp R (Clinton Fitzgerald, Royal Orchard, Afton, VA, April 28, 1918)."
   },
-  // --- Little Musgrave and Lady Barnard (Sharp/Karpeles 1932, Vol. I, No. 23) ---
+  // --- Little Musgrave and Lady Barnard (Sharp/Karpeles, No. 23) ---
   {
     text: "Little Matty Groves he sleeps tonight,\nKeeping your lady warm.",
-    source: "Little Musgrave and Lady Barnard (Sharp/Karpeles 1932, Vol. I, No. 23)",
+    source: "Little Musgrave and Lady Barnard (Sharp/Karpeles, No. 23)",
     time: ["night"],
     season: [],
     lyricsKey: "karpelesappalachianLittleMusgrave",
     stanzaIndex: 6,
     // notes: "The page's message to Lord Darnell. Night explicit; warmth in the dark. Two lines stand alone as image. Version A, sung by Mrs. Becky Griffin, Big Laurel, NC, Aug. 17, 1916. Not in refrain-quotes-campbell-sharp.json — confirmed absent."
   },
-  // --- Fair Margaret and Sweet William (Sharp/Karpeles 1932, Vol. I, No. 17) ---
+  // --- Fair Margaret and Sweet William (Sharp/Karpeles, No. 17) ---
   {
     text: "Sweet William rose one morning bright\nAnd dressed himself in blue.",
-    source: "Fair Margaret and Sweet William (Sharp/Karpeles 1932, Vol. I, No. 17)",
+    source: "Fair Margaret and Sweet William (Sharp/Karpeles, No. 17)",
     time: ["morning"],
     season: [],
     lyricsKey: "karpelesappalachianFairMargaret",
@@ -1690,47 +1682,47 @@ export const QUOTES = [
   },
   {
     text: "The day being gone and the night being come,\nWhen most men were asleep,\nSweet William spied Lady Margaret's ghost\nA-standing at his bed feet.",
-    source: "Fair Margaret and Sweet William (Sharp/Karpeles 1932, Vol. I, No. 17)",
+    source: "Fair Margaret and Sweet William (Sharp/Karpeles, No. 17)",
     time: ["night"],
     season: [],
     lyricsKey: "karpelesappalachianFairMargaret",
     stanzaIndex: 4,
     // notes: "Ghost-at-the-foot-of-the-bed stanza. Night and sleep both explicit. 'When most men were asleep' is the time marker; ghost appearance is the image. Mid-ballad. Appalachian text from Jeff Stockton / related versions in Sharp/Karpeles 1932."
   },
-  // --- Every Night When the Sun Goes In (Sharp/Karpeles 1932, Vol. II) ---
+  // --- Every Night When the Sun Goes In (Sharp/Karpeles) ---
   {
     text: "Every night when the sun goes in,\nEvery night when the sun goes in,\nI hang down my head and mournful cry.",
-    source: "Every Night When the Sun Goes In (Sharp/Karpeles 1932, Vol. II)",
+    source: "Every Night When the Sun Goes In (Sharp/Karpeles)",
     time: ["evening"],
     season: [],
     lyricsKey: "karpelesappalachianEveryNight",
     stanzaIndex: 0,
     // notes: "Opening verse. Evening marker explicit: 'when the sun goes in'. Triple repetition is structural to the song. Refrain ('True love, don't weep') omitted — first verse stands alone. Sung by Mrs. Wilson, Pineville, Bell County, KY, 1917. Text also reprinted in Lomax/Lomax, American Ballads and Folk Songs (1934), p. 149, which cites Sharp/Karpeles 1932 Vol. II as source."
   },
-  // --- The Chickens They Are Crowing (Sharp/Karpeles 1932, Vol. II) ---
+  // --- The Chickens They Are Crowing (Sharp/Karpeles) ---
   {
     text: "The chickens they are crowing, a-crowing, a-crowing,\nThe chickens they are crowing, for it is almost daylight.",
-    source: "The Chickens They Are Crowing (Sharp/Karpeles 1932, Vol. II)",
+    source: "The Chickens They Are Crowing (Sharp/Karpeles)",
     time: ["morning"],
     season: [],
     lyricsKey: "karpelesappalachianChickens",
     stanzaIndex: 0,
     // notes: "Opening verse, play-party section (new to 1932 edition; not in 1917 Campbell/Sharp). Dawn-threshold morning marker explicit: 'almost daylight'. Collected from Ben Finlay, Goose Creek (Little Goose Creek), Clay Co., KY, 1917."
   },
-  // --- Bright Morning Star (Sharp/Karpeles 1932, Vol. II) ---
+  // --- Bright Morning Star (Sharp/Karpeles) ---
   {
     text: "Bright morning stars are rising,\nBright morning stars are rising,\nBright morning stars are rising,\nDay is a-breaking in my soul.",
-    source: "Bright Morning Star (Sharp/Karpeles 1932, Vol. II)",
+    source: "Bright Morning Star (Sharp/Karpeles)",
     time: ["morning"],
     season: [],
     lyricsKey: "karpelesappalachianBrightMorningStar",
     stanzaIndex: 0,
     // notes: "Opening verse, hymns section (new to 1932 edition; not in 1917 Campbell/Sharp). Morning and pre-dawn markers explicit. Appalachian spiritual rather than British-derived ballad — distinct tradition within the collection."
   },
-  // --- One Morning in May (Sharp/Karpeles 1932, Vol. II) ---
+  // --- One Morning in May (Sharp/Karpeles) ---
   {
     text: "One morning in May, as I carelessly did stray,\nI met a bold grenadier on my way.",
-    source: "One Morning in May (Sharp/Karpeles 1932, Vol. II)",
+    source: "One Morning in May (Sharp/Karpeles)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "karpelesappalachianOneMorningInMay",
@@ -1738,200 +1730,200 @@ export const QUOTES = [
     // notes: "Opening two lines. Morning and spring both explicit. Collected in Kentucky. Cross-checked against refrain-quotes-sharp.json — not a duplicate (Sharp 1916 has Down by the Green Bushes, a different song with a similar opening formula)."
   },
   // ── baring-gould (──────────────────────────────────────)
-  // --- Upon a Sunday Morning (Baring-Gould/Sharp, Songs of the West, No. 3) ---
+  // --- Upon a Sunday Morning (Songs of the West, No. 3) ---
   {
     text: "Upon a Sunday morning, when Spring was in its prime,\nAlong the Church-lane tripping, I heard the Church-bells chime.",
-    source: "Upon a Sunday Morning (Baring-Gould/Sharp, Songs of the West, No. 3)",
+    source: "Upon a Sunday Morning (Songs of the West, No. 3)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "baringgould3",
     stanzaIndex: 0,
     // notes: "Stanza 1, lines 1–2. Collected from Robert Hard, South Brent. Baring-Gould notes the melody is not a genuine folk tune, but the text was collected from a singer."
   },
-  // --- The Hal-an-Tow (Baring-Gould/Sharp, Songs of the West, No. 24) ---
+  // --- The Hal-an-Tow (Songs of the West, No. 24) ---
   {
     text: "And we were up as soon as the day,\nFor to fetch the Summer home, O!\nThe Summer, and the May,\nNow the Winter is a gone, O!",
-    source: "The Hal-an-Tow (Baring-Gould/Sharp, Songs of the West, No. 24)",
+    source: "The Hal-an-Tow (Songs of the West, No. 24)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "baringgould24",
     stanzaIndex: 0,
     // notes: "Chorus. Helston Furry Dance, sung on May 8th annually. 'Summer home' is the ritual bringing-in of the season — the song is a spring ceremony, not a summer one."
   },
-  // --- The Mole-Catcher (Baring-Gould/Sharp, Songs of the West, No. 45) ---
+  // --- The Mole-Catcher (Songs of the West, No. 45) ---
   {
     text: "On a moon-shiny night, O! 'tis my delight,\nA-catching o' moles.",
-    source: "The Mole-Catcher (Baring-Gould/Sharp, Songs of the West, No. 45)",
+    source: "The Mole-Catcher (Songs of the West, No. 45)",
     time: ["night"],
     season: [],
     lyricsKey: "baringgould45",
     stanzaIndex: 0,
     // notes: "Refrain, repeated throughout. Collected from Robert Hard, South Brent."
   },
-  // --- The Fox (Baring-Gould/Sharp, Songs of the West, No. 55) ---
+  // --- The Fox (Songs of the West, No. 55) ---
   {
     text: "The fox went out one winter night,\nAnd prayed the moon to give him light,\nFor he'd many a mile to go that night,\nBefore he reached his den, O!",
-    source: "The Fox (Baring-Gould/Sharp, Songs of the West, No. 55)",
+    source: "The Fox (Songs of the West, No. 55)",
     time: ["night"],
     season: ["winter"],
     lyricsKey: "baringgould55",
     stanzaIndex: 0,
     // notes: "Stanza 1. Collected from James Parsons. Night and winter both explicit."
   },
-  // --- At the Setting of the Sun (Baring-Gould/Sharp, Songs of the West, No. 62) ---
+  // --- At the Setting of the Sun (Songs of the West, No. 62) ---
   {
     text: "Come all you young fellows that carry a gun,\nBeware of late shooting when daylight is done;\nFor 'tis little you reckon what hazards you run,\nI shot my true love at the setting of the sun.",
-    source: "At the Setting of the Sun (Baring-Gould/Sharp, Songs of the West, No. 62)",
+    source: "At the Setting of the Sun (Songs of the West, No. 62)",
     time: ["evening"],
     season: [],
     lyricsKey: "baringgould62",
     stanzaIndex: 0,
     // notes: "Stanza 1. Collected from Samuel Fone by Mr. Sheppard, and again by Cecil Sharp from Louie Hooper and Lucy White at Hambridge, Somerset."
   },
-  // --- On a May Morning So Early (Baring-Gould/Sharp, Songs of the West, No. 73) ---
+  // --- On a May Morning So Early (Songs of the West, No. 73) ---
   {
     text: "As I walked out one May morning,\nOne May morning so early;\nI there espied a fair pretty maid,\nAll on the dew so pearly.\nO! 'twas sweet, sweet spring,\nMerry birds did sing,\nAll in the morning early.",
-    source: "On a May Morning So Early (Baring-Gould/Sharp, Songs of the West, No. 73)",
+    source: "On a May Morning So Early (Songs of the West, No. 73)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "baringgould73",
     stanzaIndex: 0,
     // notes: "Stanza 1. Morning and spring both explicit throughout."
   },
-  // --- Midsummer Carol (Baring-Gould/Sharp, Songs of the West, No. 89) ---
+  // --- Midsummer Carol (Songs of the West, No. 89) ---
   {
     text: "'Twas early I walked on a midsummer morning,\nThe fields and the meadows were deckèd and gay,\nThe small birds were singing, the woodlands a-ringing,\n'Twas early in the morning, at breaking of day.",
-    source: "Midsummer Carol (Baring-Gould/Sharp, Songs of the West, No. 89)",
+    source: "Midsummer Carol (Songs of the West, No. 89)",
     time: ["morning"],
     season: ["summer"],
     lyricsKey: "baringgould89",
     stanzaIndex: 0,
     // notes: "Stanza 1, lines 1–4. Collected from William Aggett of Chagford, Devon, October 1890. Morning and midsummer both explicit."
   },
-  // --- Tobacco is an Indian Weed (Baring-Gould/Sharp, Songs of the West, No. 95) ---
+  // --- Tobacco is an Indian Weed (Songs of the West, No. 95) ---
   {
     text: "Tobacco is an Indian weed,\nGrows green at morn, is cut down at eve.",
-    source: "Tobacco is an Indian Weed (Baring-Gould/Sharp, Songs of the West, No. 95)",
+    source: "Tobacco is an Indian Weed (Songs of the West, No. 95)",
     time: ["morning", "evening"],
     season: [],
     lyricsKey: "baringgould95",
     stanzaIndex: 0,
     // notes: "Stanza 1, lines 1–2. Morn and eve both explicit. Memento mori quality — the full verse turns on decay and mortality."
   },
-  // --- The Merry Haymakers (Baring-Gould/Sharp, Songs of the West, No. 109) ---
+  // --- The Merry Haymakers (Songs of the West, No. 109) ---
   {
     text: "The golden sun is shining bright,\nThe dew is off the field;\nTo us it is our main delight,\nThe fork and rake to wield.\nThe pipe and tabor both shall play,\nThe viols loudly ring,\nFrom morn till eve each summer day,\nAs we go hay-making.",
-    source: "The Merry Haymakers (Baring-Gould/Sharp, Songs of the West, No. 109)",
+    source: "The Merry Haymakers (Songs of the West, No. 109)",
     time: ["afternoon"],
     season: ["summer"],
     lyricsKey: "baringgould109",
     stanzaIndex: 0,
     // notes: "Stanza 1. 'From morn till eve each summer day' implies sustained midday/afternoon activity. Summer explicit."
   },
-  // --- The Trees They Are So High (Baring-Gould/Sharp, Songs of the West, No. 4) ---
+  // --- The Trees They Are So High (Songs of the West, No. 4) ---
   {
     text: "It is cold winter's night,\nYou and I must bide alone:\nWhilst my pretty lad is young\nAnd is growing.",
-    source: "The Trees They Are So High (Baring-Gould/Sharp, Songs of the West, No. 4)",
+    source: "The Trees They Are So High (Songs of the West, No. 4)",
     time: ["night"],
     season: ["winter"],
     lyricsKey: "baringgould4",
     stanzaIndex: 0,
     // notes: "Stanza 1, lines 5–8. Night and winter explicit."
   },
-  // --- The Bonny Bunch of Roses (Baring-Gould/Sharp, Songs of the West, No. 27) ---
+  // --- The Bonny Bunch of Roses (Songs of the West, No. 27) ---
   {
     text: "Beside the rolling ocean\nOne morning in the month of June,\nThe feathered warbling songsters\nWere sweetly changing note and tune.",
-    source: "The Bonny Bunch of Roses (Baring-Gould/Sharp, Songs of the West, No. 27)",
+    source: "The Bonny Bunch of Roses (Songs of the West, No. 27)",
     time: ["morning"],
     season: ["summer"],
     lyricsKey: "baringgould27",
     stanzaIndex: 0,
     // notes: "Stanza 1, lines 1–4. Morning and June explicit."
   },
-  // --- The Green Bushes (Baring-Gould/Sharp, Songs of the West, No. 43) ---
+  // --- The Green Bushes (Songs of the West, No. 43) ---
   {
     text: "As I was a walking one morning in May,\nTo hear the birds whistle, see lambkins at play,\nI spied a fair damsel, O sweetly sang she—\n'Down by the green bushes he thinks to meet me.'",
-    source: "The Green Bushes (Baring-Gould/Sharp, Songs of the West, No. 43)",
+    source: "The Green Bushes (Songs of the West, No. 43)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "baringgould43",
     stanzaIndex: 0,
     // notes: "Stanza 1. Morning and May explicit."
   },
-  // --- May-Day Carol (Baring-Gould/Sharp, Songs of the West, No. 47) ---
+  // --- May-Day Carol (Songs of the West, No. 47) ---
   {
     text: "Awake, awake ye pretty maids,\nAnd take the May-bush in,\nOr 'twill be gone ere tomorrow morn,\nAnd you'll have none within.",
-    source: "May-Day Carol (Baring-Gould/Sharp, Songs of the West, No. 47)",
+    source: "May-Day Carol (Songs of the West, No. 47)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "baringgould47",
     stanzaIndex: 3,
     // notes: "Stanza 4. Dawn-calling carol — sung at first light on May Day. Morning implicit ('ere tomorrow morn'); spring explicit."
   },
-  // --- The Oxen Ploughing (Baring-Gould/Sharp, Songs of the West, No. 57) ---
+  // --- The Oxen Ploughing (Songs of the West, No. 57) ---
   {
     text: "Come awaken in the morn,\nWhen the cock upon the dunghill\nIs a-blowing of his horn.",
-    source: "The Oxen Ploughing (Baring-Gould/Sharp, Songs of the West, No. 57)",
+    source: "The Oxen Ploughing (Songs of the West, No. 57)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "baringgould57",
     stanzaIndex: 1,
     // notes: "Stanza 2, lines 2–4. Morning explicit; spring from stanza 1 ('the ploughboy does in Spring')."
   },
-  // --- Jolly Fellows That Follow the Plough (Baring-Gould/Sharp, Songs of the West, No. 63) ---
+  // --- Jolly Fellows That Follow the Plough (Songs of the West, No. 63) ---
   {
     text: "'Twas early one morning at breaking of day,\nThe cocks were a crowing, the farmer did say,\nCome, arise, my good fellows, arise with good will,\nFor your horses want something their bellies to fill.",
-    source: "Jolly Fellows That Follow the Plough (Baring-Gould/Sharp, Songs of the West, No. 63)",
+    source: "Jolly Fellows That Follow the Plough (Songs of the West, No. 63)",
     time: ["morning"],
     season: [],
     lyricsKey: "baringgould63",
     stanzaIndex: 0,
     // notes: "Stanza 1, lines 1–4. Morning explicit."
   },
-  // --- The Spotted Cow (Baring-Gould/Sharp, Songs of the West, No. 74) ---
+  // --- The Spotted Cow (Songs of the West, No. 74) ---
   {
     text: "One morning so gay, in the glad month of May,\nWhen I from my cottage strayed;\nAs broke the ray of awakening day,\nI met a pretty maid.",
-    source: "The Spotted Cow (Baring-Gould/Sharp, Songs of the West, No. 74)",
+    source: "The Spotted Cow (Songs of the West, No. 74)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "baringgould74",
     stanzaIndex: 0,
     // notes: "Stanza 1, lines 1–4. Morning, May, and 'awakening day' all explicit."
   },
-  // --- The Duke's Hunt (Baring-Gould/Sharp, Songs of the West, No. 81) ---
+  // --- The Duke's Hunt (Songs of the West, No. 81) ---
   {
     text: "All in a morning very fair\nAs I rode out to take the air\nI heard some to halloo clearly.",
-    source: "The Duke's Hunt (Baring-Gould/Sharp, Songs of the West, No. 81)",
+    source: "The Duke's Hunt (Songs of the West, No. 81)",
     time: ["morning"],
     season: [],
     lyricsKey: "baringgould81",
     stanzaIndex: 0,
     // notes: "Stanza 1, lines 1–3. Morning explicit."
   },
-  // --- Among the New-Mown Hay (Baring-Gould/Sharp, Songs of the West, No. 102) ---
+  // --- Among the New-Mown Hay (Songs of the West, No. 102) ---
   {
     text: "As I walked out one morn betime,\nTo view the fields in May, Sir,\nThere I espied a fair sweet maid,\nAmong the new-mown hay, Sir.",
-    source: "Among the New-Mown Hay (Baring-Gould/Sharp, Songs of the West, No. 102)",
+    source: "Among the New-Mown Hay (Songs of the West, No. 102)",
     time: ["morning"],
     season: ["spring"],
     lyricsKey: "baringgould102",
     stanzaIndex: 0,
     // notes: "Stanza 1, lines 1–4. Morning and May explicit."
   },
-  // --- Within a Garden (Baring-Gould/Sharp, Songs of the West, No. 105) ---
+  // --- Within a Garden (Songs of the West, No. 105) ---
   {
     text: "Within a garden a maiden lingered,\nWhen soft the shades of evening fell,\nExpecting, fearing,\nA footstep hearing,\nHer love appearing,\nTo say farewell.",
-    source: "Within a Garden (Baring-Gould/Sharp, Songs of the West, No. 105)",
+    source: "Within a Garden (Songs of the West, No. 105)",
     time: ["evening"],
     season: [],
     lyricsKey: "baringgould105",
     stanzaIndex: 0,
     // notes: "Stanza 1. Evening explicit."
   },
-  // --- The Owl (Baring-Gould/Sharp, Songs of the West, No. 115) ---
+  // --- The Owl (Songs of the West, No. 115) ---
   {
     text: "For all the day long she sits in a tree,\nAnd when the night cometh, away flies she.",
-    source: "The Owl (Baring-Gould/Sharp, Songs of the West, No. 115)",
+    source: "The Owl (Songs of the West, No. 115)",
     time: ["night"],
     season: [],
     lyricsKey: "baringgould115",
@@ -1940,67 +1932,57 @@ export const QUOTES = [
   },
   {
     text: "The lark in the morn ascendeth on high\nAnd leaves the poor owl to sob and to sigh;\nAnd all the day long, the owl is asleep,\nWhile little birds blithely are singing, cheep! cheep!",
-    source: "The Owl (Baring-Gould/Sharp, Songs of the West, No. 115)",
+    source: "The Owl (Songs of the West, No. 115)",
     time: ["morning"],
     season: [],
     lyricsKey: "baringgould115",
     stanzaIndex: 1,
     // notes: "Stanza 2. Morning explicit. Companion to ID 131 from the same song — different time slot."
   },
-  // --- By Chance It Was (Baring-Gould/Sharp, Songs of the West, No. 1) ---
+  // --- By Chance It Was (Songs of the West, No. 1) ---
   {
     text: "By chance it was I met my love,\nIt did me much surprise,\nDown by a shady myrtle grove,\nJust as the sun did rise.",
-    source: "By Chance It Was (Baring-Gould/Sharp, Songs of the West, No. 1)",
+    source: "By Chance It Was (Songs of the West, No. 1)",
     time: ["morning"],
     season: [],
     lyricsKey: "baringgould1",
     stanzaIndex: 0,
     // notes: "Stanza 1. 'Just as the sun did rise' — morning explicit."
   },
-  // --- Widdecombe Fair (Baring-Gould/Sharp, Songs of the West, No. 16) ---
+  // --- Widdecombe Fair (Songs of the West, No. 16) ---
   {
     text: "When the wind whistles cold on the moor of a night,\nTom Pearce's old mare doth appear, gashly white.",
-    source: "Widdecombe Fair (Baring-Gould/Sharp, Songs of the West, No. 16)",
+    source: "Widdecombe Fair (Songs of the West, No. 16)",
     time: ["night"],
     season: [],
     lyricsKey: "baringgould16",
     stanzaIndex: 6,
     // notes: "Stanza 7, lines 1–2. Night explicit. Ghost of the old mare appearing on the moor."
   },
-  // --- Come to My Window (Baring-Gould/Sharp, Songs of the West, No. 41) ---
+  // --- Come to My Window (Songs of the West, No. 41) ---
   {
     text: "Come to my window, my Love, O my Love,\nCome to my window, my Dear.\nFor my mammy is asleep,\nAnd my daddy snoreth deep,\nThen come, e'er the day-light appear.",
-    source: "Come to My Window (Baring-Gould/Sharp, Songs of the West, No. 41)",
+    source: "Come to My Window (Songs of the West, No. 41)",
     time: ["night"],
     season: [],
     lyricsKey: "baringgould41",
     stanzaIndex: 0,
     // notes: "Stanza 1. Night implicit — before daylight, household asleep."
   },
-  // --- Lullabye (Baring-Gould/Sharp, Songs of the West, No. 49) ---
+  // --- Lullabye (Songs of the West, No. 49) ---
   {
     text: "Moon shining bright,\nDropping of dew.\nOwls hoot all night\nTo-whit! to-whoo!",
-    source: "Lullabye (Baring-Gould/Sharp, Songs of the West, No. 49)",
+    source: "Lullabye (Songs of the West, No. 49)",
     time: ["night"],
     season: [],
     lyricsKey: "baringgould49",
     stanzaIndex: 0,
     // notes: "Stanza 1, lines 5–8. Night explicit."
   },
-  // --- Fair Lady, Pity Me (Baring-Gould/Sharp, Songs of the West, No. 60) ---
-  {
-    text: "How comes it that thou stroll'st this way?\nSweet maiden, tell me true,\nBefore bright Phœbus' glittering ray\nHas supped the morning dew?",
-    source: "Fair Lady, Pity Me (Baring-Gould/Sharp, Songs of the West, No. 60)",
-    time: ["morning"],
-    season: [],
-    lyricsKey: "baringgould60",
-    stanzaIndex: 1,
-    // notes: "Stanza 2, lines 5–8. Morning implicit — before Phoebus (the sun) has drunk the dew."
-  },
-  // --- The Blue Flame (Baring-Gould/Sharp, Songs of the West, No. 67) ---
+  // --- The Blue Flame (Songs of the West, No. 67) ---
   {
     text: "I sit by the cradle, my baby's asleep,\nAnd rocking the cradle, I wonder and weep.\nO little blue light,\nIn the dead of the night,\nO prithee, O prithee no nearer to creep.",
-    source: "The Blue Flame (Baring-Gould/Sharp, Songs of the West, No. 67)",
+    source: "The Blue Flame (Songs of the West, No. 67)",
     time: ["night"],
     season: [],
     lyricsKey: "baringgould67",
@@ -2009,21 +1991,11 @@ export const QUOTES = [
   },
   {
     text: "Why follow the church path, why steal you this way?\nWhy halt in your journey, on threshold why stay?\nWith flicker and flare,\nWhy dance up my stair!\nO I would, O I would, it were dawning of day.",
-    source: "The Blue Flame (Baring-Gould/Sharp, Songs of the West, No. 67)",
+    source: "The Blue Flame (Songs of the West, No. 67)",
     time: ["morning"],
     season: [],
     lyricsKey: "baringgould67",
     stanzaIndex: 2,
     // notes: "Stanza 3. Morning implicit — longing for dawn to end the haunting. Companion to ID 138."
-  },
-  // --- The Hostess' Daughter (Baring-Gould/Sharp, Songs of the West, No. 70) ---
-  {
-    text: "One summer evening, a maiden fair\nWas walking forth in the balmy air,\nShe met a sailor upon the way.",
-    source: "The Hostess' Daughter (Baring-Gould/Sharp, Songs of the West, No. 70)",
-    time: ["evening"],
-    season: ["summer"],
-    lyricsKey: "baringgould70",
-    stanzaIndex: 0,
-    // notes: "Stanza 1, lines 1–3. Evening and summer both explicit."
   },
 ];

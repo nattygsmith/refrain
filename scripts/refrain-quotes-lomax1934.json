@@ -16,8 +16,10 @@
       "id": 1,
       "collection": "lomax-1934",
       "text": "'Twas on one Sunday morning, as you shall quickly hear,\nOur logs were piled up mountain-high, we could not keep them clear;\n\"Turn out, brave boys,\" the foreman cried, with a voice devoid of fear,\n\"And we'll break up the jam on Gerry's rock and for Eagletown we'll steer.\"",
-      "source": "Gerry's Rocks (Lomax 1934)",
-      "time": ["morning"],
+      "source": "Gerry's Rocks (Lomax, American Ballads)",
+      "time": [
+        "morning"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "lomax1934GerrysRocks",

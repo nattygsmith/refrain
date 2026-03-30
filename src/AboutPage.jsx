@@ -59,8 +59,10 @@ export default function AboutPage() {
           <p>
             These verses are drawn from several collections of folk songs, predominantly
             from the British Isles, the United States, and Canada. Each verse is chosen
-            to match the time of day and season of your location. The words have been
-            lightly modernized where needed.
+            to match the time of day and season of your location. The texts follow the
+            standard published editions of each collection—specific manuscript variants
+            are noted in the collection credits below. The words have been lightly
+            modernized where needed.
           </p>
           <p>
             The verses are beautiful enough on their own, but they are meant to be sung.
@@ -81,6 +83,7 @@ export default function AboutPage() {
             late nineteenth and early twentieth centuries, when collectors feared these
             songs were on the verge of being lost:
           </p>
+          <br />
           <ul>
             <li>
               <strong>The Child Ballads</strong>—305 traditional English and Scottish folk songs

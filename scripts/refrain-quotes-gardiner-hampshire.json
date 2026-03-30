@@ -15,9 +15,13 @@
       "id": 1,
       "collection": "gardiner-hampshire",
       "text": "As I walked forth one summer's morn\nHard by a river side,\nWhere yellow cowslips did adorn\nThe blushing field with pride,\nI spied a damsel on the grass,\nMore blooming than the may;\nHer looks the Queen of Love surpassed,\nAmong the new-mown hay.",
-      "source": "The New-Mown Hay (Gardiner, Folk-Songs from Hampshire, 1909)",
-      "time": ["morning"],
-      "season": ["summer"],
+      "source": "The New-Mown Hay (Gardiner, Folk-Songs from Hampshire)",
+      "time": [
+        "morning"
+      ],
+      "season": [
+        "summer"
+      ],
       "status": "approved",
       "lyricsKey": "gardinerNewMownHay",
       "stanzaIndex": 0,
@@ -27,9 +31,13 @@
       "id": 2,
       "collection": "gardiner-hampshire",
       "text": "As I was a-walking one morning in spring\nTo hear the small birds whistle and the nightingales sing,\nI heard a fair maid making sorrowful moan,\nSaying, \"I am a stranger and far from my home.\"",
-      "source": "The Happy Stranger (Gardiner, Folk-Songs from Hampshire, 1909)",
-      "time": ["morning"],
-      "season": ["spring"],
+      "source": "The Happy Stranger (Gardiner, Folk-Songs from Hampshire)",
+      "time": [
+        "morning"
+      ],
+      "season": [
+        "spring"
+      ],
       "status": "approved",
       "lyricsKey": "gardinerHappyStranger",
       "stanzaIndex": 0,
@@ -39,8 +47,10 @@
       "id": 3,
       "collection": "gardiner-hampshire",
       "text": "One morning this squire all on the highway\nHe met the poor thresherman and unto him did say,\n\"You have many children and that I well do know,\nHow can you maintain them as well as you do?\"",
-      "source": "The Squire and the Thresher (Gardiner, Folk-Songs from Hampshire, 1909)",
-      "time": ["morning"],
+      "source": "The Squire and the Thresher (Gardiner, Folk-Songs from Hampshire)",
+      "time": [
+        "morning"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "gardinerSquireThresher",
@@ -51,8 +61,10 @@
       "id": 4,
       "collection": "gardiner-hampshire",
       "text": "And when I come home from my labour at night\nTo my wife and my family in whom I take delight,\nWhen my children come around me with their prittle-prattling noise,\nNow these are the riches a poor man enjoys.",
-      "source": "The Squire and the Thresher (Gardiner, Folk-Songs from Hampshire, 1909)",
-      "time": ["night"],
+      "source": "The Squire and the Thresher (Gardiner, Folk-Songs from Hampshire)",
+      "time": [
+        "night"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "gardinerSquireThresher",

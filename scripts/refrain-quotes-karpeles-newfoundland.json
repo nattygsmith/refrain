@@ -15,8 +15,11 @@
       "id": 1,
       "collection": "karpeles-newfoundland",
       "text": "Crow up, crow up, my little bird,\nAnd don't you crow before day,\nAnd your cage shall be made of the glittering gold,\nAnd your doors of the silver so gay.",
-      "source": "The Lover's Ghost (Karpeles 1934, Vol. II, No. 7)",
-      "time": ["night", "morning"],
+      "source": "The Lover's Ghost (Karpeles Newfoundland, No. 7)",
+      "time": [
+        "night",
+        "morning"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "karpelesLoversGhost",
@@ -27,9 +30,13 @@
       "id": 2,
       "collection": "karpeles-newfoundland",
       "text": "O she took hold of his white holland sheet,\nAnd tied it around her tight,\nAnd it's over the hills of a cold winter's night\nIn a dead man's company.",
-      "source": "Sweet William's Ghost (Karpeles 1934, Vol. I, No. 1)",
-      "time": ["night"],
-      "season": ["winter"],
+      "source": "Sweet William's Ghost (Karpeles Newfoundland, No. 1)",
+      "time": [
+        "night"
+      ],
+      "season": [
+        "winter"
+      ],
       "status": "approved",
       "lyricsKey": "karpelesSweetWilliamsGhost",
       "stanzaIndex": 8,
@@ -39,9 +46,13 @@
       "id": 3,
       "collection": "karpeles-newfoundland",
       "text": "He had not been sailing but a long winter's night\nAnd part of a short winter's day\nWhen a long, lofty ship he chanced to spy,\nCame bearing down under their lee.",
-      "source": "Henry Martin (Karpeles 1934, Vol. II, No. 6)",
-      "time": ["night"],
-      "season": ["winter"],
+      "source": "Henry Martin (Karpeles Newfoundland, No. 6)",
+      "time": [
+        "night"
+      ],
+      "season": [
+        "winter"
+      ],
       "status": "approved",
       "lyricsKey": "karpelesHenryMartin",
       "stanzaIndex": 2,
@@ -51,9 +62,11 @@
       "id": 4,
       "collection": "karpeles-newfoundland",
       "text": "The winter's gone and past and the summer's come at last,\nAnd the small birds are singing on each tree,\nAnd the hearts of those are glad, but mine is low and sad\nSince my true love is sent far from me.",
-      "source": "The Winter's Gone and Past (Karpeles 1934, Vol. II, No. 10)",
+      "source": "The Winter's Gone and Past (Karpeles Newfoundland, No. 10)",
       "time": [],
-      "season": ["summer"],
+      "season": [
+        "summer"
+      ],
       "status": "approved",
       "lyricsKey": "karpelesWintersGone",
       "stanzaIndex": 0,
@@ -63,9 +76,13 @@
       "id": 5,
       "collection": "karpeles-newfoundland",
       "text": "As I roved out one evening, all in the month of May,\nThe trees were in full blossom and the meadows in full gay,\nI fell in love with Nancy, she's the girl whom I adore,\nShe is my joy and fancy. How can I love her more?",
-      "source": "Proud Nancy (Karpeles 1934, Vol. I, No. 9)",
-      "time": ["evening"],
-      "season": ["spring"],
+      "source": "Proud Nancy (Karpeles Newfoundland, No. 9)",
+      "time": [
+        "evening"
+      ],
+      "season": [
+        "spring"
+      ],
       "status": "approved",
       "lyricsKey": "karpelesProudNancy",
       "stanzaIndex": 0,
@@ -75,8 +92,11 @@
       "id": 6,
       "collection": "karpeles-newfoundland",
       "text": "Lord Robert he died about midnight,\nLady Margaret she died before day.\nI hope every couple that may now be together\nMay find more enjoyment than they.",
-      "source": "Earl Brand (Karpeles 1934, Vol. II, No. 2)",
-      "time": ["night", "morning"],
+      "source": "Earl Brand (Karpeles Newfoundland, No. 2)",
+      "time": [
+        "night",
+        "morning"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "karpelesEarlBrand",
@@ -87,9 +107,13 @@
       "id": 7,
       "collection": "karpeles-newfoundland",
       "text": "How can I come downstairs\nOn a cold winter's night,\nNo spark of fire burning,\nNo candle alight.\nYou've got two white holland sheets\nAs white as the snow,\nI pray you come down\nBy the light of them so.",
-      "source": "Lamkin (Karpeles 1934, Vol. I, No. 4)",
-      "time": ["night"],
-      "season": ["winter"],
+      "source": "Lamkin (Karpeles Newfoundland, No. 4)",
+      "time": [
+        "night"
+      ],
+      "season": [
+        "winter"
+      ],
       "status": "approved",
       "lyricsKey": "karpelesLamkin",
       "stanzaIndex": 4,
@@ -99,9 +123,13 @@
       "id": 8,
       "collection": "karpeles-newfoundland",
       "text": "As I roved out one morning in Spring,\nTo hear the larks whistle and the nightingales sing,\nO green grow the rushes all covered with young,\nAnd small birds all around me how joyful they sound.",
-      "source": "Young Floro (Karpeles 1934, Vol. II, No. 9)",
-      "time": ["morning"],
-      "season": ["spring"],
+      "source": "Young Floro (Karpeles Newfoundland, No. 9)",
+      "time": [
+        "morning"
+      ],
+      "season": [
+        "spring"
+      ],
       "status": "approved",
       "lyricsKey": "karpelesYoungFloro",
       "stanzaIndex": 0,
@@ -111,9 +139,13 @@
       "id": 9,
       "collection": "karpeles-newfoundland",
       "text": "It's early, early all in the Spring,\nMy love roved out for to serve the king,\nWith the raging seas and the winds blowing high,\nWhich parted me from my sailor boy.",
-      "source": "Sweet William (Karpeles 1934, Vol. I, No. 12)",
-      "time": ["morning"],
-      "season": ["spring"],
+      "source": "Sweet William (Karpeles Newfoundland, No. 12)",
+      "time": [
+        "morning"
+      ],
+      "season": [
+        "spring"
+      ],
       "status": "approved",
       "lyricsKey": "karpelesSweetWilliamSong",
       "stanzaIndex": 0,

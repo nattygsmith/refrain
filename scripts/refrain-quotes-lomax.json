@@ -16,8 +16,10 @@
       "id": 1,
       "collection": "lomax",
       "text": "Last night as I lay on the prairie,\nAnd looked at the stars in the sky,\nI wondered if ever a cowboy\nWould drift to that sweet by and by.",
-      "source": "The Cowboy's Dream (Lomax 1910)",
-      "time": ["night"],
+      "source": "The Cowboy's Dream (Lomax, Cowboy Songs)",
+      "time": [
+        "night"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "lomaxCowboysDream",
@@ -28,9 +30,13 @@
       "id": 2,
       "collection": "lomax",
       "text": "As I was a-walking one morning for pleasure,\nI spied a cow-puncher a-riding alone;\nHis hat was throwed back and his spurs was a-jingling,\nAs he approached me a-singing this song.",
-      "source": "Whoopee-Ti-Yi-Yo, Git Along Little Dogies (Lomax 1910)",
-      "time": ["morning"],
-      "season": ["spring"],
+      "source": "Whoopee-Ti-Yi-Yo, Git Along Little Dogies (Lomax, Cowboy Songs)",
+      "time": [
+        "morning"
+      ],
+      "season": [
+        "spring"
+      ],
       "status": "approved",
       "lyricsKey": "lomaxWhoopee",
       "stanzaIndex": 0,
@@ -40,8 +46,10 @@
       "id": 3,
       "collection": "lomax",
       "text": "How often at night when the heavens are bright\nWith the light from the glittering stars,\nHave I stood here amazed and asked as I gazed\nIf their glory exceeds that of ours.",
-      "source": "Home on the Range (words: Brewster Higley, 1873; collected Lomax 1910)",
-      "time": ["night"],
+      "source": "Home on the Range (Brewster Higley; Lomax, Cowboy Songs)",
+      "time": [
+        "night"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "lomaxHomeOnTheRange",
@@ -52,8 +60,10 @@
       "id": 4,
       "collection": "lomax",
       "text": "Oh, lay still, dogies, since you have laid down,\nStretch away out on the big open ground;\nSnore loud, little dogies, and drown the wild sound\nThat will all go away when the day rolls round.",
-      "source": "Night-Herding Song (Harry Stephens; collected Lomax 1910)",
-      "time": ["night"],
+      "source": "Night-Herding Song (Harry Stephens; Lomax, Cowboy Songs)",
+      "time": [
+        "night"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "lomaxNightHerding",
@@ -64,9 +74,13 @@
       "id": 5,
       "collection": "lomax",
       "text": "Yes, we buried him there on the lone prairie\nWhere the owl all night hoots mournfully,\nAnd the blizzard beats and the winds blow free\nO'er his lowly grave on the lone prairie.",
-      "source": "The Dying Cowboy (Lomax 1910)",
-      "time": ["night"],
-      "season": ["winter"],
+      "source": "The Dying Cowboy (Lomax, Cowboy Songs)",
+      "time": [
+        "night"
+      ],
+      "season": [
+        "winter"
+      ],
       "status": "approved",
       "lyricsKey": "lomaxDyingCowboy",
       "stanzaIndex": 10,
@@ -76,8 +90,10 @@
       "id": 6,
       "collection": "lomax",
       "text": "Think I heard the noisy cook say,\n\"Wake up, boys, it's near the break of day\" —\nWay up on the Kansas line,\nAnd slowly we will rise with the sleepy feeling eyes,\nWay up on the Kansas line.",
-      "source": "The Kansas Line (Lomax 1910)",
-      "time": ["morning"],
+      "source": "The Kansas Line (Lomax, Cowboy Songs)",
+      "time": [
+        "morning"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "lomaxKansasLine",
@@ -88,8 +104,10 @@
       "id": 7,
       "collection": "lomax",
       "text": "Oh, we're up in the morning ere breaking of day,\nThe chuck-wagon's busy, the flapjacks in play;\nThe herd is astir o'er hillside and vale,\nWith the night riders rounding them into the trail.",
-      "source": "The Railroad Corral (Joseph Mills Hanson, 1904; collected Lomax 1910)",
-      "time": ["morning"],
+      "source": "The Railroad Corral (Joseph Mills Hanson, 1904; Lomax, Cowboy Songs)",
+      "time": [
+        "morning"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "lomaxRailroadCorral",
@@ -100,8 +118,10 @@
       "id": 8,
       "collection": "lomax",
       "text": "But the longest of days must reach evening at last,\nThe hills all climbed, the creeks all past;\nThe tired herd droops in the yellowing light;\nLet them loaf if they will, for the railroad's in sight.",
-      "source": "The Railroad Corral (Joseph Mills Hanson, 1904; collected Lomax 1910)",
-      "time": ["evening"],
+      "source": "The Railroad Corral (Joseph Mills Hanson, 1904; Lomax, Cowboy Songs)",
+      "time": [
+        "evening"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "lomaxRailroadCorral",
@@ -112,20 +132,25 @@
       "id": 9,
       "collection": "lomax",
       "text": "Next morning, just at daybreak, we found where Rocket fell\nDown in the washout twenty feet below;\nBeneath the horse's body, a-lying where he fell,\nWas our little Texas stray, poor wrangler Joe.",
-      "source": "Little Joe the Wrangler (N. Howard Thorp, 1898; collected Lomax 1910)",
-      "time": ["morning"],
+      "source": "Little Joe the Wrangler (N. Howard Thorp, 1898; Lomax, Cowboy Songs)",
+      "time": [
+        "morning"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "lomaxLittleJoe",
-      "stanzaIndex": 7,
+      "stanzaIndex": 8,
       "notes": "Near-final stanza. Written by N. Howard 'Jack' Thorp (1867–1940); first published in Songs of the Cowboys (1908). Collected by Lomax; published in Cowboy Songs and Other Frontier Ballads (Sturgis & Walton, 1910), p. 167. Morning explicit ('just at daybreak')."
     },
     {
       "id": 10,
       "collection": "lomax",
       "text": "I'm up in the mornin' afore daylight,\nAnd afore I sleep the moon shines bright.",
-      "source": "The Old Chisholm Trail (Lomax 1910)",
-      "time": ["morning", "night"],
+      "source": "The Old Chisholm Trail (Lomax, Cowboy Songs)",
+      "time": [
+        "morning",
+        "night"
+      ],
       "season": [],
       "status": "approved",
       "lyricsKey": "lomaxChisholmTrail",
@@ -136,9 +161,13 @@
       "id": 11,
       "collection": "lomax",
       "text": "That very night this cowboy went out to stand his guard;\nThe night was dark and cloudy and storming very hard;\nThe cattle they got frightened and rushed in wild stampede,\nThe cowboy tried to head them while riding at full speed.",
-      "source": "When the Work is Done This Fall (D.J. O'Malley, 1893; collected Lomax 1910)",
-      "time": ["night"],
-      "season": ["autumn"],
+      "source": "When the Work is Done This Fall (D.J. O'Malley, 1893; Lomax, Cowboy Songs)",
+      "time": [
+        "night"
+      ],
+      "season": [
+        "autumn"
+      ],
       "status": "approved",
       "lyricsKey": "lomaxWorkDoneThisFall",
       "stanzaIndex": 4,
@@ -148,9 +177,13 @@
       "id": 12,
       "collection": "lomax",
       "text": "Poor Charlie was buried at sunrise, no tombstone at his head,\nNothing but a little board; and this is what it said:\n\"Charlie died at daybreak, he died from a fall,\nAnd he'll not see his mother when the work's all done this fall.\"",
-      "source": "When the Work is Done This Fall (D.J. O'Malley, 1893; collected Lomax 1910)",
-      "time": ["morning"],
-      "season": ["autumn"],
+      "source": "When the Work is Done This Fall (D.J. O'Malley, 1893; Lomax, Cowboy Songs)",
+      "time": [
+        "morning"
+      ],
+      "season": [
+        "autumn"
+      ],
       "status": "approved",
       "lyricsKey": "lomaxWorkDoneThisFall",
       "stanzaIndex": 7,

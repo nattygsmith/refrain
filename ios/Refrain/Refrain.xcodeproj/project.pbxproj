@@ -68,6 +68,8 @@
 		B8840D752F7316C700C205D7 /* Exceptions for "Refrain" folder in "RefrainWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"IMFellEnglish-Italic.ttf",
+				"IMFellEnglish-Regular.ttf",
 				Quote.swift,
 				Resources/lyrics.json,
 				Resources/quotes.json,

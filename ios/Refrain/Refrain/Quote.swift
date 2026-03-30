@@ -3,8 +3,8 @@ import Foundation
 // MARK: - Quote
 
 struct Quote: Codable, Identifiable {
-    // 'id' is synthesised from the array index at load time, not stored in JSON.
-    // Identifiable conformance lets SwiftUI use quotes directly in ForEach etc.
+    // Assigned from the array index at load time by DataStore; not stored in JSON.
+    // Default of 0 is overwritten immediately on load — see DataStore.shared.
     var id: Int = 0
 
     let text: String
@@ -15,13 +15,11 @@ struct Quote: Codable, Identifiable {
     // Optional — only present when full lyrics are available for this quote
     let lyricsKey: String?
     let stanzaIndex: Int?
-    
+
     enum CodingKeys: String, CodingKey {
         case text, source, time, season, lyricsKey, stanzaIndex
     }
-    }
-
-    // JSON keys match the field names exactly, so no custom CodingKeys needed.
+}
 
 
 // MARK: - LyricsEntry

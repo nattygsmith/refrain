@@ -59,7 +59,7 @@ struct AboutView: View {
                     Image("RefrainLogo")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 80, height: 80)
+                        .frame(width: 110, height: 110)
                         .padding(.bottom, 8)
 
                     Text("About Refrain")
@@ -77,6 +77,21 @@ struct AboutView: View {
                         Text("Refrain draws verses from several collections of folk songs, predominantly from the British Isles, the United States, and Canada. Each verse is chosen to match the time of day and season of your location. The words have been lightly modernized where needed.")
                         Text("The verses are beautiful enough on their own, but they are meant to be sung. Find recordings, listen to them, learn them, and sing them!")
                         Text("A new verse appears every 15 minutes, or tap Another whenever you like.")
+
+                        Divider()
+                            .overlay(theme.accent.opacity(0.3))
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 8)
+
+                        VStack(alignment: .center, spacing: 4) {
+                            Text("Made by Nathaniel Smith, 2026.")
+                                .font(.system(size: 15))
+                                .foregroundStyle(theme.ink.opacity(0.75))
+                            Link("www.refrainapp.com", destination: URL(string: "https://refrainapp.com")!)
+                                .font(.system(size: 15))
+                                .foregroundStyle(theme.accent)
+                        }
+                        .frame(maxWidth: .infinity)
 
                         Divider()
                             .overlay(theme.accent.opacity(0.3))
@@ -164,6 +179,10 @@ struct AboutView: View {
         CollectionInfo(
             title: "American Ballads and Folk Songs",
             description: "Around 200 songs collected by John A. Lomax and Alan Lomax from across the United States and published in 1934. The collection ranges widely: lumberjack and canal songs, frontier ballads, Appalachian mountain songs, sea shanties, and work songs."
+        ),
+        CollectionInfo(
+            title: "Songs of the West",
+            description: "121 traditional folk songs of Devon and Cornwall, collected from singers in the field by Sabine Baring-Gould with Henry Fleetwood Sheppard and F.W. Bussell, and published in 1905 with Cecil Sharp as musical editor. Baring-Gould began collecting in 1888, visiting old men in their cottages, farmhouses, and moorland taverns across the West Country. The songs have a strongly pastoral character, featuring mornings on the moor, rural labour, and the Devon and Cornish landscape."
         ),
     ]
 }

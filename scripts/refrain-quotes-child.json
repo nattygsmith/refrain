@@ -27,7 +27,7 @@
     {
       "id": 2,
       "collection": "child-ballads",
-      "text": "The youngest sister, fair and bright,\nShe lay beside him all through the night.",
+      "text": "The youngest daughter that same night,\nShe went to bed to this young knight.",
       "source": "Riddles Wisely Expounded (Child 1)",
       "time": [
         "night"
@@ -40,7 +40,7 @@
     {
       "id": 3,
       "collection": "child-ballads",
-      "text": "And in the morning, come the day,\nShe said, 'Young man, will you marry me?'",
+      "text": "And in the morning, when it was day,\nThese words unto him she did say:\n'Now you have had your will,' quoth she,\n'I pray, sir knight, will you marry me?'",
       "source": "Riddles Wisely Expounded (Child 1)",
       "time": [
         "morning"
@@ -68,7 +68,7 @@
     {
       "id": 5,
       "collection": "child-ballads",
-      "text": "They rode till they came to the sweet water side,\nThree hours before it was day.",
+      "text": "She rode till she came to the sweet river side,\nThree hours before it was day.",
       "source": "Lady Isabel and the Elf-Knight (Child 4)",
       "time": [
         "night"
@@ -89,7 +89,7 @@
       "season": [],
       "status": "approved",
       "lyricsKey": "child26",
-      "stanzaIndex": 0
+      "stanzaIndex": 1
     },
     {
       "id": 7,
@@ -138,7 +138,7 @@
     {
       "id": 10,
       "collection": "child-ballads",
-      "text": "Just at the mirk and midnight hour,\nThe fairy folk will ride,\nAnd they that would their true-love win,\nAt Miles Cross they must bide.",
+      "text": "'Just at the mirk and midnight hour\nThe fairy folk will ride,\nAnd they that wad their true-love win,\nAt Miles Cross they maun bide.'",
       "source": "Tam Lin (Child 39)",
       "time": [
         "night"
@@ -153,7 +153,7 @@
     {
       "id": 11,
       "collection": "child-ballads",
-      "text": "Tomorrow is Halloween,\nThe elfin court will ride,\nThrough England, and through all Scotland,\nAnd through the world wide.",
+      "text": "'But the night is Halloween, lady,\nThe morn is Hallowday;\nThen win me, win me, an ye will,\nFor weel I wat ye may.",
       "source": "Tam Lin (Child 39)",
       "time": [
         "morning",
@@ -184,7 +184,7 @@
     {
       "id": 13,
       "collection": "child-ballads",
-      "text": "There was a knight and a lady bright,\nHad a true tryste at the broom;\nThe one went early in the morning,\nThe other in the afternoon.",
+      "text": "There was a knight and a lady bright,\nHad a true tryst at the broom;\nThe one rode early in the morning,\nThe other in the afternoon.",
       "source": "The Broomfield Hill (Child 43)",
       "time": [
         "morning",
@@ -218,7 +218,7 @@
     {
       "id": 15,
       "collection": "child-ballads",
-      "text": "Late late last night I saw the new moon,\nWith the old moon in her arm;\nAnd I fear, I fear, my dear master,\nThat we will come to harm.",
+      "text": "Late late yestreen I saw the new moon,\nWi the auld moon in her arm,\nAnd I fear, I fear, my dear master,\nThat we will come to harm.",
       "source": "Sir Patrick Spens (Child 58)",
       "time": [
         "night"
@@ -233,7 +233,7 @@
     {
       "id": 16,
       "collection": "child-ballads",
-      "text": "Sweet Willie and Fair Annie,\nAs they sat on yonder hill,\nIf they had sat from morn 'til evening,\nThey had not talked their fill.",
+      "text": "Sweet Willie and Fair Annie,\nAs they sat on yonder hill,\nIf they had sat from morn till evening,\nThey had not talked their fill.",
       "source": "Lord Thomas and Annet (Child 73)",
       "time": [
         "evening"
@@ -289,7 +289,7 @@
     {
       "id": 20,
       "collection": "child-ballads",
-      "text": "The wind does blow today, my love,\nAnd a few small drops of rain;\nI never had but one true-love,\nIn a cold grave she was lain.",
+      "text": "The wind doth blow today, my love,\nAnd a few small drops of rain;\nI never had but one true-love,\nIn cold grave she was lain.",
       "source": "The Unquiet Grave (Child 78)",
       "time": [
         "morning",
@@ -388,7 +388,7 @@
     {
       "id": 27,
       "collection": "child-ballads",
-      "text": "All in the merry month of May,\nWhen green leaves they were springing,\nThis young man on his death-bed lay,\nFor the love of Barbara Allen.",
+      "text": "All in the merry month of May,\nWhen green leaves they were springing,\nThis young man on his death-bed lay,\nFor the love of Barbara Allan.",
       "source": "Bonny Barbara Allan (Child 84)",
       "time": [
         "morning",
@@ -436,7 +436,7 @@
     {
       "id": 30,
       "collection": "child-ballads",
-      "text": "Then one arose at her bed-foot,\nA grumbly guest I'm sure was he.",
+      "text": "Then ane arose at her bed-foot,\nA grumbly guest I'm sure was he.",
       "source": "The Great Silkie of Sule Skerry (Child 113)",
       "time": [
         "night"
@@ -473,7 +473,7 @@
       "season": [
         "spring"
       ],
-      "status": "approved",
+      "status": "retired",
       "lyricsKey": "child113",
       "stanzaIndex": 6
     },
@@ -611,7 +611,7 @@
     {
       "id": 42,
       "collection": "child-ballads",
-      "text": "Thus rode she all one winter's night,\nTill Edenborow they saw in sight.",
+      "text": "Thus rode she all one winter's night,\nTill Edenborough they saw in sight.",
       "source": "The Fair Flower of Northumberland (Child 9)",
       "time": [
         "night"
@@ -683,7 +683,7 @@
     {
       "id": 47,
       "collection": "child-ballads",
-      "text": "It's May she comes and May she goes,\nDown by the garden green,\nIt's there she spied a good young squire,\nAs good as e'er she seen.",
+      "text": "O May she comes, and May she goes,\nDown by yon garden green,\nAnd there she spied a gallant squire\nAs squire had ever been.",
       "source": "The Bonny Hind (Child 50)",
       "time": [
         "morning",
@@ -926,7 +926,7 @@
     {
       "id": 64,
       "collection": "child-ballads",
-      "text": "And well he knew that lady fair\nAmong her maidens free,\nFor the flower that springs in May morning\nWas not so sweet as she.",
+      "text": "And weel he kent that ladye feir\nAmang her maidens free,\nFor the flower that springs in May morning\nWas not sae sweet as she.",
       "source": "The Gay Goshawk (Child 96)",
       "time": [
         "morning"
@@ -1335,7 +1335,7 @@
       "status": "approved",
       "notes": "Stanza 2. No modernisation needed.",
       "lyricsKey": "child305",
-      "stanzaIndex": 1
+      "stanzaIndex": 0
     },
     {
       "id": 92,
@@ -1349,7 +1349,7 @@
       "status": "approved",
       "notes": "Version B, stanza 4. No modernisation needed.",
       "lyricsKey": "child101",
-      "stanzaIndex": 3
+      "stanzaIndex": 2
     },
     {
       "id": 93,
@@ -1363,7 +1363,7 @@
       "status": "approved",
       "notes": "Version B, stanza 12. First four lines only; truncated with ellipsis. No modernisation needed.",
       "lyricsKey": "child101",
-      "stanzaIndex": 11
+      "stanzaIndex": 6
     },
     {
       "id": 94,
@@ -1377,7 +1377,7 @@
       "status": "approved",
       "notes": "Version C, stanza 7. No modernisation needed.",
       "lyricsKey": "child101",
-      "stanzaIndex": 6
+      "stanzaIndex": 8
     },
     {
       "id": 95,
@@ -1396,7 +1396,7 @@
     {
       "id": 96,
       "collection": "child-ballads",
-      "text": "An it shall come to pass on a summer's day,\nWhen the sun shines hot on every stone,\nThat I will take my little young son,\nAn teach him for to swim the foam.",
+      "text": "And it shall come to pass on a summer's day,\nWhen the sun shines hot on every stone,\nThat I will take my little young son,\nAnd teach him for to swim the foam.",
       "source": "The Great Silkie of Sule Skerry (Child 113)",
       "time": [
         "afternoon"
@@ -1437,7 +1437,7 @@
       "status": "approved",
       "notes": "Stanza 23. No modernisation needed.",
       "lyricsKey": "child118",
-      "stanzaIndex": 22
+      "stanzaIndex": 1
     },
     {
       "id": 99,
@@ -1453,7 +1453,7 @@
       "status": "approved",
       "notes": "Stanza 37. 'Them fettled them to fly away' reworded to 'The other forced to fly away' for clarity.",
       "lyricsKey": "child118",
-      "stanzaIndex": 36
+      "stanzaIndex": 3
     },
     {
       "id": 100,
@@ -1469,7 +1469,7 @@
       "status": "approved",
       "notes": "Stanza 6. 'along summer's day' modernised to 'all a summer's day'. No other changes.",
       "lyricsKey": "child124",
-      "stanzaIndex": 5
+      "stanzaIndex": 4
     },
     {
       "id": 101,
@@ -1528,7 +1528,7 @@
       "status": "approved",
       "notes": "Stanza 22. 'o'→'o''. No other changes.",
       "lyricsKey": "child251",
-      "stanzaIndex": 21
+      "stanzaIndex": 2
     },
     {
       "id": 105,
@@ -1542,7 +1542,7 @@
       "status": "approved",
       "notes": "Stanza 12. 'Ae'→'One', 'for's inconstancie'→'for his inconstancy'. Inverted syntax of line 2 retained.",
       "lyricsKey": "child253",
-      "stanzaIndex": 11
+      "stanzaIndex": 3
     },
     {
       "id": 106,
@@ -1588,7 +1588,7 @@
       "status": "approved",
       "notes": "Stanza 7. 'gane'→'gone'. No other changes.",
       "lyricsKey": "child270",
-      "stanzaIndex": 6
+      "stanzaIndex": 2
     },
     {
       "id": 109,
@@ -1602,7 +1602,7 @@
       "status": "approved",
       "notes": "Version A, stanza 5. No modernisation needed.",
       "lyricsKey": "child275",
-      "stanzaIndex": 4
+      "stanzaIndex": 3
     },
     {
       "id": 110,
@@ -1634,7 +1634,7 @@
       "status": "approved",
       "notes": "Stanza 18. 'craw' and 'daw' retained for rhyme. 'alang'→'along'. No other changes.",
       "lyricsKey": "child304",
-      "stanzaIndex": 17
+      "stanzaIndex": 1
     }
   ]
 }

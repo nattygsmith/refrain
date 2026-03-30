@@ -44,6 +44,14 @@ final class QuoteClock {
 
     // MARK: - Public interface
 
+    /// Navigate directly to a specific quote by ID.
+    /// Used when the app is opened from a widget deep link.
+    func navigate(to id: Int) {
+        if let target = pool.first(where: { $0.id == id }) {
+            quote = target
+        }
+    }
+
     /// Advance to a new random quote. Avoids repeating the last quote shown.
     /// Call this when the user taps "Another".
     func next() {

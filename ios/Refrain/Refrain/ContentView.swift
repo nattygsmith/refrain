@@ -3,9 +3,14 @@ import SwiftUI
 // MARK: - ContentView
 
 struct ContentView: View {
+    @Binding var pendingLyricsKey: String?
+    @Binding var pendingStanzaIndex: Int?
+    @Binding var pendingQuoteID: Int?
+    @Binding var pendingTrigger: Int
     @State private var clock = QuoteClock()
     @State private var showAbout = false
     @State private var showLyrics = false
+    @State private var isReopening = false
 
     var theme: Theme {
         Theme.current(time: clock.timeOfDay, season: clock.season)
@@ -32,7 +37,7 @@ struct ContentView: View {
                 // Header
                 HStack {
                     Label(
-                        "\(clock.timeOfDay.label) · \(clock.season.label)",
+                        "\(clock.timeOfDay.rawValue.capitalized) · \(clock.season.rawValue.capitalized)",
                         systemImage: clock.timeOfDay.systemImage
                     )
                     .font(.custom("IM_FELL_English_Roman", size: 11))
@@ -125,17 +130,26 @@ struct ContentView: View {
                     Text("\(clock.pool.count) verse\(clock.pool.count == 1 ? "" : "s") for this \(clock.timeOfDay.rawValue)")
                         .font(.custom("IM_FELL_English_Roman", size: 11))
                         .textCase(.uppercase)
-                        .foregroundStyle(theme.ink.opacity(0.4))
+                        .foregroundStyle(theme.ink.opacity(0.65))
                 }
                 .padding(.bottom, 24)
             }
         }
         // ── Lyrics: partial bottom sheet ────────────────────────────────
-        .sheet(isPresented: $showLyrics) {
-            if let quote = clock.quote,
-               let key = quote.lyricsKey,
+        .sheet(isPresented: $showLyrics, onDismiss: {
+            if !isReopening {
+                pendingLyricsKey   = nil
+                pendingStanzaIndex = nil
+                pendingQuoteID     = nil
+            }
+            isReopening = false
+        }) {
+            // Prefer the deep-linked key if present; fall back to current quote
+            let lyricsKey   = pendingLyricsKey   ?? clock.quote?.lyricsKey
+            let stanzaIndex = pendingStanzaIndex ?? clock.quote?.stanzaIndex
+            if let key = lyricsKey,
                let entry = DataStore.shared.lyrics(for: key) {
-                LyricsView(entry: entry, stanzaIndex: quote.stanzaIndex, theme: theme)
+                LyricsView(entry: entry, stanzaIndex: stanzaIndex, theme: theme)
                     .presentationDetents([.medium, .large])
                     .presentationDragIndicator(.visible)
                     .presentationBackground(theme.bg)
@@ -151,26 +165,41 @@ struct ContentView: View {
                 for: UIApplication.didBecomeActiveNotification
             )
         ) { _ in
-            clock.appDidBecomeActive()
+            // Short delay lets onOpenURL fire first so pendingQuoteID is set
+            // before we check it — widget deep links set pendingQuoteID and
+            // handle their own navigation, so we skip refresh in that case.
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+                guard pendingQuoteID == nil else { return }
+                clock.appDidBecomeActive()
+            }
         }
         // Animate theme transitions
         .animation(.easeInOut(duration: 1.2), value: clock.timeOfDay)
         .animation(.easeInOut(duration: 1.2), value: clock.season)
+        // Handle deep links from widget taps — navigate to the widget's quote and open lyrics
+        .onChange(of: pendingTrigger) { _ in
+            guard pendingLyricsKey != nil else { return }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                if let id = pendingQuoteID {
+                    clock.navigate(to: id)
+                }
+                if showLyrics {
+                    isReopening = true
+                    showLyrics = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+                        showLyrics = true
+                    }
+                } else {
+                    showLyrics = true
+                }
+            }
+        }
     }
 }
 
 // MARK: - TimeOfDay display helpers
 
 extension TimeOfDay {
-    var label: String {
-        switch self {
-        case .morning:   return "Morning"
-        case .afternoon: return "Afternoon"
-        case .evening:   return "Evening"
-        case .night:     return "Night"
-        }
-    }
-
     // SF Symbols — monochrome, text-rendering variants where available
     var systemImage: String {
         switch self {
@@ -178,17 +207,6 @@ extension TimeOfDay {
         case .afternoon: return "circle.righthalf.filled"
         case .evening:   return "moon"
         case .night:     return "sparkle"
-        }
-    }
-}
-
-extension Season {
-    var label: String {
-        switch self {
-        case .spring: return "Spring"
-        case .summer: return "Summer"
-        case .autumn: return "Autumn"
-        case .winter: return "Winter"
         }
     }
 }

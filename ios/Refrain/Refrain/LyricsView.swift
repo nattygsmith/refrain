@@ -25,12 +25,12 @@ struct LyricsView: View {
                         if let label = entry.collectionLabel {
                             Text(label)
                                 .font(.system(size: 12))
-                                .foregroundStyle(theme.ink.opacity(0.45))
+                                .foregroundStyle(theme.ink.opacity(0.75))
                         }
 
                         Text(entry.version)
                             .font(.system(size: 11))
-                            .foregroundStyle(theme.ink.opacity(0.35))
+                            .foregroundStyle(theme.ink.opacity(0.75))
                             .multilineTextAlignment(.center)
                             .padding(.top, 2)
                     }
@@ -50,7 +50,7 @@ struct LyricsView: View {
                                 .foregroundStyle(
                                     index == stanzaIndex
                                         ? theme.ink
-                                        : theme.ink.opacity(0.55)
+                                        : theme.ink.opacity(0.75)
                                 )
                                 .multilineTextAlignment(.center)
                                 .lineSpacing(5)
