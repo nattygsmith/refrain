@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "description": "Quote library for As It Fell — time-tagged verses from American Ballads and Folk Songs, collected by John A. Lomax and Alan Lomax (Macmillan, 1934)",
+    "last_updated": "2026-03-21",
+    "status_values": [
+      "approved",
+      "pending-wordsmith",
+      "hold",
+      "retired"
+    ],
+    "notes": "Public domain (published 1934). Songs are traditional and anonymous unless otherwise noted. The Lomaxes admitted to compositing stanzas from multiple sources without always specifying them; verse texts should be verified against the 1934 edition where possible. The collection spans a broad range of American traditions including Appalachian mountain songs, prison and work songs, lumberjack songs, and sea shanties. Where material derives from African American traditions still actively maintained, this is noted in the notes field.",
+    "collection": "lomax-1934"
+  },
+  "quotes": [
+    {
+      "id": 1,
+      "collection": "lomax-1934",
+      "text": "'Twas on one Sunday morning, as you shall quickly hear,\nOur logs were piled up mountain-high, we could not keep them clear;\n\"Turn out, brave boys,\" the foreman cried, with a voice devoid of fear,\n\"And we'll break up the jam on Gerry's rock and for Eagletown we'll steer.\"",
+      "source": "Gerry's Rocks (Lomax, American Ballads)",
+      "time": [
+        "morning"
+      ],
+      "season": [],
+      "status": "approved",
+      "lyricsKey": "lomax1934GerrysRocks",
+      "stanzaIndex": 1,
+      "notes": "Second stanza. Text verified against 1934 edition p. 448-449. Classic lumberjack ballad, traditional/anonymous, North American origin. Lomax sourced from Franz L. Rickaby's Ballads and Songs of the Shanty-Boy. Sunday morning explicit. Lomax's version uses 'Eagletown' rather than 'Agonstown' found in other variants."
+    }
+  ]
+}

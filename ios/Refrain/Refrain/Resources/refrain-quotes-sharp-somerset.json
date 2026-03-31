@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "description": "Quote library for As It Fell — time-tagged verses from Cecil Sharp, Folk Songs from Somerset (Simpkin & Co., 1904–1911)",
+    "last_updated": "2026-03-19",
+    "status_values": [
+      "approved",
+      "pending-wordsmith",
+      "hold"
+    ],
+    "notes": "Quotes marked pending-wordsmith are proposed but not yet finalised. Do not push to app until status is changed to approved. lyricsKey stubs need to be written and merged into refrain-lyrics-sharp-somerset.json before deployment.",
+    "collection": "sharp-somerset"
+  },
+  "quotes": [
+    {
+      "id": 1,
+      "collection": "sharp-somerset",
+      "text": "In the heat of the day when the sun shines so freely,\nI met Master Kilby, so fine and so gay.",
+      "source": "Master Kilby (Folk Songs from Somerset)",
+      "time": ["afternoon"],
+      "season": ["summer"],
+      "status": "approved",
+      "lyricsKey": "somersetMasterKilby",
+      "stanzaIndex": 0,
+      "notes": "Opening stanza. Collected by Cecil Sharp from Harry Richards of Curry Rivel, Somerset, 1904/1909. Published in Journal of the English Folk Song Society. 'Heat of the day' is an explicit afternoon time marker."
+    }
+  ]
+}

@@ -74,7 +74,7 @@ struct AboutView: View {
 
                     // ── Body ────────────────────────────────────────────
                     VStack(alignment: .leading, spacing: 16) {
-                        Text("Refrain draws verses from several collections of folk songs, predominantly from the British Isles, the United States, and Canada. Each verse is chosen to match the time of day and season of your location. The words have been lightly modernized where needed.")
+                        Text("Refrain draws verses from several collections of folk songs, predominantly from the British Isles, the United States, and Canada. Each verse is chosen to match the time of day and season of your location. The texts follow the standard published editions of each collection—specific manuscript variants are noted in the collection credits below. The words have been lightly modernized where needed.")
                         Text("The verses are beautiful enough on their own, but they are meant to be sung. Find recordings, listen to them, learn them, and sing them!")
                         Text("A new verse appears every 15 minutes, or tap Another whenever you like.")
 
@@ -99,6 +99,8 @@ struct AboutView: View {
                             .padding(.vertical, 8)
 
                         Text("The verses come from a number of fieldwork collections, most gathered in the late nineteenth and early twentieth centuries:")
+
+                        Spacer().frame(height: 4)
 
                         ForEach(collections, id: \.title) { collection in
                             VStack(alignment: .leading, spacing: 4) {
@@ -183,6 +185,10 @@ struct AboutView: View {
         CollectionInfo(
             title: "Songs of the West",
             description: "121 traditional folk songs of Devon and Cornwall, collected from singers in the field by Sabine Baring-Gould with Henry Fleetwood Sheppard and F.W. Bussell, and published in 1905 with Cecil Sharp as musical editor. Baring-Gould began collecting in 1888, visiting old men in their cottages, farmhouses, and moorland taverns across the West Country. The songs have a strongly pastoral character, featuring mornings on the moor, rural labour, and the Devon and Cornish landscape."
+        ),
+        CollectionInfo(
+            title: "English Traditional Songs and Carols",
+            description: "38 traditional English folk songs and carols collected almost entirely by Lucy Broadwood from field singers across Sussex, Surrey, and Bedfordshire, and published in 1908. A substantial number came from a single remarkable source: Henry Burstow, a bellringer and cobbler from Horsham, Sussex, who had carried the songs in his memory for decades. The collection also includes May Day carols and a gypsy Christmas carol collected from the Goby family of Sussex and Surrey."
         ),
     ]
 }

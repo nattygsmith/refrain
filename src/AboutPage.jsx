@@ -150,6 +150,15 @@ export default function AboutPage() {
               folk song that shapes most of this collection. Songs are traditional and anonymous
               unless otherwise noted.
             </li>
+            <li>
+              <strong>English Traditional Songs and Carols</strong>—38 traditional English folk
+              songs and carols collected almost entirely by Lucy Broadwood from field singers
+              across Sussex, Surrey, and Bedfordshire, and published in 1908. A substantial
+              number of songs came from a single remarkable source: Henry Burstow, a bellringer
+              and cobbler from Horsham, Sussex, who had carried the songs in his memory for
+              decades. The collection also includes May Day carols and a gypsy Christmas carol
+              collected from the Goby family of Sussex and Surrey.
+            </li>
           </ul>
         </div>
       </div>{/* overlay-body-inner */}
