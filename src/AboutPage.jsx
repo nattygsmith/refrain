@@ -74,7 +74,7 @@ export default function AboutPage() {
         </div>
 
         {/* ── Get the app / contact ── */}
-        <div className="about-links-section">
+        <div className="about-links-section about-links-section--centered">
           <div className="lyrics-rule">
             <div className="rule-line" />
             <div className="rule-diamond" />

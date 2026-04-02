@@ -83,13 +83,19 @@ struct AboutView: View {
                             .padding(.horizontal, 8)
                             .padding(.vertical, 8)
 
-                        VStack(alignment: .center, spacing: 4) {
+                        VStack(alignment: .center, spacing: 6) {
                             Text("Made by Nathaniel Smith, 2026.")
                                 .font(.system(size: 15))
                                 .foregroundStyle(theme.ink.opacity(0.75))
                             Link("www.refrainapp.com", destination: URL(string: "https://refrainapp.com")!)
                                 .font(.system(size: 15))
                                 .foregroundStyle(theme.accent)
+                            Link("support@refrainapp.com", destination: URL(string: "mailto:support@refrainapp.com")!)
+                                .font(.system(size: 14))
+                                .foregroundStyle(theme.ink.opacity(0.55))
+                            Link("Privacy Policy", destination: URL(string: "https://refrainapp.com/privacy")!)
+                                .font(.system(size: 13))
+                                .foregroundStyle(theme.ink.opacity(0.35))
                         }
                         .frame(maxWidth: .infinity)
 

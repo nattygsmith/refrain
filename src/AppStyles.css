@@ -651,3 +651,16 @@ blockquote {
   opacity: 0.75;
   border-bottom-color: color-mix(in srgb, var(--rf-ink) 40%, transparent);
 }
+
+.about-links-section--centered {
+  text-align: center;
+}
+
+.about-links-section--centered .about-store-row {
+  justify-content: center;
+}
+
+.about-links-section--centered .lyrics-rule {
+  margin-left: auto;
+  margin-right: auto;
+}

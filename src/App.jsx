@@ -43,27 +43,59 @@ function Refrain() {
     root.style.setProperty("--rf-mist", theme.mist);
   }, [theme]);
 
-  const activeQuote = pinnedQuote || quote;
-
-  // Trigger fade animation on quote change
+  // Ensure viewport-fit=cover so iOS respects safe-area-inset env() vars
   useEffect(() => {
-    setFadeKey(k => k + 1);
-  }, [activeQuote]);
+    const meta = document.querySelector('meta[name="viewport"]');
+    if (meta && !meta.content.includes("viewport-fit")) {
+      meta.content += ", viewport-fit=cover";
+    }
+  }, []);
 
-  const handleAnother = () => {
-    setPinnedQuote(null);
-    refresh();
+  // Keyboard nav: Escape closes overlays
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (e.key === "Escape") {
+        setShowLyrics(false);
+        setPinnedQuote(null);
+      }
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, []);
+
+  // Open lyrics and pin the current quote so a 15-min auto-refresh can't swap it
+  const handleOpenLyrics = () => {
+    setPinnedQuote(displayQuote);
+    setShowLyrics(true);
   };
 
-  const lyricsEntry = activeQuote?.lyricsKey ? LYRICS[activeQuote.lyricsKey] : null;
+  // Close lyrics and release the pin (normal rotation resumes)
+  const handleCloseLyrics = () => {
+    setShowLyrics(false);
+    setPinnedQuote(null);
+  };
 
-  // Dev search results
-  const devResults = DEV_MODE && devSearch.length > 1
-    ? QUOTES.filter(q =>
-        q.source.toLowerCase().includes(devSearch.toLowerCase()) ||
-        q.text.toLowerCase().includes(devSearch.toLowerCase())
-      ).slice(0, 8)
-    : [];
+  // Trigger fade animation and clear pinned quote on manual refresh
+  const handleRefresh = () => {
+    refresh(lastQuote);
+    setFadeKey((k) => k + 1);
+    setShowLyrics(false);
+    setPinnedQuote(null);
+    setDevSearch("");
+  };
+
+  if (!quote) return null;
+
+  const displayQuote = pinnedQuote || quote;
+
+  const devSearchResults =
+    DEV_MODE && devSearch.trim().length >= 2
+      ? QUOTES.filter(
+          (q) =>
+            q.source.toLowerCase().includes(devSearch.toLowerCase()) ||
+            q.text.toLowerCase().includes(devSearch.toLowerCase())
+        ).slice(0, 8)
+      : [];
 
   return (
     <div className="folk-root">
@@ -72,110 +104,152 @@ function Refrain() {
       <div className="header">
         <div className="time-badge">
           <span className="glyph">{TIME_GLYPHS[timeOfDay]}</span>
-          <span>{TIME_LABELS[timeOfDay]} · {SEASON_LABELS[season]}</span>
+          {TIME_LABELS[timeOfDay]} · {SEASON_LABELS[season]}
         </div>
         <button className="info-btn" onClick={() => navigate("/about")}>
           About
         </button>
       </div>
 
-      {/* Ornamental rule */}
+      {/* Top rule */}
       <div className="rule">
         <div className="rule-line" />
         <div className="rule-diamond" />
         <div className="rule-line" />
       </div>
 
-      {/* Quote display */}
-      <div className="quote-area">
-        {activeQuote && (
-          <div key={fadeKey} className="quote-fade">
-            <blockquote className="folk-quote">
-              {activeQuote.text.split("\n").map((line, i) => (
-                <span key={i}>{line}<br /></span>
-              ))}
-            </blockquote>
-            <div className="folk-source">— {activeQuote.source}</div>
-          </div>
-        )}
+      {/* Quote */}
+      <div className="quote-section">
+        <div key={fadeKey} className="quote-wrap">
+          <blockquote>
+            {displayQuote.text.split("\n").map((line, i) => (
+              <span key={i}>
+                {line}
+                {i < displayQuote.text.split("\n").length - 1 && <br />}
+              </span>
+            ))}
+          </blockquote>
+          <p className="attribution">
+            {displayQuote.lyricsKey && LYRICS[displayQuote.lyricsKey] ? (
+              <button
+                className="attribution-link"
+                onClick={handleOpenLyrics}
+              >
+                — {displayQuote.source}
+              </button>
+            ) : (
+              <>— {displayQuote.source}</>
+            )}
+          </p>
+        </div>
       </div>
 
-      {/* Footer buttons */}
+      {/* Bottom rule */}
+      <div className="rule">
+        <div className="rule-line" />
+        <div className="rule-diamond" />
+        <div className="rule-line" />
+      </div>
+
+      {/* Footer */}
       <div className="footer">
-        <div className="footer-row">
-          <button className="folk-btn" onClick={handleAnother}>
-            Another
-          </button>
-          {lyricsEntry && (
-            <button className="folk-btn folk-btn--secondary" onClick={() => setShowLyrics(true)}>
-              Full Song
-            </button>
-          )}
-        </div>
-        {DEV_MODE && (
-          <div className="dev-bar">
-            <div className="dev-bar-row">
-              <label>Time</label>
-              <select value={devTime || ""} onChange={e => setDevTime(e.target.value || null)}>
-                <option value="">Auto</option>
-                <option value="morning">Morning</option>
-                <option value="afternoon">Afternoon</option>
-                <option value="evening">Evening</option>
-                <option value="night">Night</option>
-              </select>
-              <label>Season</label>
-              <select value={devSeason || ""} onChange={e => setDevSeason(e.target.value || null)}>
-                <option value="">Auto</option>
-                <option value="spring">Spring</option>
-                <option value="summer">Summer</option>
-                <option value="autumn">Autumn</option>
-                <option value="winter">Winter</option>
-              </select>
-            </div>
-            <div className="dev-search-row">
-              <label>Pin</label>
-              <input
-                className="dev-search-input"
-                placeholder="search quotes…"
-                value={devSearch}
-                onChange={e => setDevSearch(e.target.value)}
-              />
-              {pinnedQuote && (
-                <button className="dev-pin-clear" onClick={() => { setPinnedQuote(null); setDevSearch(""); }}>
-                  ✕ unpin
-                </button>
-              )}
-            </div>
-            {devResults.length > 0 && (
-              <div className="dev-results">
-                {devResults.map(q => (
-                  <button
-                    key={q.source + q.text.slice(0, 20)}
-                    className="dev-result-item"
-                    onClick={() => {
-                      setPinnedQuote(q);
-                      setDevSearch(q.source);
-                    }}
-                  >
-                    <span className="dev-result-source">{q.source}</span>
-                    <span className="dev-result-preview">
-                      {q.text.split("\n")[0]}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        )}
+        <button className="btn-another" onClick={handleRefresh}>
+          Another
+        </button>
+        <p className="pool-note">
+          {pool.length} verse{pool.length !== 1 ? "s" : ""} for this {timeOfDay}
+        </p>
       </div>
 
       {/* Lyrics overlay */}
-      {showLyrics && lyricsEntry && (
+      {showLyrics && displayQuote.lyricsKey && LYRICS[displayQuote.lyricsKey] && (
         <LyricsScreen
-          entry={lyricsEntry}
-          stanzaIndex={activeQuote?.stanzaIndex}
-          onClose={() => setShowLyrics(false)}
+          entry={LYRICS[displayQuote.lyricsKey]}
+          stanzaIndex={displayQuote.stanzaIndex}
+          onClose={handleCloseLyrics}
         />
+      )}
+
+      {/* Dev panel */}
+      {DEV_MODE && (
+        <div className="dev-bar">
+          <div className="dev-bar-row">
+            <label>Time</label>
+            <select
+              value={devTime}
+              onChange={(e) => {
+                setDevTime(e.target.value);
+                setFadeKey((k) => k + 1);
+              }}
+            >
+              <option value="morning">Morning</option>
+              <option value="afternoon">Afternoon</option>
+              <option value="evening">Evening</option>
+              <option value="night">Night</option>
+            </select>
+            <label>Season</label>
+            <select
+              value={devSeason}
+              onChange={(e) => {
+                setDevSeason(e.target.value);
+                setFadeKey((k) => k + 1);
+              }}
+            >
+              <option value="spring">Spring</option>
+              <option value="summer">Summer</option>
+              <option value="autumn">Autumn</option>
+              <option value="winter">Winter</option>
+            </select>
+          </div>
+          <div className="dev-search-row">
+            <label>Find</label>
+            <input
+              className="dev-search-input"
+              type="text"
+              value={devSearch}
+              onChange={(e) => {
+                setDevSearch(e.target.value);
+                setPinnedQuote(null);
+                setShowLyrics(false);
+              }}
+              placeholder="source or text…"
+              spellCheck={false}
+            />
+            {pinnedQuote && (
+              <button
+                className="dev-pin-clear"
+                onClick={() => {
+                  setPinnedQuote(null);
+                  setDevSearch("");
+                  setShowLyrics(false);
+                }}
+              >
+                ✕
+              </button>
+            )}
+          </div>
+          {devSearchResults.length > 0 && (
+            <div className="dev-results">
+              {devSearchResults.map((q, i) => (
+                <button
+                  key={i}
+                  className="dev-result-item"
+                  onClick={() => {
+                    setPinnedQuote(q);
+                    setFadeKey((k) => k + 1);
+                    setShowLyrics(false);
+                    setDevSearch(q.source);
+                  }}
+                >
+                  <span className="dev-result-source">{q.source}</span>
+                  <span className="dev-result-preview">
+                    {q.text.split("\n")[0]}
+                  </span>
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       )}
 
     </div>
