@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "description": "Quote library for Refrain — time-tagged verses from Broadwood, English Traditional Songs and Carols",
+    "last_updated": "2026-03-31",
+    "status_values": [
+      "approved",
+      "pending-wordsmith",
+      "hold",
+      "retired"
+    ],
+    "collection": "broadwood"
+  },
+  "quotes": [
+    {
+      "id": 141,
+      "collection": "broadwood",
+      "text": "At break of day each summer's morning\nWilliam for his horses went,\nAnd as he viewed bright Phoebus dawning,\nHe would listen with content\nTo the voice of sweet Rosetta,\nWhich charmed young William's heart with joy;\nWith voice so shrill she loved young Will,\nWho was her father's gay ploughboy.",
+      "source": "Rosetta and Her Gay Ploughboy (Broadwood, English Traditional Songs and Carols)",
+      "time": ["morning"],
+      "season": ["summer"],
+      "status": "approved",
+      "notes": "Stanza 2. Sung by Henry Burstow, Horsham, Sussex, 1893.",
+      "lyricsKey": "broadwoodRosetta",
+      "stanzaIndex": 1
+    },
+    {
+      "id": 142,
+      "collection": "broadwood",
+      "text": "She sat and sung of her sweet William,\nAs she milked her spotted cow;\nAnd he would sigh for his Rosetta\nAll the day while at the plough;\nAnd as evening did approach,\nRosetta tript along with joy,\nWith voice so shrill, to meet young Will,\nWho was her father's gay ploughboy.",
+      "source": "Rosetta and Her Gay Ploughboy (Broadwood, English Traditional Songs and Carols)",
+      "time": ["evening"],
+      "season": [],
+      "status": "approved",
+      "notes": "Stanza 3. Sung by Henry Burstow, Horsham, Sussex, 1893.",
+      "lyricsKey": "broadwoodRosetta",
+      "stanzaIndex": 2
+    },
+    {
+      "id": 143,
+      "collection": "broadwood",
+      "text": "As I rode over Banstead Downs,\nOne mid-May morning early,\nThere I espied a pretty fair maid\nLamenting for her Georgie.",
+      "source": "Georgie (Broadwood, English Traditional Songs and Carols)",
+      "time": ["morning"],
+      "season": ["spring"],
+      "status": "approved",
+      "notes": "Stanza 1. Broadwood's Banstead Downs version (Child 209). Sung by Henry Burstow, 1893. Not duplicated in the Child Ballads file.",
+      "lyricsKey": "broadwoodGeorgie",
+      "stanzaIndex": 0
+    },
+    {
+      "id": 144,
+      "collection": "broadwood",
+      "text": "Oh the moon shines bright, and the stars give a light;\nOh, a little before the day,\nOur Lord, our God, He calls upon us all,\nAnd He bids us awake and pray.",
+      "source": "The Moon Shines Bright (Broadwood, English Traditional Songs and Carols)",
+      "time": ["night"],
+      "season": [],
+      "status": "approved",
+      "notes": "Stanza 1. Collected from the Goby family, gypsies in Sussex and Surrey, c.1893. A May/New Year carol.",
+      "lyricsKey": "broadwoodMoonShinesBright",
+      "stanzaIndex": 0
+    },
+    {
+      "id": 145,
+      "collection": "broadwood",
+      "text": "I've been rambling all the night,\nAnd the best part of the day;\nAnd now I am returning back again,\nI have brought you a branch of May.",
+      "source": "Bedfordshire May Day Carol (Broadwood, English Traditional Songs and Carols)",
+      "time": ["night"],
+      "season": ["spring"],
+      "status": "approved",
+      "notes": "Stanza 1. Collected near Hinwick, Bedfordshire, 1908.",
+      "lyricsKey": "broadwoodMayDayCarol",
+      "stanzaIndex": 0
+    }
+  ]
+}

@@ -577,3 +577,77 @@ blockquote {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* ── About page — links / store section ─────────────────── */
+
+.about-links-section {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.about-store-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.25rem 0 1rem;
+}
+
+.about-store-badge {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.about-store-badge-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.about-store-badge:hover .about-store-badge-img { opacity: 1; }
+
+.about-store-badge--soon {
+  cursor: default;
+}
+
+.about-store-coming {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--rf-ink);
+  opacity: 0.35;
+  text-transform: uppercase;
+}
+
+.about-contact {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--rf-ink);
+  margin: 0.6rem 0 0;
+}
+
+.about-contact--small {
+  margin-top: 0.4rem;
+}
+
+.about-link {
+  color: var(--rf-accent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--rf-accent) 35%, transparent);
+  transition: border-color 0.2s, opacity 0.2s;
+}
+.about-link:hover {
+  border-bottom-color: var(--rf-accent);
+}
+
+.about-link--muted {
+  color: var(--rf-ink);
+  opacity: 0.45;
+  border-bottom-color: color-mix(in srgb, var(--rf-ink) 20%, transparent);
+}
+.about-link--muted:hover {
+  opacity: 0.75;
+  border-bottom-color: color-mix(in srgb, var(--rf-ink) 40%, transparent);
+}
