@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import "./AppStyles.css";
 import { TIME_GLYPHS, TIME_LABELS, SEASON_LABELS } from "./constants.js";
 import { LYRICS } from "./lyrics.js";
