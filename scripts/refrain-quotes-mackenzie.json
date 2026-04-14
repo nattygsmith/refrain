@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "description": "Quote library for Refrain — time-tagged verses from W. Roy Mackenzie, Ballads and Sea Songs from Nova Scotia (Harvard University Press, 1928)",
+    "last_updated": "2026-04-14",
+    "status_values": [
+      "approved",
+      "pending-wordsmith",
+      "hold"
+    ],
+    "notes": "Source: Ballads and Sea Songs from Nova Scotia, collected by W. Roy Mackenzie (Harvard University Press, Cambridge, 1928). 162 songs. Public domain (published 1928, US pre-1928 cutoff does not apply — but 1928 Harvard UP publication with no subsequent copyright renewal is in the public domain). Songs collected primarily from Pictou County, Nova Scotia, c. 1908–1912. Cite as: Song Title (Mackenzie 1928, No. N).",
+    "collection": "mackenzie"
+  },
+  "quotes": [
+    {
+      "id": 1,
+      "collection": "mackenzie",
+      "text": "No shoes or stockings, hat or cloak did that pretty fair maiden wear;\nHer hair in golden ringlets hung down o'er her shoulders fair.\nTwo milking-pails were in her hands so jovial and so gay;\nShe seemed to me like Venus fair at the dawning of the day.",
+      "source": "The Dawning of the Day (Mackenzie 1928, No. 56)",
+      "time": ["morning"],
+      "season": ["summer"],
+      "status": "approved",
+      "lyricsKey": "mackenzieDawningOfTheDay",
+      "stanzaIndex": 1,
+      "notes": "Stanza 2. Milkmaid at dawn in June. Sung by Harry Sutherland, River John, Pictou County. Text verified from scan of pp. 152–153."
+    },
+    {
+      "id": 2,
+      "collection": "mackenzie",
+      "text": "As I went a walking one evening in June,\nA viewing the roses — they were in full bloom —\nI met a pretty fair maid as I passed along;\nShe was washing some linens by the Chippewa Stream.",
+      "source": "The Chippewa Stream (Mackenzie 1928, No. 54)",
+      "time": ["evening"],
+      "season": ["summer"],
+      "status": "approved",
+      "lyricsKey": "mackenzieChippewaStream",
+      "stanzaIndex": 0,
+      "notes": "Stanza 1. Summer evening, roses in bloom, woman washing linens. Sung by Miss Greta Brown, River John, Pictou County. Text verified from OCR of p. 150."
+    },
+    {
+      "id": 3,
+      "collection": "mackenzie",
+      "text": "Said William, \"Lady, why roam alone?\nThe night is coming and the day is gone.\"\nShe said, while tears from her eyes did fall,\n\"It's my dark-eyed sailor that proved my downfall.",
+      "source": "The Dark-eyed Sailor (Mackenzie 1928, No. 64)",
+      "time": ["evening"],
+      "season": [],
+      "status": "approved",
+      "lyricsKey": "mackenzieDarkEyedSailor",
+      "stanzaIndex": 1,
+      "notes": "Stanza 2. 'The night is coming and the day is gone' — twilight. Sung by Richard Hines, River John, Pictou County. Text verified from OCR of p. 172."
+    },
+    {
+      "id": 4,
+      "collection": "mackenzie",
+      "text": "'Twas one cold winter's night when the winds\nThey blew bitter across the wild moor,\nWhen poor Mary she came with a child in her arms\nWandering home to her own father's door.",
+      "source": "Mary of the Wild Moor (Mackenzie 1928, No. 61)",
+      "time": ["night"],
+      "season": ["winter"],
+      "status": "approved",
+      "lyricsKey": "mackenzieMaryWildMoor",
+      "stanzaIndex": 0,
+      "notes": "Stanza 1. Night, winter, the wild moor. Sung by Mrs. Ellen Bigney, Pictou, Pictou County. Text verified from scan of p. 164."
+    },
+    {
+      "id": 5,
+      "collection": "mackenzie",
+      "text": "One morning very early, in the pleasant month of May,\nAs I walked out to take the air, all nature being gay,\nThe moon had not yet veiled her face, but through the trees did shine,\nAs I wandered forth to take the air on the banks of Brandywine.",
+      "source": "The Banks of Brandywine (Mackenzie 1928, No. 71)",
+      "time": ["morning"],
+      "season": ["spring"],
+      "status": "approved",
+      "lyricsKey": "mackenzieBanksOfBrandywine",
+      "stanzaIndex": 0,
+      "notes": "Stanza 1. Early May morning, moonlight still in the trees. Sung by Mrs. Ellen Bigney, Pictou, Pictou County. Text verified from scan of p. 186."
+    },
+    {
+      "id": 6,
+      "collection": "mackenzie",
+      "text": "One morning for recreation as I roamed by the seaside\nThe hills all were covered with flowers bedecked with pride.\nI spied a handsome fair maid as she roamed along the shore;\nLike roses blooming were the cheeks of Janie on the Moor.",
+      "source": "Janie on the Moor (Mackenzie 1928, No. 66)",
+      "time": ["morning"],
+      "season": [],
+      "status": "approved",
+      "lyricsKey": "mackenzieJanieOnTheMoor",
+      "stanzaIndex": 0,
+      "notes": "Stanza 1, Version A. Morning by the seaside, hills in flower. Sung by Mrs. James Campbell, River John, Pictou County. Text verified from scan of p. 175."
+    },
+    {
+      "id": 7,
+      "collection": "mackenzie",
+      "text": "By the borders of the ocean\nOne morning in the month of June,\nFor to hear those warlike songsters\nTheir cheerful notes and sweetly tune,\nI overheard a female\nWho seemed to be in grief and woe,\nConversing with young Buonaparte\nConcerning the bonny bunch of roses O.",
+      "source": "The Bonny Bunch of Roses (Mackenzie 1928, No. 72)",
+      "time": ["morning"],
+      "season": ["summer"],
+      "status": "approved",
+      "lyricsKey": "mackenzieBonnyBunchOfRoses",
+      "stanzaIndex": 0,
+      "notes": "Stanza 1, Version B. June morning by the ocean, birdsong ('warlike songsters'). Sung by Alexander Harrison, Maccan, Cumberland County. Text verified from scan of p. 191."
+    },
+    {
+      "id": 8,
+      "collection": "mackenzie",
+      "text": "\"My father keeps a public house\nDown yonder by the shore,\nAnd you this night shall enter in\nAnd there to morning dwell.",
+      "source": "Young Edmund (Mackenzie 1928, No. 27)",
+      "time": ["night"],
+      "season": [],
+      "status": "approved",
+      "lyricsKey": "mackenzieYoungEdmund",
+      "stanzaIndex": 3,
+      "notes": "Stanza 4. Night shelter at the public house by the shore. Sung by Carl Langille, River John, Pictou County. Text verified from scan of pp. 92–93."
+    },
+    {
+      "id": 9,
+      "collection": "mackenzie",
+      "text": "As I walked out one evening down by the river side\nI overheard a damsel, the tears fell from her eyes,\nSaying, \"This is a dark and stormy night\" —\n\"And my love is on the raging seas bound for America.\"",
+      "source": "The Banks of Claudie (Mackenzie 1928, No. 70)",
+      "time": ["evening", "night"],
+      "season": [],
+      "status": "approved",
+      "lyricsKey": "mackenzieBanksOfClaudie",
+      "stanzaIndex": 0,
+      "notes": "Stanza 1. Evening by the river shading into a dark and stormy night, woman weeping for her love at sea. Sung by Mrs. James Palmer, Waldegrave, Colchester County. Text verified from scan of p. 185."
+    }
+  ]
+}

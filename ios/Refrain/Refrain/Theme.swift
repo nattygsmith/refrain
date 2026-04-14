@@ -51,6 +51,15 @@ extension Theme {
             .winter: Theme(bg: "#080c14", ink: "#b0c8e0", accent: "#4d7dad", mist: "#101828"),
         ],
     ]
+
+    /// True for evening and night themes, which have dark backgrounds.
+    /// Used to apply .preferredColorScheme(.dark) to system controls.
+    var isDark: Bool {
+        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
+        UIColor(bg).getRed(&r, green: &g, blue: &b, alpha: &a)
+        let luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b
+        return luminance < 0.15
+    }
 }
 
 // MARK: - Hex colour initialiser

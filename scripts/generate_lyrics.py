@@ -28,6 +28,7 @@ LYRICS_FILES = [
     os.path.join(SCRIPTS_DIR, "refrain-lyrics-lomax1934.json"),
     os.path.join(SCRIPTS_DIR, "refrain-lyrics-karpeles-appalachian.json"),
     os.path.join(SCRIPTS_DIR, "refrain-lyrics-broadwood.json"),
+    os.path.join(SCRIPTS_DIR, "refrain-lyrics-mackenzie.json"),
     # Add future collections here:
     # os.path.join(SCRIPTS_DIR, "refrain-lyrics-broadwood-county.json"),
     # os.path.join(SCRIPTS_DIR, "refrain-lyrics-greig-duncan.json"),

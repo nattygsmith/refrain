@@ -15,7 +15,18 @@ data class RefrainTheme(
     val ink: Color,
     val accent: Color,
     val mist: Color,
-)
+) {
+    /** True for evening and night themes. Used to determine sheet background. */
+    val isDark: Boolean get() {
+        val r = bg.red
+        val g = bg.green
+        val b = bg.blue
+        val luminance = 0.2126f * r + 0.7152f * g + 0.0722f * b
+        return luminance < 0.15f
+    }
+
+    val sheetBg: Color get() = if (isDark) mist else bg
+}
 
 // ── Hex helper ────────────────────────────────────────────────────────────────
 

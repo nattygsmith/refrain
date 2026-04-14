@@ -84,9 +84,10 @@ struct LyricsView: View {
             .onAppear {
                 scrollTo(index: stanzaIndex, proxy: proxy, delay: 0.35)
             }
-            .onChange(of: stanzaIndex) { newIndex in
+            .onChange(of: stanzaIndex) { _, newIndex in
                 scrollTo(index: newIndex, proxy: proxy, delay: 0.1)
             }
+            .textSelection(.enabled)
         }
     }
 

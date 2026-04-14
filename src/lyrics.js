@@ -2479,4 +2479,136 @@ export const LYRICS = {
       "And now my song is almost done,\nI can no longer stay,\nGod bless you all both great and small,\nI wish you a joyful May.",
     ],
   },
+
+  "mackenzieDawningOfTheDay": {
+    title: "The Dawning of the Day",
+    version: "W. Roy Mackenzie, Ballads and Sea Songs from Nova Scotia (Harvard University Press, 1928). Sung by Harry Sutherland, River John, Pictou County.",
+    stanzas: [
+      "As I walked out one morning fair all in the month of June,\nEach bush and tree was decked in green and the flowers were in their bloom.\nReturning home all from a walk through a field I took my way;\nI chanced to see a pretty fair maid at the dawning of the day.",
+      "No shoes or stockings, hat or cloak did that pretty fair maiden wear;\nHer hair in golden ringlets hung down o'er her shoulders fair.\nTwo milking-pails were in her hands so jovial and so gay;\nShe seemed to me like Venus fair at the dawning of the day.",
+      "\"O where are you going, my pretty fair maid? O where are you going so soon?\"\n\"I'm going a milking, sir,\" she said, \"all in the month of June.\nThose pasture fields that I go to are so, so far away\nThat I have to be there each morning fair at the dawning of the day.\"",
+      "\"O there's time enough, my pretty fair maid, suppose it were a mile.\nCome sit down on those primrose banks and chat with me a while.\"\n\"O no, O no,\" replied this maid, \"to that I can't obey.\nLook around, the skies are breaking clear, 'tis the dawning of the day.\"",
+      "Those words she spoke. My arms entwined around her slender waist.\nI laid her on the primrose banks and her I did embrace.\n\"Leave off your freedom, kind sir,\" she said, \"and let me go my way.\nLook around, the sky is breaking clear, 'tis the dawning of the day.\"",
+      "We arose, shook hands and parted, and I crossed o'er the way.\nIn the course of seven months after, I met her on my way.\nShe appeared to me quite dropsical as I crossed o'er the way,\nAnd carelessly I passed her by at the dawning of the day.",
+      "The tears rolled down her lily-white cheeks and bitterly she did cry,\n\"I hope you'll gain no credit, sir, by thus deluding me,\nThat I may be a warning to all other maids so gay\nTo never trust a lad they meet at the dawning of the day.\"",
+      "\"For to marry you, my pretty fair maid, 'tis a thing that cannot be.\nTo join our hands in wedlock bonds, to that I can't agree,\nFor I've been lately married to a girl from Bathly Bay,\nOf whom I gained ten thousand pounds, at the dawning of the day.\"",
+      "The tears rolled down her lily-white cheeks and bitterly she did cry,\n\"I hope you'll gain no credit, sir, by thus deluding me,\nThat I may be a warning to all other maids so gay,\nTo never trust a lad they meet at the dawning of the day.\"",
+    ],
+  },
+
+  "mackenzieChippewaStream": {
+    title: "The Chippewa Stream",
+    version: "W. Roy Mackenzie, Ballads and Sea Songs from Nova Scotia (Harvard University Press, 1928). Sung by Miss Greta Brown, River John, Pictou County.",
+    stanzas: [
+      "As I went a walking one evening in June,\nA viewing the roses — they were in full bloom —\nI met a pretty fair maid as I passed along;\nShe was washing some linens by the Chippewa Stream.",
+      "I went up beside her and I made a low bow,\nAnd what I said to her I'll tell to you now:\n\"It's been twelve months or better my mind's been on thee,\nAnd it's now we'll get married if you will agree.\"",
+      "\"O to marry, to marry, kind sir, I'm too young;\nBesides all you young men have a false flattering tongue.\nHow cross would my mother and my father would be\nIf I was to wed with a rover like thee.\"",
+      "He turned around quickly, knowing well what to say:\n\"I wish you a good man, a good man I pray.\nThe sky it looks heavy, I think we'll have rain.\"\nSo they shook hands and parted on the Chippewa Stream.",
+      "\"O come back, love, come back, love, you've quite won my heart;\nIt is now we'll get married and never depart.\n'Tis now we'll get married and happy I'll be,\nAnd live happy together till the day we do die.\"",
+      "\"O the last words you spoke, love, was far out of tune.\nO the last words you spoke, love, I've quite changed my mind.\nI think it's far better for single to remain\nThan to court some pretty fair maid on the Chippewa Stream.\"",
+    ],
+  },
+
+  "mackenzieDarkEyedSailor": {
+    title: "The Dark-eyed Sailor",
+    version: "W. Roy Mackenzie, Ballads and Sea Songs from Nova Scotia (Harvard University Press, 1928). Sung by Richard Hines, River John, Pictou County.",
+    stanzas: [
+      "As I walked out one evening fair\nDown by the river to take the air,\nI met a female upon my way,\nAnd I paid attention to hear what she would say.",
+      "Said William, \"Lady, why roam alone?\nThe night is coming and the day is gone.\"\nShe said, while tears from her eyes did fall,\n\"It's my dark-eyed sailor that proved my downfall.",
+      "\"It's seven years since he left the land.\nHe took a gold ring from off his hand;\nHe broke it in two. Here's one half with me,\nAnd the other's rolling in the bottom of the sea.\"",
+      "Said William, \"Lady, shake him from your mind;\nSome other sailor as good you'll find.\nLove turns aside and cold doth grow\nLike a winter's morning when the lands are clothed with snow.\"",
+      "\"His coal-black eyes and his curly hair,\nHis flattering tongue did my heart ensnare.\nGentle he was, but no rake like you,\nTo advise a maiden to slight the jacket blue.\"",
+      "Then half of the ring William he did show.\nShe seemed distressed with joy, not woe.\n\"You're welcome, William, I've got lands and gold\nFor my dark-eyed sailor who's manly, true, and bold.\"",
+      "They joined in wedlock and did well agree.\nThey live in a cottage down by the sea.\nSo, maids, be true while your love's away,\nFor a cloudy morning ofttimes brings a pleasant day.",
+    ],
+  },
+
+  "mackenzieBanksOfBrandywine": {
+    title: "The Banks of Brandywine",
+    version: "W. Roy Mackenzie, Ballads and Sea Songs from Nova Scotia (Harvard University Press, 1928). Sung by Mrs. Ellen Bigney, Pictou, Pictou County.",
+    stanzas: [
+      "One morning very early, in the pleasant month of May,\nAs I walked out to take the air, all nature being gay,\nThe moon had not yet veiled her face, but through the trees did shine,\nAs I wandered forth to take the air on the banks of Brandywine.",
+      "At such an early hour I was surprised to see\nA lovely maid with downcast eyes upon those banks so gay.\nI modestly saluted her, she knew not my design,\nAnd requested her sweet company on the banks of Brandywine.",
+      "\"I pray, young man, be civil, my company forsake,\nFor in my real opinion I think you are a rake.\nMy love's a valiant sailor, he's now gone to the main,\nWhile comfortless I wander on the banks of Brandywine.\"",
+      "\"My dear, why do you thus give up to melancholy cries?\nI pray give up your weeping and dry those lovely eyes,\nFor sailors in each port, my dear, they do a mistress find.\nHe will leave you to wander on the banks of Brandywine.\"",
+      "\"O leave me, sir, do leave me! Why do you me torment?\nMy Henry wont to see me, therefore I am content.\nWhy do you thus torment me, and cruelly combine\nTo fill my heart with horror on the banks of Brandywine?\"",
+      "\"I wish not to afflict your mind, but rather for to ease.\nSuch dreadful apprehensions, they soon your heart will seize.\nYour love, my dear, in wedlock bands another one has joined.\"\nShe swooned into my arms on the banks of Brandywine.",
+      "The lofty hills and craggy rocks reëchoed back her strains;\nThe pleasant groves and rural shades were witness to her pains.\n\"How often has he promised me in Hymen's chains to join!\nNow I'm a maid forsaken on the banks of Brandywine.\"",
+      "\"O no, my dear, that ne'er shall be. Behold your Henry now!\nI clasp you to my bosom, love, I've not forgot our vow.\nIt's now I know you're true, my dear, in Hymen's chains we'll join,\nAnd bless the happy morn we met on the banks of Brandywine.\"",
+    ],
+  },
+
+  "mackenzieJanieOnTheMoor": {
+    title: "Janie on the Moor",
+    version: "W. Roy Mackenzie, Ballads and Sea Songs from Nova Scotia (Harvard University Press, 1928). Version A, sung by Mrs. James Campbell, River John, Pictou County.",
+    stanzas: [
+      "One morning for recreation as I roamed by the seaside\nThe hills all were covered with flowers bedecked with pride.\nI spied a handsome fair maid as she roamed along the shore;\nLike roses blooming were the cheeks of Janie on the Moor.",
+      "Said I, \"My handsome fair maid, why thou so early rise?\"\n\"'Tis for to breathe the morning air while the larks are in the skies;\nI love to roam the beach alone where loud the billows roar\nThat make the bosom of the deep,\" cried Janie on the Moor.",
+      "We both sat down together on yonder mossy side.\nSaid I, \"My handsome fair maid, I will make you my bride.\nI have both gold and silver brought from some foreign shore,\nAnd with me you may tarry, dear Janie on the Moor.\"",
+      "\"I have a true love of my own. Long since he's gone from me,\nBut with pleasure I'll wait on him till he'll return from sea.\nI'll wait on him without a doubt till he'll return on shore.\nWe'll join our hands in wedlock bands,\" cried Janie on the Moor.",
+      "\"If your true love was a sailor pray tell to me your name.\"\n\"His name was Dennis Ryan, from New York town he came;\nBut with pleasure I'll wait on him till he returns on shore,\nAnd we'll join our hands in wedlock bands,\" cried Janie on the Moor.",
+      "\"If your true love was a sailor I know the young man well.\nHe was in the battle at Vendons Town, by an angry ball he fell.\nHere is a token of true love which he on his finger wore.\"\nShe fell a fainting in his arms, dear Janie on the Moor.",
+      "When he saw she was tender-hearted, \"Behold, my love,\" he cried,\n\"This is your Dennis Ryan a standing by your side!\nSo come and we'll get married and be happy evermore.\nWe'll join our hands in wedlock bands, dear Janie on the Moor.\"",
+    ],
+  },
+
+  "mackenzieBonnyBunchOfRoses": {
+    title: "The Bonny Bunch of Roses",
+    version: "W. Roy Mackenzie, Ballads and Sea Songs from Nova Scotia (Harvard University Press, 1928). Version B, sung by Alexander Harrison, Maccan, Cumberland County.",
+    stanzas: [
+      "By the borders of the ocean\nOne morning in the month of June,\nFor to hear those warlike songsters\nTheir cheerful notes and sweetly tune,\nI overheard a female\nWho seemed to be in grief and woe,\nConversing with young Buonaparte\nConcerning the bonny bunch of roses O.",
+      "Then up steps young Napoleon\nAnd takes his mother by the hand,\nSaying, \"Mother dear, have patience,\nUntil I am able to command;\nThen I will take an army,\nThrough tremendous dangers I will go.\nIn spite of all the universe\nI will conquer the bonny bunch of roses O!\"",
+      "The first time I saw young Buonaparte\nDown on his bended knees fell he;\nHe asked the pardon of his father,\nWho granted it most mournfully.\n\"Dear son,\" he said, \"I'll take an army\nAnd on the frozen Alps will go;\nThen I will conquer Moscow,\nAnd return to the bonny bunch of roses O.\"",
+      "He took five hundred thousand men,\nWith kings likewise to bear his train.\nHe was so well provided for\nThat he could sweep this world alone.\nBut when he came to Moscow\nHe was overpowered by the driven snow,\nWhen Moscow was a blazing,\nSo he lost his bonny bunch of roses O.",
+      "\"Oh, son, don't speak so venturesome,\nFor in England are the hearts of oak.\nThere is England, Ireland, Scotland;\nTheir unity was never broke.\nOh, son, think of thy father —\nOn the isle of Saint Helena his body lies low,\nAnd you must soon follow after him,\nSo beware of the bonny bunch of roses O.\"",
+      "\"Now do believe me, dearest mother,\nNow I lie on my dying bed;\nIf I had lived I would have been clever,\nBut now I droop my youthful head.\nBut whilst our bodies lie mould'ring,\nAnd weeping willows over our bodies grow,\nThe deeds of great Napoleon\nShall sing the bonny bunch of roses O.\"",
+    ],
+  },
+
+  "mackenzieYoungEdmund": {
+    title: "Young Edmund",
+    version: "W. Roy Mackenzie, Ballads and Sea Songs from Nova Scotia (Harvard University Press, 1928). Sung by Carl Langille, River John, Pictou County.",
+    stanzas: [
+      "Young Emily was a servant maid,\nShe loved a sailor bold;\nAnd for much gain he crossed the main,\nFor love as I've been told.",
+      "Seven long years or better\nSince Edmund's been at home,\nHe came unto young Emily's house\nAnd she was all alone.",
+      "He came unto young Emily's house\nHis gold all for to show,\nThat he had gained upon the main.\nHe plowed the Lowlands low.",
+      "\"My father keeps a public house\nDown yonder by the shore,\nAnd you this night shall enter in\nAnd there to morning dwell.",
+      "\"You'll meet me in the morning.\nDon't let my parents know\nThat your name it is young Edmund\nThat plowed the Lowlands low.\"",
+      "Young Emily in her chamber\nShe dreamt a dreadful dream:\nShe dreamed she saw young Edmund\nFloat in yon crystal stream.",
+      "She rose at day in the morning,\nTo meet her love did go,\nBecause she loved him dearly.\nHe plowed the Lowlands low.",
+      "\"O mother, where's that stranger\nCame here last night to dwell?\"\n\"He is dead,\" and says her father,\n\"And you no tales shall tell.\"",
+      "Saying, \"Father, cruel father,\nYou will die a public show\nFor the murdering of young Edmund\nThat plowed the Lowlands low!\"",
+      "She went unto the justice,\nAnd there her case made known.\nHe is taken on suspicion,\nHis trial soon comes on.",
+      "The jury found him guilty,\nAnd hanged he was also\nFor the murdering of young Edmund\nWho plowed the Lowlands low.",
+      "\"I'll build myself a little house\nDown yonder by the shore.\nThe ship that's on the ocean\nThe wind tossed to and fro,\nReminds me of young Edmund\nThat plowed the Lowlands low.\"",
+    ],
+  },
+
+  "mackenzieBanksOfClaudie": {
+    title: "The Banks of Claudie",
+    version: "W. Roy Mackenzie, Ballads and Sea Songs from Nova Scotia (Harvard University Press, 1928). Sung by Mrs. James Palmer, Waldegrave, Colchester County.",
+    stanzas: [
+      "As I walked out one evening down by the river side\nI overheard a damsel, the tears fell from her eyes,\nSaying, \"This is a dark and stormy night\" —\n\"And my love is on the raging seas bound for America.\"",
+      "I stepped up to this fair maid and put her in surprise;\nI own she did not know me, I being in disguise.\nI said, \"My pretty fair maid, my joy and heart's delight,\nHow far do you wander this dark and dreary night?\"",
+      "\"Kind sir, the way to Claudie would you be pleased to show?\nAnd pity the distresséd, for there I have to go.\nI am in search of a young man, and Johnny is his name,\nAnd upon the banks of Claudie I am told he does remain.\"",
+      "\"This is the banks of Claudie, the ground whereon you stand,\nBut do not trust young Johnny, for he's a false young man.\nO do not trust young Johnny, for he'll not meet you here.\nCome along with me to yonder banks, no danger need you fear.\"",
+      "\"If Johnny he was here this night he'd shed me from all harm;\nHe's dressed in his readiness all in his uniform;\nHe's gone to plough the ocean, his foes he will defy.\nLike a rolling king of honour he fought in the wars of Troy.\"",
+      "When he found her so loyal he could no longer stand;\nHe jumped into her arms, saying, \"Betsy, I'm the man.\nO Betsy, I'm the young man that caused you all your pain,\nAnd since we're met on Claudie banks we'll never part again.\"",
+      "\"Ye purling streams of Claudie, ye waters that roll by,\nAnd all ye little small burns that prove your destiny,\nHad I a tongue to flatter I'd tell ye some love tale\nAbout a bonny boy from Claudie that in my mind remains.\"",
+    ],
+  },
+
+  "mackenzieMaryWildMoor": {
+    title: "Mary of the Wild Moor",
+    version: "W. Roy Mackenzie, Ballads and Sea Songs from Nova Scotia (Harvard University Press, 1928). Sung by Mrs. Ellen Bigney, Pictou, Pictou County.",
+    stanzas: [
+      "'Twas one cold winter's night when the winds\nThey blew bitter across the wild moor,\nWhen poor Mary she came with a child in her arms\nWandering home to her own father's door.",
+      "\"O why did I leave this fine cot,\nWhere once I was happy and free?\nNow doomed for to roam without friends or a home,\nO father, take pity on me!\"",
+      "\"O father, O father,\" she cries,\n\"Pray come down and open your door,\nOr this child at my bosom will perish and die\nFrom the winds blown across the wild moor.\"",
+      "But her father was deaf to her cry,\nNot a sound of his voice reached her ear;\nBut the watch-dogs did bark and the village bells rang,\nAnd the winds blew across the wild moor.",
+      "But what did her old father say\nWhen he came to the door the next morn,\nWhere he found Mary dead but her child still alive,\nFondly clasped in its dead mother's arms?",
+      "With grief the old man pined away,\nAnd the child to its mother went soon,\nAnd there's none that is left to this very day,\nFor the cottage is going to ruin.",
+      "But the village points out the spot\nWhere the willows weep over the door,\nWhere Mary died, once the village pride,\nFrom the winds blown across the wild moor.",
+    ],
+  },
 };

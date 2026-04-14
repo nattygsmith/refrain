@@ -42,6 +42,7 @@ LYRICS_FILES = [
     os.path.join(SCRIPTS_DIR, "refrain-lyrics-karpeles-appalachian.json"),
     os.path.join(SCRIPTS_DIR, "refrain-lyrics-baring-gould.json"),
     os.path.join(SCRIPTS_DIR, "refrain-lyrics-broadwood.json"),
+    os.path.join(SCRIPTS_DIR, "refrain-lyrics-mackenzie.json"),
 ]
 
 TARGET_FILE = os.path.join(SCRIPTS_DIR, "..", "ios", "Refrain", "Refrain", "Resources", "lyrics.json")

@@ -71,57 +71,12 @@ export default function AboutPage() {
           <p>
             A new verse appears every 15 minutes, or press "Another" whenever you like.
           </p>
-        </div>
-
-        {/* ── Get the app / contact ── */}
-        <div className="about-links-section about-links-section--centered">
+          <br />
           <div className="lyrics-rule">
             <div className="rule-line" />
             <div className="rule-diamond" />
             <div className="rule-line" />
           </div>
-
-          <div className="about-store-row">
-            <a
-              className="about-store-badge"
-              href="https://apps.apple.com/app/id6761557395"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download on the App Store"
-            >
-              <img
-                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                alt="Download on the App Store"
-                className="about-store-badge-img"
-              />
-            </a>
-            <span className="about-store-badge about-store-badge--soon">
-              <span className="about-store-coming">Android — coming soon</span>
-            </span>
-          </div>
-
-          <p className="about-contact">
-            Questions, bug reports, or feedback:{" "}
-            <a href="mailto:support@refrainapp.com" className="about-link">
-              support@refrainapp.com
-            </a>
-          </p>
-
-          <p className="about-contact about-contact--small">
-            <a href="/privacy" className="about-link about-link--muted">
-              Privacy Policy
-            </a>
-          </p>
-        </div>
-
-        {/* ── Collections ── */}
-        <div className="lyrics-rule">
-          <div className="rule-line" />
-          <div className="rule-diamond" />
-          <div className="rule-line" />
-        </div>
-
-        <div className="info-body">
           <br />
           <p>
             The verses come from a number of fieldwork collections, most gathered in the
@@ -196,14 +151,6 @@ export default function AboutPage() {
               unless otherwise noted.
             </li>
             <li>
-              <strong>Songs of the West</strong>—121 traditional folk songs from Devon and
-              Cornwall collected by Sabine Baring-Gould, H. Fleetwood Sheppard, and F.W.
-              Bussell from singers across the West Country, first published in 1889–1891 and
-              revised by Cecil Sharp for a definitive fifth edition in 1905. Baring-Gould was
-              one of the earliest English folk song collectors; some texts were lightly
-              expurgated for the published edition.
-            </li>
-            <li>
               <strong>English Traditional Songs and Carols</strong>—38 traditional English folk
               songs and carols collected almost entirely by Lucy Broadwood from field singers
               across Sussex, Surrey, and Bedfordshire, and published in 1908. A substantial
@@ -212,9 +159,16 @@ export default function AboutPage() {
               decades. The collection also includes May Day carols and a gypsy Christmas carol
               collected from the Goby family of Sussex and Surrey.
             </li>
+            <li>
+              <strong>Ballads and Sea Songs from Nova Scotia</strong>—162 traditional ballads
+              and songs collected by W. Roy Mackenzie from singers across Nova Scotia, primarily
+              in Pictou and Colchester counties, between 1908 and 1912, and published by Harvard
+              University Press in 1928. The collection preserves both British ballad traditions
+              carried to the Maritimes by early settlers and locally composed songs of the sea,
+              the lumber camps, and the Nova Scotia shore.
+            </li>
           </ul>
         </div>
-
       </div>{/* overlay-body-inner */}
       </div>
     </div>

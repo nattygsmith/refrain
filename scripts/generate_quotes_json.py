@@ -31,6 +31,7 @@ QUOTE_FILES = [
     "scripts/refrain-quotes-karpeles-appalachian.json",
     "scripts/refrain-quotes-baring-gould.json",
     "scripts/refrain-quotes-broadwood.json",
+    "scripts/refrain-quotes-mackenzie.json",
 ]
 
 TARGET_FILE = "ios/Refrain/Refrain/Resources/quotes.json"

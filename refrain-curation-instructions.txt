@@ -1,0 +1,464 @@
+REFRAIN — QUOTES CURATION INSTRUCTIONS
+=======================================
+Refrain displays time- and season-matched verses from folk song collections.
+This file is the single source of truth for curation state, conventions, and
+collection notes. Read it at the start of every session.
+
+─────────────────────────────────────────────────────────────────────────────
+THE LIBRARY FILES
+─────────────────────────────────────────────────────────────────────────────
+Each collection has its own JSON file. At session end, updated files are
+generated as downloadable outputs; the user replaces the project files manually.
+
+QUOTES FILES (active, complete):
+refrain-quotes-child.json               — Child Ballads (108 entries)
+refrain-quotes-sharp.json               — Sharp 1916 (15 entries)
+refrain-quotes-sharp-somerset.json      — Sharp Somerset (1 entry)
+refrain-quotes-campbell-sharp.json      — Campbell/Sharp 1917 (21 entries)
+refrain-quotes-karpeles-newfoundland.json — Karpeles Newfoundland (9 entries)
+refrain-quotes-gardiner-hampshire.json  — Gardiner Hampshire (4 entries)
+refrain-quotes-lomax.json               — Lomax 1910 (12 entries)
+refrain-quotes-lomax1934.json           — Lomax 1934 (1 entry)
+refrain-quotes-karpeles-appalachian.json — Sharp/Karpeles 1932 (9 entries)
+refrain-quotes-baring-gould.json        — Baring-Gould (29 entries)
+refrain-quotes-broadwood.json           — Broadwood 1908 (5 entries)
+refrain-quotes-mackenzie.json           — Mackenzie 1928 (9 entries)
+
+LYRICS FILES (active):
+refrain-lyrics-child.json               — Child Ballads (73 entries)
+refrain-lyrics-sharp.json               — Sharp 1916 (15 entries)
+refrain-lyrics-sharp-somerset.json      — Sharp Somerset (1 entry)
+refrain-lyrics-campbell-sharp.json      — Campbell/Sharp 1917 (20 entries)
+refrain-lyrics-karpeles-newfoundland.json — Karpeles Newfoundland (9 entries)
+refrain-lyrics-gardiner-hampshire.json  — Gardiner Hampshire (3 entries)
+refrain-lyrics-lomax.json               — Lomax 1910 (10 entries)
+refrain-lyrics-lomax1934.json           — Lomax 1934 (1 entry)
+refrain-lyrics-karpeles-appalachian.json — Sharp/Karpeles 1932 (8 entries)
+refrain-lyrics-baring-gould.json        — Baring-Gould (27 entries)
+refrain-lyrics-broadwood.json           — Broadwood 1908 (4 entries)
+refrain-lyrics-mackenzie.json           — Mackenzie 1928 (9 entries)
+
+OTHER:
+asitfellquotes.csv                      — Human-readable backup of Child Ballads
+
+FUTURE FILES (not yet started):
+refrain-quotes-broadwood-county.json    — Broadwood & Fuller Maitland 1893
+refrain-quotes-greig-duncan.json        — Greig/Duncan 1925
+
+Quote schema: id, collection, text, source, time, season, status, notes,
+              lyricsKey, stanzaIndex
+Status values: approved, pending-wordsmith, hold, retired
+
+─────────────────────────────────────────────────────────────────────────────
+LYRICS FILE ARCHITECTURE
+─────────────────────────────────────────────────────────────────────────────
+Lyrics are stored in per-collection JSON files. At deploy time,
+generate_lyrics.py merges all files and writes src/lyrics.js; generate_quotes.py
+does the same for src/quotes.js. To add a new collection, create the JSON file
+and add it to LYRICS_FILES / QUOTE_FILES in the relevant script.
+
+─────────────────────────────────────────────────────────────────────────────
+COLLECTIONS
+─────────────────────────────────────────────────────────────────────────────
+All collections below are public domain and fully triaged. No further curation
+is needed on any of them unless new candidates are identified.
+
+── Child Ballads (collection: "child-ballads") ─────────────────────────────
+Source: The English and Scottish Popular Ballads, Francis James Child (1882–1898).
+Text sources: sacred-texts.com, Wikisource.
+Cite as: Song Title (Child NNN)
+Key format: varies by song (see existing entries)
+Status: COMPLETE. 108 approved entries; full 305-song corpus assessed.
+Breakdown: morning strong, evening good, night strong; afternoon and summer
+thinnest but improved.
+
+── Cecil Sharp — One Hundred English Folksongs (collection: "sharp") ────────
+Source: One Hundred English Folksongs, Cecil J. Sharp (Oliver Ditson, 1916).
+Text sources: joe-offer.com/folkinfo, mainlynorfolk.info, lieder.net.
+Note: Internet Archive OCR of the 1916 edition is too degraded to use.
+Sharp sometimes compiled verses from multiple singers or made minor alterations.
+Cite as: Song Title (Sharp N)
+Key format: sharpN (e.g. sharp42)
+Status: COMPLETE. 15 approved entries; full 100-song collection assessed.
+Breakdown: morning 8, night 2, morning+night 1, no time 4;
+spring 6, summer 4, winter 1, no season 4. No afternoon entries.
+
+── Cecil Sharp — Folk Songs from Somerset (collection: "sharp-somerset") ─────
+Source: Folk Songs from Somerset, Cecil J. Sharp and Charles L. Marson
+(Simpkin & Co., London, 1904–1911). Five series, 130 songs.
+Text sources: mainlynorfolk.info (primary; Internet Archive OCR is variable).
+Note: Overlaps heavily with the 1916 Sharp collection. Always cross-check
+against refrain-quotes-sharp.json before proposing a candidate.
+Note: Master Kilby appeared in the Journal of the English Folk Song Society,
+not directly in the Somerset volumes — still public domain.
+Cite as: Song Title (Folk Songs from Somerset)
+Key format: somersetSongTitle in camelCase
+Status: COMPLETE. 1 approved entry (Master Kilby — afternoon, summer).
+Full 130-song series assessed; only one non-duplicate candidate found.
+
+── Campbell & Sharp (collection: "campbell-sharp") ──────────────────────────
+Source: English Folk Songs from the Southern Appalachians, Olive Dame Campbell
+and Cecil J. Sharp (G.P. Putnam's Sons, New York, 1917). 122 songs.
+Text sources: Archive.org scans (englishfolksongs00camp_0 is higher quality).
+Secondary: mainlynorfolk.info, bluegrassmessengers.com.
+Do not conflate with the 1932 Karpeles edition.
+Cite as: Song Title (Campbell/Sharp 1917, No. N)
+Key format: campbellsharpNN (e.g. campbellsharp76)
+Status: COMPLETE. 21 approved entries; full 122-song collection assessed.
+Breakdown: morning 10, night 10, evening 3, afternoon 0;
+spring 2, summer 2, winter 2, no season 15.
+Afternoon is genuinely absent — the repertoire does not carry it.
+Verified source notes:
+- "I dreamt last night" (Early, Early in the Spring) — NOT in 1917 edition.
+- "Tonight or in the morning soon" (Wife of Usher's Well) — NOT in 1917 edition.
+- Lady Isabel (No. 2), version A: "three hours before it was day" (st. 10) —
+  caught on full pass, not keyword search.
+- Grey Cock (Mrs. Jane Gentry version): confirmed in 1917 edition (evening, summer).
+
+── Maud Karpeles — Folk Songs from Newfoundland (collection: "karpeles-newfoundland")
+Source: Folk Songs from Newfoundland, Maud Karpeles (Oxford University Press,
+1934). 2 volumes, 30 songs.
+Text sources: the 1934 edition (Archive.org).
+Cite as: Song Title (Karpeles 1934, Vol. N, No. N)
+Key format: karpelesNewfoundlandSongTitle in camelCase
+Status: COMPLETE. 9 approved entries.
+Breakdown: morning 4, night 5, evening 1; spring 3, winter 3, summer 1.
+
+── George Gardiner — Folk-Songs from Hampshire (collection: "gardiner-hampshire")
+Source: Folk-Songs from Hampshire, George B. Gardiner; accompaniments by Gustav
+Holst (Novello & Co., 1909). 16 songs selected and edited by Cecil Sharp.
+Text sources: mainlynorfolk.info (primary).
+Cite as: Song Title (Gardiner, Folk-Songs from Hampshire, 1909)
+Key format: gardinerSongTitle in camelCase
+Status: COMPLETE. 4 approved entries.
+Breakdown: morning 3, night 1; spring 1, summer 1, no season 2.
+
+── John A. Lomax — Cowboy Songs (collection: "lomax") ───────────────────────
+Source: Cowboy Songs and Other Frontier Ballads, John A. Lomax
+(Sturgis & Walton, New York, 1910). ~150 songs.
+Text sources: Project Gutenberg (gutenberg.org/files/21300/21300-8.txt).
+Authorship: mostly traditional/anonymous. Known authored songs in the file:
+- Harry Stephens — Night-Herding Song (c. 1890)
+- Brewster Higley — Home on the Range (words, 1873)
+- Joseph Mills Hanson — The Railroad Corral (1904)
+- N. Howard Thorp — Little Joe the Wrangler (1898)
+- D.J. O'Malley — When the Work is Done This Fall (1893)
+Cite as: Song Title (Lomax 1910) for anonymous songs, or
+         Song Title (Author Name, year; collected Lomax 1910) for authored songs.
+Key format: lomaxSongTitle in camelCase (e.g. lomaxCowboysDream)
+For authored songs, cite version as: "Written by [Author]; collected by
+John A. Lomax, Cowboy Songs and Other Frontier Ballads (Sturgis & Walton, 1910)"
+Status: COMPLETE. 12 approved entries; full ~150-song collection triaged.
+Breakdown: morning 6, night 6, evening 1; spring 1, autumn 2, winter 1.
+
+── John A. and Alan Lomax — American Ballads and Folk Songs (collection: "lomax-1934")
+Source: American Ballads and Folk Songs, John A. Lomax and Alan Lomax
+(Macmillan, New York, 1934). ~200 songs.
+Text sources: Archive.org OCR is degraded — verify against physical pages.
+The Lomaxes composited stanzas from multiple sources; treat texts as
+representative rather than definitive.
+Important: some songs are reprinted from other collections. Always check the
+Lomax footnote before assigning attribution (e.g. Every Night When the Sun Goes
+In is from Sharp/Karpeles 1932, not original Lomax material).
+Cite as: Song Title (Lomax 1934)
+Key format: lomax1934SongTitle in camelCase
+Status: COMPLETE. 1 approved entry (Gerry's Rocks — morning).
+Verified: Once More a-Lumbering Go is not in this collection (it's from Folk
+Song U.S.A., 1947). Low Bridge (Erie Canal) is a 1905 composition, not traditional.
+
+── Sharp/Karpeles — Southern Appalachians 1932 (collection: "karpeles-appalachian")
+Source: English Folk Songs from the Southern Appalachians, revised and enlarged
+edition edited by Maud Karpeles (Oxford University Press, 1932). 2 vols, ~274 songs.
+Text sources: mainlynorfolk.info (primary); Archive.org / Loomis House Press reprint.
+Cross-check all candidates against refrain-quotes-campbell-sharp.json.
+Note: Published 1932, pre-1928 US cutoff — public domain in the US. Karpeles's
+editorial contributions are not yet public domain in the UK, but verse texts are safe.
+Cite as: Song Title (Sharp/Karpeles 1932, Vol. N, No. N)
+Key format: karpelesappalachianSongTitle in camelCase
+Status: COMPLETE. 9 approved entries; all 72 Vol. I ballads and Vol. II assessed.
+Breakdown: morning 6, night 3, evening 1; spring 1, no season 8. No afternoon.
+Verified source notes:
+- Every Night When the Sun Goes In: reprinted from Sharp/Karpeles 1932, not Lomax.
+- The Chickens They Are Crowing: from Ben Finlay, Clay Co., KY, 1917 (play-party).
+- Bright Morning Star: hymns section, new to 1932 edition; treat as traditional.
+- Little Musgrave: Version A from Mrs. Becky Griffin, Big Laurel, NC, 1916.
+  Not in Campbell-Sharp file despite being in 1917 edition — cite to 1932.
+- Fair Margaret and Sweet William: opens 'Sweet William rose one morning bright'
+  (not 'one May morning') — no spring tag.
+- Cruel Ship's Carpenter: 'Early one morning before the break of day' confirmed
+  in Sharp R (Clinton Fitzgerald, Afton, VA, 1918).
+
+── Sabine Baring-Gould — Songs of the West (collection: "baring-gould") ─────
+Source: Songs of the West, S. Baring-Gould, H. Fleetwood Sheppard, and F.W.
+Bussell, ed. Cecil J. Sharp (Methuen & Co., London, 5th edition, 1905). 121 songs.
+Text sources: Project Gutenberg (gutenberg.org/ebooks/56625) is the primary
+plain-text source; mainlynorfolk.info indexes all 121 songs.
+Note: Baring-Gould expurgated and rewrote some texts. His manuscripts are at
+the VWML Full English archive, but Refrain quotes the published text only.
+Cite as: Song Title (Songs of the West, No. N)
+Key format: baringgouldN (e.g. baringgould89)
+Status: COMPLETE. 29 approved entries; full 121-song collection triaged via
+Project Gutenberg keyword search.
+Breakdown: morning 17, night 8, evening 4, afternoon 1; spring 8, summer 4,
+winter 2, no season 14. No autumn entries.
+Verified: Upon a Sunday Morning (No. 3) — melody is not a genuine folk tune,
+but text is collected from Robert Hard, South Brent; included.
+The Hal-an-Tow (No. 24) — May 8th spring ceremony; tagged spring, not summer.
+
+── Lucy Broadwood — English Traditional Songs and Carols (collection: "broadwood")
+Source: English Traditional Songs and Carols, Lucy E. Broadwood
+(Boosey & Co., London, 1908). 38 songs.
+Text sources: the 1908 edition (Archive.org, identifier: englishtraditio00broagoog).
+PDF scan has no extractable text layer; OCR via pytesseract at 180–200 DPI gives
+good results. Full-collection keyword triage is feasible via rasterised OCR.
+Note: A substantial number of songs came from Henry Burstow, a bellringer and
+cobbler from Horsham, Sussex. Several carols came from the Goby family, gypsies
+in Sussex and Surrey.
+Important: The "rambling all this night" stanza of The Moon Shines Bright appears
+in Broadwood's 1893 English County Songs (Thomas Gray, Weston, Hertfordshire),
+NOT in the 1908 collection. The 1908 Goby version has six theological stanzas only.
+Do not conflate the two publications.
+Cite as: Song Title (Broadwood, English Traditional Songs and Carols)
+Key format: broadwoodSongTitle in camelCase (e.g. broadwoodMoonShinesBright)
+Status: COMPLETE. 5 approved entries; full 38-song collection assessed.
+Breakdown: morning 2, evening 1, night 2; spring 2, summer 1, no season 2.
+
+── W. Roy Mackenzie — Ballads and Sea Songs from Nova Scotia (collection: "mackenzie")
+Source: Ballads and Sea Songs from Nova Scotia, W. Roy Mackenzie
+(Harvard University Press, Cambridge, 1928). 162 songs.
+Text sources: Archive.org scan (balladsseasongsf00mack). The PDF has a text layer
+on prose pages but not reliably on verse pages; pdftotext extracts introduction
+text cleanly. Verse pages were verified visually via pdftoppm at 180 DPI.
+Songs collected primarily from Pictou and Colchester counties, Nova Scotia,
+c. 1908–1912. Two-thirds of the songs are from River John, Pictou County.
+Copyright: Published 1928 Harvard University Press. Copyright was not renewed
+(pre-1964 publication); public domain in the US. Safe to use verse texts.
+Note: Mackenzie's internal song numbering differs from the TOC by one in places
+(TOC No. 26 = internal No. 27, Young Edmund). Always cite from the internal number
+as printed in the book.
+Note: Gerry's Rocks appears in two versions (A and B), both with "Sunday morning"
+opener — duplicate of Lomax 1934 entry, not added.
+Note: The OCR text layer is unreliable for verse stanzas; always verify stanza
+text against the rasterised scan before finalising any entry.
+Cite as: Song Title (Mackenzie 1928, No. N)
+Key format: mackenzieTitle in camelCase (e.g. mackenzieDawningOfTheDay)
+Status: COMPLETE. 9 approved entries; full 162-song collection triaged.
+Breakdown: morning 4, evening 3, night 2; summer 3, spring 1, winter 1, no season 4.
+No afternoon entries. Evening/night coverage notably improved by this collection.
+Approved entries:
+- No. 56 The Dawning of the Day — morning, summer (milkmaid at dawn, June)
+- No. 54 The Chippewa Stream — evening, summer (washing linens, roses in bloom)
+- No. 64 The Dark-eyed Sailor — evening (night is coming and the day is gone)
+- No. 61 Mary of the Wild Moor — night, winter (bitter winds, wild moor)
+- No. 71 The Banks of Brandywine — morning, spring (moon in trees, early May)
+- No. 66 Janie on the Moor — morning (seaside, hills in flower)
+- No. 72 The Bonny Bunch of Roses — morning, summer (ocean border, June birdsong)
+- No. 27 Young Edmund — night (public house by the shore)
+- No. 70 The Banks of Claudie — evening/night (dark and stormy night, love at sea)
+
+── Future collections — assessed and ruled out (March 2026) ─────────────────
+- Olive Dame Campbell: no standalone collection; all songs in Campbell/Sharp 1917.
+- Maud Karpeles: publications either already curated or post-1928 (Crystal Spring
+  1975, 1974 Sharp edition).
+- A.L. Lloyd: died 1982; all publications post-1928.
+- Harold Boulton, Songs of the Four Nations (1892): public domain, but Boulton
+  authored some texts himself. Not a suitable fit.
+
+── Future collections — viable candidates (April 2026) ──────────────────────
+- Broadwood & Fuller Maitland — English County Songs (1893): songs from across
+  English counties. Mostly archival rather than field-collected, but solidly
+  traditional. Public domain. Note: contains the Thomas Gray version of
+  The Moon Shines Bright ("a little before 'tis day") not in Broadwood 1908.
+- Gavin Greig / James Duncan — Last Leaves of Traditional Ballads and Ballad
+  Airs (1925): major Scottish collection from Aberdeenshire. Dates and copyright
+  need verifying before starting.
+- Greenleaf & Mansfield — Ballads and Sea Songs of Newfoundland (1933): Harvard
+  University Press. Collected 1929 in Newfoundland, some repertoire overlap with
+  Karpeles 1934 but different singers. Worth assessing.
+
+─────────────────────────────────────────────────────────────────────────────
+CURATION RULES
+─────────────────────────────────────────────────────────────────────────────
+A quote is eligible if it:
+- Contains an explicit time-of-day marker (morning, afternoon, evening, night).
+  Strong incidental imagery is acceptable (firelight/candlelight for night,
+  dew/milkmaid for morning) but birdsong alone is not a time marker.
+- Works as a standalone image or moment. Plot-dependence is no longer a strict
+  barrier since full lyrics are available — the test is whether the image lands.
+  Floating pronouns that are genuinely opaque mid-narrative remain a reason to
+  reject.
+- Has sufficient lyrical quality to stand alone.
+
+Additional conventions:
+- Light modernisation of spelling is acceptable. Scots vocabulary is preserved
+  where it adds atmosphere (lang, mirk, een, waly, linn, tirled at the pin, etc.)
+  — flag unusual words for discussion.
+- No invented time or season tags. Season tags only where textually supported.
+- Riddle and impossible-task ballads are not categorically excluded.
+- Always show full quote text when presenting candidates in a table.
+- Keep sessions collection-specific. One session = one collection.
+- Process ~5 songs per batch; present only genuine candidates with brief reasoning.
+
+─────────────────────────────────────────────────────────────────────────────
+DEPLOYING TO THE APP
+─────────────────────────────────────────────────────────────────────────────
+Run all commands from the repo root (~/refrain/):
+
+  cp ~/Downloads/refrain-quotes-[collection].json scripts/
+  cp ~/Downloads/refrain-lyrics-[collection].json scripts/
+  cp ~/Downloads/generate_quotes.py scripts/      # if updated
+  cp ~/Downloads/generate_lyrics.py scripts/      # if updated
+  cp ~/Downloads/AboutPage.jsx src/               # if updated
+  cp ~/Downloads/PrivacyPage.jsx src/             # if updated
+  cp ~/Downloads/AboutView.swift ios/Refrain/Refrain/  # if updated
+  python3 scripts/generate_quotes.py
+  python3 scripts/generate_lyrics.py
+  # Verify DEV_MODE = false in src/config.js
+  git add . && git commit -m "..." && git push
+
+Vercel auto-deploys on push to main. generate_quotes.py skips hold,
+pending-wordsmith, and retired entries automatically.
+If the Vercel webhook fails: git commit --allow-empty -m "Trigger redeploy" && git push
+
+iOS content updates (quote additions) require a new App Store build and
+resubmission, since quotes.json is bundled. Web app updates instantly.
+
+⚠️  ANDROID content updates also require a new Play Store build and resubmission.
+After running the generate scripts, copy JSON files to Android assets:
+  cp quotes.json android/app/src/main/assets/
+  cp lyrics.json android/app/src/main/assets/
+Then build a new signed AAB and submit via Play Store Console.
+
+─────────────────────────────────────────────────────────────────────────────
+ADDING A NEW COLLECTION — CHECKLIST
+─────────────────────────────────────────────────────────────────────────────
+1. Add refrain-quotes-[collection].json to scripts/ and to QUOTE_FILES in
+   scripts/generate_quotes.py
+2. Add refrain-lyrics-[collection].json to scripts/ and to LYRICS_FILES in
+   scripts/generate_lyrics.py
+3. Add a credit entry to:
+   - src/AboutPage.jsx (web)
+   - ios/Refrain/Refrain/AboutView.swift (iOS)
+   - android/app/src/main/java/com/nattygsmith/refrain/ui/AboutScreen.kt (Android)
+4. Update these curation instructions
+
+─────────────────────────────────────────────────────────────────────────────
+STARTING A NEW SESSION
+─────────────────────────────────────────────────────────────────────────────
+All existing collections are complete as of April 2026. To start a new collection:
+"Let's start curation for [collection name] — read the project files."
+
+For re-curation or review of an existing collection, state the collection name
+and Claude will read the relevant files.
+
+─────────────────────────────────────────────────────────────────────────────
+SOURCE RETRIEVAL NOTES
+─────────────────────────────────────────────────────────────────────────────
+Child Ballads: sacred-texts.com and Wikisource are the primary text sources.
+Sharp 1916: joe-offer.com/folkinfo, mainlynorfolk.info, lieder.net.
+  Internet Archive OCR of the 1916 edition is too degraded to use.
+Sharp Somerset: mainlynorfolk.info (primary). Internet Archive OCR is variable.
+Campbell/Sharp 1917: Archive.org scan (englishfolksongs00camp_0 is higher quality).
+  The 1917 PDF is the most reliable source; full keyword triage via pdftotext is
+  feasible. One time tag (Lady Isabel, st. 10) was missed by keyword search and
+  caught only on full song-by-song pass.
+Lomax 1910: Project Gutenberg plain-text file (gutenberg.org/files/21300/21300-8.txt).
+Lomax 1934: Archive.org OCR is degraded. Use mainlynorfolk.info and targeted
+  searches; verify against physical pages where possible.
+Sharp/Karpeles 1932: mainlynorfolk.info (primary); Archive.org / Loomis House Press.
+Baring-Gould: Project Gutenberg (gutenberg.org/ebooks/56625). If the user can
+  export the Gutenberg page as a PDF, pdftotext enables a full keyword search
+  in one pass.
+Broadwood 1908: Archive.org scan (englishtraditio00broagoog). No extractable text
+  layer — use pytesseract OCR at 180–200 DPI. Full-collection keyword triage
+  is feasible via rasterised OCR.
+General: pdftotext + keyword search is significantly faster than song-by-song
+  web fetching when a clean PDF is available. mainlynorfolk.info is reliable
+  for individual songs across most collections.
+
+─────────────────────────────────────────────────────────────────────────────
+CODE ARCHITECTURE
+─────────────────────────────────────────────────────────────────────────────
+React/Vite + React Router, deployed via GitHub + Vercel at refrainapp.com.
+Repo: ~/refrain/ (local), nattygsmith/refrain (GitHub).
+
+src/config.js          — DEV_MODE flag. Set to false before every deploy.
+src/constants.js       — THEMES, TIME_LABELS, SEASON_LABELS, TIME_GLYPHS
+src/helpers.js         — getTimeOfDay, getSeason, getPool, pickQuote
+src/useQuoteClock.js   — custom hook: clock, time/season, pool, quote selection,
+                         auto-refresh
+src/LyricsScreen.jsx   — lyrics overlay component
+src/AboutPage.jsx      — about page at /about; uses useNavigate for ← Back button;
+                         uses useQuoteClock to set theme tokens for background colors;
+                         contains App Store link (id6761557395) and support email
+src/PrivacyPage.jsx    — privacy policy at /privacy; same structure as AboutPage
+src/AppStyles.css      — all CSS; uses --rf-* CSS custom properties throughout
+src/App.jsx            — root component; routes: / (main), /about, /privacy
+src/quotes.js          — AUTO-GENERATED by generate_quotes.py; do not edit
+src/lyrics.js          — AUTO-GENERATED by generate_lyrics.py; do not edit
+
+Theme tokens applied as CSS custom properties on document root
+(--rf-bg, --rf-ink, --rf-accent, --rf-mist).
+vercel.json catch-all rewrite handles /about and /privacy direct loads.
+AppStyles.css uses color-mix() for semi-transparent accents — supported in all
+modern browsers including Safari 16.2+.
+
+iOS: Xcode project at ios/Refrain/Refrain/. Key files: ContentView.swift,
+AboutView.swift, RefrainApp.swift, Theme.swift, Quote.swift, RefrainWidget.swift,
+QuoteClock.swift, LyricsView.swift. JSON files at ios/Refrain/Refrain/Resources/,
+added to both app and widget targets. Font: IM Fell English (Regular + Italic).
+URL scheme: refrain://lyrics/{key}/{stanzaIndex}/{quoteID}.
+Supported destinations: iPhone only (iPad, Mac, Apple Vision removed for v1).
+Minimum deployment: iOS 17.0 (main app), iOS 18.0 (widget extension).
+
+Android: Kotlin + Jetpack Compose project at android/. Key files:
+  MainActivity.kt          — entry point, widget deep link handling
+  RefrainApplication.kt    — initialises DataStore singleton
+  data/DataStore.kt        — loads and indexes quotes.json and lyrics.json
+  data/Models.kt           — Quote, LyricsEntry data classes
+  clock/TimeAndSeason.kt   — TimeOfDay, Season enums
+  clock/QuoteClock.kt      — ViewModel: pool, rotation, 15-min timer
+  theme/Theme.kt           — 16-theme table (matches iOS + web exactly)
+  theme/Typography.kt      — IM Fell English FontFamily
+  ui/MainScreen.kt         — quote display screen
+  ui/LyricsSheet.kt        — full-height ModalBottomSheet with stanza scroll
+  ui/AboutScreen.kt        — about / credits screen
+  ui/widget/RefrainWidget.kt         — Glance home screen widget
+  ui/widget/RefrainWidgetReceiver.kt — widget receiver + WorkManager refresh
+JSON files bundled at android/app/src/main/assets/.
+Font: IM Fell English TTF files at android/app/src/main/res/font/.
+Widget refresh: WorkManager periodic task, 15-minute interval aligned to clock.
+Widget tap: launches MainActivity with widgetQuoteId extra; no lyrics sheet opened.
+Minimum SDK: 26 (Android 8.0). Target SDK: 35.
+Pool filtering: quotes with empty season array match any season (same as iOS/web).
+
+─────────────────────────────────────────────────────────────────────────────
+APP STORE
+─────────────────────────────────────────────────────────────────────────────
+iOS app submitted to App Store: April 9, 2026. Version 1.0, build 1.
+App name: Refrain: Seasonal Folk Verses
+Bundle ID: com.nattygsmith.refrain
+Widget bundle ID: com.nattygsmith.refrain.RefrainWidget
+Apple ID: 6761557395
+App Store URL: https://apps.apple.com/app/id6761557395
+Support email: support@refrainapp.com
+Privacy policy: https://refrainapp.com/privacy
+Release mode: Manual (must be triggered in App Store Connect after approval)
+
+When the app is approved and released, update the App Store badge link in
+AboutPage.jsx — the href is already set to the correct URL.
+
+─────────────────────────────────────────────────────────────────────────────
+PLAY STORE
+─────────────────────────────────────────────────────────────────────────────
+Android app: in development as of April 2026, not yet submitted.
+Package ID: com.nattygsmith.refrain
+Widget package ID: com.nattygsmith.refrain.RefrainWidget
+Support email: support@refrainapp.com
+Privacy policy: https://refrainapp.com/privacy
+Play Store developer account: registration in progress (identity verification pending)
+Note: Google requires verification of access to a physical Android device to publish.
+
+When the app is listed, update the Play Store badge link in AboutScreen.kt
+(there is a TODO comment marking the spot) and add the badge to AboutPage.jsx
+and AboutView.swift as well.

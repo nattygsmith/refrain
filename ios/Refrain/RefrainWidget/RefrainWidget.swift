@@ -74,20 +74,18 @@ struct RefrainWidgetView: View {
     private var verseSize: CGFloat {
         switch family {
         case .systemExtraLarge: return 22
-        case .systemLarge:      return 18
-        default:                return 13
+        case .systemLarge:      return 20
+        default:                return 20
         }
     }
 
-    private var attributionSize: CGFloat {
+    private var tagSize: CGFloat {
         switch family {
-        case .systemExtraLarge: return 13
-        case .systemLarge:      return 12
+        case .systemExtraLarge: return 11
+        case .systemLarge:      return 10
         default:                return 8
         }
     }
-
-    private var labelSize: CGFloat { 10 }
 
     private var edgePadding: CGFloat {
         switch family {
@@ -98,14 +96,6 @@ struct RefrainWidgetView: View {
     }
 
     private var verseLineSpacing: CGFloat { isExtraLarge || isLarge ? 6 : 2 }
-
-    private var verseAttrSpacing: CGFloat {
-        switch family {
-        case .systemExtraLarge: return 32
-        case .systemLarge:      return 24
-        default:                return 4
-        }
-    }
 
     private var gradientRadius: CGFloat {
         switch family {
@@ -118,38 +108,32 @@ struct RefrainWidgetView: View {
     // MARK: - Body
 
     var body: some View {
-        VStack(alignment: .center, spacing: 0) {
+        VStack(spacing: 0) {
 
             // Time · Season label — pinned to top
             Text("\(entry.timeOfDay.rawValue.uppercased()) · \(entry.season.rawValue.uppercased())")
-                .font(.custom("IM_FELL_English_Roman", size: labelSize))
+                .font(.custom("IM_FELL_English_Roman", size: tagSize))
                 .foregroundStyle(entry.theme.ink.opacity(0.65))
-                .padding(.top, 6)
-                .padding(.bottom, 2)
 
-            Spacer(minLength: 0)
+            // Quote — expands to fill all available space between label and attribution
+            Text(entry.quote.text)
+                .font(.custom("IM_FELL_English_Roman", size: verseSize))
+                .foregroundStyle(entry.theme.ink)
+                .multilineTextAlignment(.center)
+                .lineSpacing(verseLineSpacing)
+                .minimumScaleFactor(0.4)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .padding(.horizontal, edgePadding)
 
-            VStack(spacing: verseAttrSpacing) {
-                Text(entry.quote.text)
-                    .font(.custom("IM_FELL_English_Roman", size: verseSize))
-                    .foregroundStyle(entry.theme.ink)
-                    .multilineTextAlignment(.center)
-                    .lineSpacing(verseLineSpacing)
-                    // Extra-large has room to breathe; large clips gracefully
-                    .lineLimit(isExtraLarge ? nil : (isLarge ? 6 : nil))
-                    .minimumScaleFactor(isLarge ? 0.4 : 1.0)
-                    .padding(.horizontal, edgePadding)
-
-                Text("— \(entry.quote.source.uppercased())")
-                    .font(.custom("IM_FELL_English_Roman", size: attributionSize))
-                    .foregroundStyle(entry.theme.ink.opacity(0.75))
-                    .multilineTextAlignment(.center)
-                    .lineLimit(isExtraLarge ? 3 : 2)
-                    .padding(.horizontal, edgePadding)
-            }
-
-            Spacer()
+            // Attribution — same size as label, truncates with ellipsis
+            Text("— \(entry.quote.source.uppercased())")
+                .font(.custom("IM_FELL_English_Roman", size: tagSize))
+                .foregroundStyle(entry.theme.ink.opacity(0.65))
+                .lineLimit(1)
+                .truncationMode(.tail)
+                .padding(.horizontal, edgePadding)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .containerBackground(for: .widget) {
             entry.theme.bg
             RadialGradient(
@@ -159,11 +143,7 @@ struct RefrainWidgetView: View {
                 endRadius: gradientRadius
             )
         }
-        .widgetURL({
-            guard let key = entry.quote.lyricsKey else { return nil }
-            let stanza = entry.quote.stanzaIndex.map { String($0) } ?? "nil"
-            return URL(string: "refrain://lyrics/\(key)/\(stanza)/\(entry.quote.id)")
-        }())
+        .widgetURL(URL(string: "refrain://quote/\(entry.quote.id)"))
     }
 }
 

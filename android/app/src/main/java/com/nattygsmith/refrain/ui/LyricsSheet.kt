@@ -48,7 +48,7 @@ fun LyricsSheet(
     ModalBottomSheet(
         onDismissRequest = onDismiss,
         sheetState       = sheetState,
-        containerColor   = theme.bg,
+        containerColor   = theme.sheetBg,
         modifier         = Modifier.fillMaxWidth(),
         dragHandle = {
             Box(

@@ -6,8 +6,6 @@ struct ContentView: View {
 
     // ── Widget deep-link bindings ────────────────────────────────────────
     // Set by RefrainApp.onOpenURL when a widget tap carries a specific quote.
-    @Binding var pendingLyricsKey: String?
-    @Binding var pendingStanzaIndex: Int?
     @Binding var pendingQuoteID: Int?
     @Binding var pendingTrigger: Int
 
@@ -101,9 +99,9 @@ struct ContentView: View {
         .fullScreenCover(isPresented: $showAbout) {
             AboutView(theme: theme)
         }
-        .onChange(of: showLyrics,     perform: handleShowLyricsChange)
-        .onChange(of: useSidePanel,   perform: handleOrientationChange)
-        .onChange(of: pendingTrigger, perform: { _ in handleWidgetDeepLink() })
+        .onChange(of: showLyrics)     { _, newValue in handleShowLyricsChange(newValue) }
+        .onChange(of: useSidePanel)   { _, _ in handleOrientationChange(useSidePanel) }
+        .onChange(of: pendingTrigger) { _, _ in handleWidgetDeepLink() }
         .onReceive(orientationPublisher) { _ in updateOrientation() }
         .onReceive(appActivePublisher)   { _ in handleAppActive() }
         .animation(.easeInOut(duration: 1.2), value: clock.timeOfDay)
@@ -180,6 +178,7 @@ struct ContentView: View {
                 }
                 .padding(.horizontal, 28)
                 .padding(.top, 8)
+                .preferredColorScheme(theme.isDark ? .dark : .light)
                 .transition(.opacity.combined(with: .move(edge: .top)))
             }
 
@@ -228,6 +227,7 @@ struct ContentView: View {
                     }
                     .disabled(!hasLyrics)
                 }
+                .textSelection(.enabled)
                 .gesture(
                     DragGesture(minimumDistance: 40).onEnded { value in
                         if value.translation.height < -40, quote.lyricsKey != nil {
@@ -276,8 +276,8 @@ struct ContentView: View {
     /// threshold dismisses it.
     @ViewBuilder
     private var bottomOverlayLyrics: some View {
-        let lyricsKey   = pendingLyricsKey   ?? clock.quote?.lyricsKey
-        let stanzaIndex = pendingStanzaIndex ?? clock.quote?.stanzaIndex
+        let lyricsKey   = clock.quote?.lyricsKey
+        let stanzaIndex = clock.quote?.stanzaIndex
 
         if showLyrics,
            let key = lyricsKey,
@@ -304,15 +304,15 @@ struct ContentView: View {
     /// Dismissed by the chevron button, a rightward swipe, or tapping the main area.
     @ViewBuilder
     private var sidePanelLyrics: some View {
-        let lyricsKey   = pendingLyricsKey   ?? clock.quote?.lyricsKey
-        let stanzaIndex = pendingStanzaIndex ?? clock.quote?.stanzaIndex
+        let lyricsKey   = clock.quote?.lyricsKey
+        let stanzaIndex = clock.quote?.stanzaIndex
 
         if showLyrics,
            let key = lyricsKey,
            let entry = DataStore.shared.lyrics(for: key) {
 
             ZStack(alignment: .topTrailing) {
-                theme.mist
+                theme.isDark ? theme.mist : theme.bg
 
                 LyricsView(entry: entry, stanzaIndex: stanzaIndex, theme: theme)
                     .padding(.top, 24)
@@ -356,15 +356,15 @@ struct ContentView: View {
     /// On iPad, bottomOverlayLyrics and sidePanelLyrics are used instead.
     @ViewBuilder
     private var iPhoneLyricsSheet: some View {
-        let lyricsKey   = pendingLyricsKey   ?? clock.quote?.lyricsKey
-        let stanzaIndex = pendingStanzaIndex ?? clock.quote?.stanzaIndex
+        let lyricsKey   = clock.quote?.lyricsKey
+        let stanzaIndex = clock.quote?.stanzaIndex
 
         if let key = lyricsKey,
            let entry = DataStore.shared.lyrics(for: key) {
             LyricsView(entry: entry, stanzaIndex: stanzaIndex, theme: theme)
                 .presentationDetents([.medium, .large])
                 .presentationDragIndicator(.visible)
-                .presentationBackground(theme.mist)
+                .presentationBackground(theme.isDark ? theme.mist : theme.bg)
                 .presentationCornerRadius(20)
         }
     }
@@ -373,9 +373,6 @@ struct ContentView: View {
 
     private func dismissLyrics() {
         showLyrics = false
-        pendingLyricsKey   = nil
-        pendingStanzaIndex = nil
-        pendingQuoteID     = nil
     }
 
     // MARK: - Event handlers
@@ -402,29 +399,17 @@ struct ContentView: View {
     private func handleSheetDismiss() {
         if !isReopening {
             showLyrics = false
-            pendingLyricsKey   = nil
-            pendingStanzaIndex = nil
             pendingQuoteID     = nil
         }
         isReopening = false
     }
 
-    /// Handles deep links from widget taps.
+    /// Handles deep links from widget taps — navigates to the quote only.
     private func handleWidgetDeepLink() {
-        guard pendingLyricsKey != nil else { return }
+        guard let id = pendingQuoteID else { return }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            if let id = pendingQuoteID {
-                clock.navigate(to: id)
-            }
-            if showLyrics {
-                isReopening = true
-                showLyrics = false
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
-                    showLyrics = true
-                }
-            } else {
-                showLyrics = true
-            }
+            clock.navigate(to: id)
+            pendingQuoteID = nil
         }
     }
 
@@ -538,7 +523,7 @@ private struct BottomOverlay: View {
                 LyricsView(entry: entry, stanzaIndex: stanzaIndex, theme: theme)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-            .background(theme.mist)
+            .background(theme.isDark ? theme.mist : theme.bg)
             .clipShape(UnevenRoundedRectangle(
                 topLeadingRadius: 20, bottomLeadingRadius: 0,
                 bottomTrailingRadius: 0, topTrailingRadius: 20,

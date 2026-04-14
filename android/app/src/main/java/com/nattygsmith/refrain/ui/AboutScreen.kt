@@ -288,4 +288,8 @@ private val collections = listOf(
         "English Traditional Songs and Carols",
         "38 traditional English folk songs and carols collected almost entirely by Lucy Broadwood from field singers across Sussex, Surrey, and Bedfordshire, and published in 1908. A substantial number came from a single remarkable source: Henry Burstow, a bellringer and cobbler from Horsham, Sussex, who had carried the songs in his memory for decades. The collection also includes May Day carols and a gypsy Christmas carol collected from the Goby family of Sussex and Surrey.",
     ),
+    CollectionInfo(
+        "Ballads and Sea Songs from Nova Scotia",
+        "162 traditional ballads and songs collected by W. Roy Mackenzie from singers across Nova Scotia, primarily in Pictou and Colchester counties, between 1908 and 1912, and published by Harvard University Press in 1928. The collection preserves both British ballad traditions carried to the Maritimes by early settlers and locally composed songs of the sea, the lumber camps, and the Nova Scotia shore.",
+    ),
 )
