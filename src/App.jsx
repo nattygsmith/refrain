@@ -7,6 +7,7 @@ import { useNavigate, Routes, Route } from "react-router-dom";
 import { useQuoteClock } from "./useQuoteClock.js";
 import LyricsScreen from "./LyricsScreen.jsx";
 import AboutPage from "./AboutPage.jsx";
+import PrivacyPage from "./PrivacyPage.jsx";
 
 // ============================================================
 //  Refrain — main view
@@ -283,6 +284,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Refrain />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/privacy" element={<PrivacyPage />} />
     </Routes>
   );
 }
